@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import PatternCard from './PatternCard.astro';
+import Icon from './Icon.astro';
+import { categoryMap, type CategoryKey } from '../data/site';
+
+interface Props {
+  issue: string;              // "01"
+  category: CategoryKey;
+  entries: CollectionEntry<'patterns'>[];
+  tint?: boolean;             // خلفية وردية فاتحة
+}
+const { issue, category, entries, tint = false } = Astro.props;
+const cat = categoryMap[category];
+const [lead, ...rest] = entries;
+const hasLead = Boolean(lead);
+---
+
+{hasLead && (
+<section class:list={['py-16 lg:py-24', tint && 'bg-blush-50/60 border-y border-blush-100']}>
+  <div class="container-editorial">
+    <!-- ترويسة العدد -->
+    <div class="flex flex-wrap items-end justify-between gap-4 border-b border-mauve-300/70 pb-6" data-reveal>
+      <div class="flex flex-wrap items-baseline gap-4">
+        <span class="rounded-full bg-blush-200 px-3.5 py-1.5 text-[0.6rem] font-bold tracking-[0.2em] text-blush-800 uppercase">
+          Issue no. {issue}
+        </span>
+        <h2 class="font-display text-issue font-bold tracking-tight text-plum-900">
+          {cat?.title.split(' ')[0]} <span class="accent-italic">{cat?.kicker}</span>
+        </h2>
+      </div>
+      <a
+        href={`/category/${category}`}
+        class="group inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-plum-800 uppercase transition-colors hover:text-blush-600"
+      >
+        View all
+        <Icon name="arrow-right" size={15} class="transition-transform group-hover:translate-x-1" />
+      </a>
+    </div>
+
+    <div class="mt-9 grid gap-8 lg:grid-cols-[1.15fr_1fr] lg:gap-12">
+      <!-- الباترون الرئيسي -->
+      <div class="relative">
+        <span class="eyebrow absolute -top-1 start-0 z-10 hidden">01 / Featured</span>
+        <PatternCard entry={lead} size="lg" index={0} />
+      </div>
+
+      <!-- الشبكة -->
+      <div class:list={['grid gap-x-5 gap-y-8 self-start', rest.length > 1 ? 'grid-cols-2' : 'grid-cols-1']}>
+        {rest.slice(0, 4).map((e, i) => <PatternCard entry={e} size="sm" index={i + 1} showMeta={false} />)}
+      </div>
+    </div>
+  </div>
+</section>
+)}

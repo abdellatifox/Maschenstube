@@ -1,0 +1,101 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PatternCard from '../../components/PatternCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Icon from '../../components/Icon.astro';
+import { categories, categoryMap } from '../../data/site';
+
+export const getStaticPaths = (async () => {
+  const all = await getCollection('patterns', ({ data }) => !data.draft);
+  return categories.map((c) => ({
+    params: { category: c.key },
+    props: {
+      cat: c,
+      entries: all
+        .filter((p) => p.data.category === c.key)
+        .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()),
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { cat, entries } = Astro.props;
+const others = categories.filter((c) => c.key !== cat.key);
+---
+
+<BaseLayout title={`${cat.title} crochet patterns`} description={cat.blurb}>
+  <section class="yarn-texture border-b border-mauve-300/60">
+    <div class="container-editorial py-12 lg:py-16">
+      <Breadcrumbs items={[{ label: 'Patterns', href: '/patterns' }, { label: cat.title }]} />
+
+      <div class="mt-7 flex flex-wrap items-end justify-between gap-6">
+        <div>
+          <p class="eyebrow flex items-center gap-3">
+            <span class="font-mono text-blush-400">{cat.no}</span>
+            Collection
+          </p>
+          <h1 class="mt-4 max-w-3xl font-display text-hero font-bold tracking-[-0.035em] text-plum-900">
+            {cat.title.split(' ')[0]} <span class="accent-italic">{cat.kicker}</span>
+          </h1>
+          <p class="mt-5 max-w-lg text-[1.02rem] leading-relaxed text-plum-700">{cat.blurb}</p>
+        </div>
+
+        <p class="rounded-full bg-blush-200 px-4 py-2 text-[0.68rem] font-bold tracking-[0.18em] text-blush-800 uppercase">
+          {entries.length} {entries.length === 1 ? 'pattern' : 'patterns'}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-editorial py-14 lg:py-20">
+    {
+      entries.length > 0 ? (
+        <div class="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+          {entries.map((entry, i) => (
+            <PatternCard entry={entry} index={i} />
+          ))}
+        </div>
+      ) : (
+        <div class="rounded-3xl border border-dashed border-mauve-300 py-20 text-center">
+          <p class="font-display text-xl font-bold text-plum-900">Nothing here just yet.</p>
+          <p class="mt-2 text-plum-700">This collection is on the hook — subscribe and you will hear first.</p>
+          <a
+            href="/patterns"
+            class="mt-6 inline-flex items-center gap-2 rounded-full bg-blush-600 px-6 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-white uppercase"
+          >
+            Browse everything
+            <Icon name="arrow-right" size={15} />
+          </a>
+        </div>
+      )
+    }
+  </section>
+
+  <!-- تصنيفات أخرى -->
+  <section class="border-t border-mauve-300/70 bg-blush-50/60 py-16">
+    <div class="container-editorial">
+      <p class="eyebrow">Keep browsing</p>
+      <ul class="mt-6 flex flex-wrap gap-2.5">
+        {
+          others.map((c) => (
+            <li>
+              <a
+                href={`/category/${c.key}`}
+                class="inline-flex items-center gap-2.5 rounded-full border border-mauve-300 bg-white px-4 py-2.5 text-[0.82rem] font-semibold text-plum-800 transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:text-blush-700"
+              >
+                <span class="font-mono text-[0.68rem] text-blush-400">{c.no}</span>
+                {c.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="container-editorial py-20">
+    <Newsletter source={`category:${cat.key}`} />
+  </section>
+</BaseLayout>

@@ -1,0 +1,46 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "crochet-pattern-theme",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./dist/_worker.js/index.js",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist"
+  },
+  "observability": { "enabled": true },
+
+  // ─────────────── D1 : قاعدة البيانات ───────────────
+  // wrangler d1 create crochet-db  ← ثم ضع database_id هنا
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "crochet-db",
+      "database_id": "REPLACE_WITH_YOUR_D1_ID",
+      "migrations_dir": "db/migrations"
+    }
+  ],
+
+  // ─────────────── KV : كاش + إعدادات + Rate limit ───────────────
+  // wrangler kv namespace create CACHE
+  "kv_namespaces": [
+    { "binding": "CACHE", "id": "REPLACE_WITH_YOUR_KV_ID" },
+    { "binding": "SETTINGS", "id": "REPLACE_WITH_YOUR_SETTINGS_KV_ID" },
+    // جلسات Astro (يطلبها محوّل Cloudflare) — wrangler kv namespace create SESSION
+    { "binding": "SESSION", "id": "REPLACE_WITH_YOUR_SESSION_KV_ID" }
+  ],
+
+  // ─────────────── R2 : ملفات PDF والصور ───────────────
+  // wrangler r2 bucket create crochet-media
+  "r2_buckets": [
+    {
+      "binding": "MEDIA",
+      "bucket_name": "crochet-media"
+    }
+  ],
+
+  "vars": {
+    "SITE_NAME": "Crochet Atelier",
+    "PUBLIC_R2_URL": "" // إن ربطت نطاقًا مخصصًا بالـ R2 ضعه هنا مثال: https://media.example.com
+  }
+}

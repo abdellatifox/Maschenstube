@@ -1,0 +1,144 @@
+---
+import Icon from './Icon.astro';
+---
+
+<dialog
+  id="search-dialog"
+  class="m-0 w-full max-w-2xl rounded-3xl border border-mauve-300 bg-cream p-0 shadow-lift backdrop:bg-plum-900/50 backdrop:backdrop-blur-sm sm:mx-auto sm:mt-[12vh]"
+  aria-label="Search patterns"
+>
+  <div class="flex items-center gap-3 border-b border-mauve-300/70 px-5 py-4">
+    <Icon name="search" size={20} class="shrink-0 text-blush-600" />
+    <input
+      id="search-input"
+      type="search"
+      placeholder="Search patterns, stitches, yarn weight…"
+      autocomplete="off"
+      class="w-full bg-transparent text-lg text-plum-900 outline-none placeholder:text-mauve-500"
+    />
+    <kbd class="hidden rounded-md border border-mauve-300 bg-white px-2 py-1 text-[0.65rem] font-bold text-mauve-500 sm:block">
+      ESC
+    </kbd>
+  </div>
+
+  <div id="search-results" class="max-h-[58vh] overflow-y-auto p-3">
+    <p class="px-3 py-8 text-center text-[0.9rem] text-mauve-500">Start typing to search the pattern library.</p>
+  </div>
+
+  <div class="flex items-center justify-between border-t border-mauve-300/70 px-5 py-3">
+    <span class="text-[0.68rem] font-bold tracking-[0.16em] text-mauve-500 uppercase">Crochet Atelier search</span>
+    <a href="/patterns" class="text-[0.75rem] font-semibold text-blush-700 hover:text-blush-500">Browse all →</a>
+  </div>
+</dialog>
+
+<script>
+  type Item = {
+    slug: string; title: string; excerpt: string; category: string;
+    difficulty: string; hook: string; yarn: string; tags: string[]; cover: string;
+  };
+
+  const dialog = document.getElementById('search-dialog') as HTMLDialogElement | null;
+  const input = document.getElementById('search-input') as HTMLInputElement | null;
+  const results = document.getElementById('search-results');
+  let index: Item[] | null = null;
+
+  const loadIndex = async () => {
+    if (index) return index;
+    try {
+      const res = await fetch('/search.json');
+      index = (await res.json()) as Item[];
+    } catch {
+      index = [];
+    }
+    return index;
+  };
+
+  const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+
+  const score = (item: Item, q: string) => {
+    const t = item.title.toLowerCase();
+    if (t.startsWith(q)) return 100;
+    if (t.includes(q)) return 70;
+    if (item.tags.some((x) => x.toLowerCase().includes(q))) return 50;
+    if (item.category.includes(q) || item.difficulty.includes(q)) return 35;
+    if (item.excerpt.toLowerCase().includes(q) || item.hook.toLowerCase().includes(q)) return 20;
+    return 0;
+  };
+
+  const render = (items: Item[], q: string) => {
+    if (!results) return;
+    if (!q) {
+      results.innerHTML =
+        '<p class="px-3 py-8 text-center text-[0.9rem] text-mauve-500">Start typing to search the pattern library.</p>';
+      return;
+    }
+    if (!items.length) {
+      results.innerHTML = `<p class="px-3 py-8 text-center text-[0.9rem] text-mauve-500">No pattern matches “${escapeHtml(q)}”.</p>`;
+      return;
+    }
+    results.innerHTML = items
+      .map(
+        (i) => `
+      <a href="/patterns/${i.slug}" class="flex items-center gap-4 rounded-2xl px-3 py-3 transition-colors hover:bg-blush-100">
+        <img src="${i.cover}" alt="" width="56" height="56" loading="lazy"
+             class="size-14 shrink-0 rounded-xl object-cover" />
+        <span class="min-w-0 flex-1">
+          <span class="block text-[0.7rem] font-bold tracking-[0.16em] text-blush-600 uppercase">${escapeHtml(i.category.replace('-', ' & '))}</span>
+          <span class="block truncate font-semibold text-plum-900">${escapeHtml(i.title)}</span>
+          <span class="block truncate text-[0.8rem] text-plum-700">${escapeHtml(i.hook)} · ${escapeHtml(i.difficulty)}</span>
+        </span>
+      </a>`,
+      )
+      .join('');
+  };
+
+  const search = async () => {
+    const q = (input?.value ?? '').trim().toLowerCase();
+    const data = await loadIndex();
+    const hits = q
+      ? data!
+          .map((i) => ({ i, s: score(i, q) }))
+          .filter((x) => x.s > 0)
+          .sort((a, b) => b.s - a.s)
+          .slice(0, 8)
+          .map((x) => x.i)
+      : [];
+    render(hits, q);
+  };
+
+  const open = () => {
+    if (!dialog) return;
+    dialog.showModal();
+    document.body.style.overflow = 'hidden';
+    void loadIndex();
+    setTimeout(() => input?.focus(), 40);
+  };
+
+  document.querySelectorAll('[data-search-open]').forEach((b) => b.addEventListener('click', open));
+
+  dialog?.addEventListener('close', () => {
+    document.body.style.overflow = '';
+    if (input) input.value = '';
+    render([], '');
+  });
+
+  // إغلاق عند النقر خارج الصندوق
+  dialog?.addEventListener('click', (e) => {
+    if (e.target === dialog) dialog.close();
+  });
+
+  let timer: number;
+  input?.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = window.setTimeout(search, 110);
+  });
+
+  // اختصار ⌘K / Ctrl+K
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      dialog?.open ? dialog.close() : open();
+    }
+  });
+</script>

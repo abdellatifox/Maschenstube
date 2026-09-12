@@ -1,0 +1,80 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import CategoryIndex from '../components/CategoryIndex.astro';
+import IssueSection from '../components/IssueSection.astro';
+import AuthorNote from '../components/AuthorNote.astro';
+import PatternCard from '../components/PatternCard.astro';
+import Icon from '../components/Icon.astro';
+import { categories, site } from '../data/site';
+
+const all = (await getCollection('patterns', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+);
+
+const featured = all.find((p) => p.data.featured) ?? all[0]!;
+
+const counts: Record<string, number> = {};
+for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 1;
+
+const byCategory = (key: string) => all.filter((p) => p.data.category === key);
+
+/** الأقسام التي تملك ما يكفي من المحتوى لعرضها كـ "عدد" */
+const issues = categories
+  .map((c) => ({ cat: c, entries: byCategory(c.key) }))
+  .filter((x) => x.entries.length >= 5)
+  .slice(0, 4);
+
+const latest = all.slice(0, 4);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: site.name,
+  url: site.url,
+  description: site.description,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${site.url}/patterns?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+};
+---
+
+<BaseLayout jsonLd={jsonLd}>
+  <Hero featured={featured} />
+
+  <CategoryIndex counts={counts} />
+
+  {
+    issues.map(({ cat, entries }, i) => (
+      <IssueSection issue={cat.no} category={cat.key} entries={entries} tint={i % 2 === 1} />
+    ))
+  }
+
+  <!-- أحدث الإضافات -->
+  <section class="container-editorial py-16 lg:py-24">
+    <div class="flex flex-wrap items-end justify-between gap-4 border-b border-mauve-300/70 pb-6" data-reveal>
+      <div>
+        <p class="eyebrow">Fresh off the hook</p>
+        <h2 class="mt-3 font-display text-issue font-bold tracking-tight text-plum-900">
+          Latest <span class="accent-italic">releases</span>
+        </h2>
+      </div>
+      <a
+        href="/patterns"
+        class="group inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-plum-800 uppercase transition-colors hover:text-blush-600"
+      >
+        All patterns
+        <Icon name="arrow-right" size={15} class="transition-transform group-hover:translate-x-1" />
+      </a>
+    </div>
+
+    <div class="mt-9 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+      {latest.map((entry, i) => <PatternCard entry={entry} index={i} />)}
+    </div>
+  </section>
+
+  <AuthorNote />
+</BaseLayout>

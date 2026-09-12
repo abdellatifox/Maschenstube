@@ -1,0 +1,129 @@
+---
+import Icon from './Icon.astro';
+import Newsletter from './Newsletter.astro';
+import { site, categories } from '../data/site';
+
+const year = new Date().getFullYear();
+const explore = [
+  { label: 'All patterns', href: '/patterns' },
+  { label: 'About Mia', href: '/about' },
+  { label: 'Contact', href: '/contact' },
+  { label: 'RSS feed', href: '/rss.xml' },
+];
+const legal = [
+  { label: 'Privacy policy', href: '/privacy' },
+  { label: 'Terms of use', href: '/terms' },
+  { label: 'Disclaimer', href: '/disclaimer' },
+];
+---
+
+<footer class="mt-24 border-t border-mauve-300/70 bg-shell">
+  <!-- شريط متحرّك -->
+  <div class="overflow-hidden border-b border-mauve-300/70 bg-blush-100 py-3">
+    <div class="flex w-max animate-marquee gap-10 will-change-transform">
+      {
+        Array.from({ length: 2 }).map(() => (
+          <div class="flex shrink-0 gap-10">
+            {['Free patterns', 'Written in US terms', 'Tested twice', 'Printable PDFs', 'Made with pink yarn', 'New every Sunday'].map(
+              (t) => (
+                <span class="flex items-center gap-10 text-[0.7rem] font-bold tracking-[0.28em] text-blush-700 uppercase">
+                  {t}
+                  <span class="size-1.5 rounded-full bg-blush-400" />
+                </span>
+              ),
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="container-editorial py-16">
+    <Newsletter source="footer" />
+
+    <div class="mt-16 grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div>
+        <h2 class="font-display text-2xl font-bold tracking-tight text-plum-900">
+          Crochet <span class="accent-italic">Atelier</span>
+        </h2>
+        <p class="mt-4 max-w-xs text-[0.92rem] leading-relaxed text-plum-700">{site.description}</p>
+        <ul class="mt-6 flex gap-2">
+          {
+            site.social.map((s) => (
+              <li>
+                <a
+                  href={s.href}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label={s.label}
+                  class="grid size-10 place-items-center rounded-full border border-mauve-300 bg-white text-plum-700 transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:bg-blush-500 hover:text-white"
+                >
+                  <Icon name={s.icon as any} size={17} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <nav aria-labelledby="f-cat">
+        <p class="eyebrow" id="f-cat">Categories</p>
+        <ul class="mt-5 space-y-2.5">
+          {
+            categories.slice(0, 6).map((c) => (
+              <li>
+                <a
+                  href={`/category/${c.key}`}
+                  class="text-[0.9rem] text-plum-700 transition-colors hover:text-blush-600"
+                >
+                  {c.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="f-exp">
+        <p class="eyebrow" id="f-exp">Explore</p>
+        <ul class="mt-5 space-y-2.5">
+          {
+            explore.map((l) => (
+              <li>
+                <a href={l.href} class="text-[0.9rem] text-plum-700 transition-colors hover:text-blush-600">
+                  {l.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="f-leg">
+        <p class="eyebrow" id="f-leg">Legal</p>
+        <ul class="mt-5 space-y-2.5">
+          {
+            legal.map((l) => (
+              <li>
+                <a href={l.href} class="text-[0.9rem] text-plum-700 transition-colors hover:text-blush-600">
+                  {l.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </div>
+
+    <div
+      class="mt-14 flex flex-col items-center justify-between gap-3 border-t border-mauve-300/70 pt-7 text-center sm:flex-row sm:text-start"
+    >
+      <p class="text-[0.7rem] font-semibold tracking-[0.16em] text-plum-700 uppercase">
+        © {year} {site.name} — all rights reserved
+      </p>
+      <p class="text-[0.7rem] font-semibold tracking-[0.16em] text-mauve-500 uppercase">
+        Built with Astro on Cloudflare
+      </p>
+    </div>
+  </div>
+</footer>

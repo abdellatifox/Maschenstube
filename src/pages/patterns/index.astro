@@ -1,0 +1,216 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PatternCard from '../../components/PatternCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Icon from '../../components/Icon.astro';
+import { categories, difficulties } from '../../data/site';
+
+const all = (await getCollection('patterns', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+);
+
+const counts: Record<string, number> = {};
+for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 1;
+---
+
+<BaseLayout
+  title="All free crochet patterns"
+  description="Every free crochet pattern in the library — filter by category, difficulty and hook size."
+>
+  <section class="yarn-texture border-b border-mauve-300/60">
+    <div class="container-editorial py-12 lg:py-16">
+      <Breadcrumbs items={[{ label: 'Patterns' }]} />
+      <h1 class="mt-6 font-display text-hero font-bold tracking-[-0.035em] text-plum-900">
+        The <span class="accent-italic">library</span>
+      </h1>
+      <p class="mt-5 max-w-lg text-[1.02rem] leading-relaxed text-plum-700">
+        {all.length} free patterns, written in US terms and tested twice. Filter your way to the next project.
+      </p>
+    </div>
+  </section>
+
+  <!-- شريط الفلاتر -->
+  <div class="z-30 border-b border-mauve-300/70 bg-cream/92 backdrop-blur-md lg:sticky lg:top-[74px]">
+    <div class="container-editorial flex flex-col gap-3 py-4 lg:flex-row lg:items-center lg:justify-between">
+      <div
+        class="-mx-5 flex items-center gap-1.5 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:flex-wrap md:overflow-visible md:px-0 md:pb-0"
+        role="group"
+        aria-label="Filter by category"
+      >
+        <button
+          type="button"
+          data-filter="category"
+          data-value="all"
+          class="filter-chip is-active"
+        >
+          All <span class="opacity-60">{all.length}</span>
+        </button>
+        {
+          categories.map((c) =>
+            counts[c.key] ? (
+              <button type="button" data-filter="category" data-value={c.key} class="filter-chip">
+                {c.title} <span class="opacity-60">{counts[c.key]}</span>
+              </button>
+            ) : null,
+          )
+        }
+      </div>
+
+      <div class="flex flex-wrap items-center gap-1.5">
+        <label class="sr-only" for="sort">Sort patterns</label>
+        <select
+          id="sort"
+          class="rounded-full border border-mauve-300 bg-white px-4 py-2 text-[0.78rem] font-semibold text-plum-800 outline-none focus:border-blush-400"
+        >
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="az">A → Z</option>
+        </select>
+
+        <select
+          id="difficulty"
+          class="rounded-full border border-mauve-300 bg-white px-4 py-2 text-[0.78rem] font-semibold text-plum-800 capitalize outline-none focus:border-blush-400"
+        >
+          <option value="all">Any difficulty</option>
+          {difficulties.map((d) => <option value={d}>{d}</option>)}
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <section class="container-editorial py-12 lg:py-16">
+    <p id="result-count" class="eyebrow mb-8">Showing {all.length} patterns</p>
+
+    <div id="grid" class="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        all.map((entry, i) => (
+          <div
+            data-card
+            data-category={entry.data.category}
+            data-difficulty={entry.data.difficulty}
+            data-title={entry.data.title.toLowerCase()}
+            data-date={entry.data.publishDate.valueOf()}
+          >
+            <PatternCard entry={entry} index={i} />
+          </div>
+        ))
+      }
+    </div>
+
+    <p id="empty" hidden class="py-20 text-center text-plum-700">
+      No patterns match those filters yet.
+      <button type="button" id="reset" class="font-semibold text-blush-700 underline underline-offset-4">Reset</button>
+    </p>
+  </section>
+
+  <section class="container-editorial pb-24">
+    <Newsletter source="patterns-index" variant="panel" />
+  </section>
+</BaseLayout>
+
+<style>
+  .filter-chip {
+    flex: none;
+    white-space: nowrap;
+    border-radius: 9999px;
+    border: 1px solid var(--color-mauve-300);
+    background: white;
+    padding: 0.45rem 0.95rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--color-plum-800);
+    transition: all 0.2s var(--ease-out-soft);
+    cursor: pointer;
+  }
+  .filter-chip:hover {
+    border-color: var(--color-blush-400);
+    color: var(--color-blush-700);
+  }
+  .filter-chip.is-active {
+    background: var(--color-blush-600);
+    border-color: var(--color-blush-600);
+    color: white;
+  }
+</style>
+
+<script>
+  const grid = document.getElementById('grid')!;
+  const cards = [...grid.querySelectorAll<HTMLElement>('[data-card]')];
+  const countEl = document.getElementById('result-count')!;
+  const empty = document.getElementById('empty')!;
+  const sortSel = document.getElementById('sort') as HTMLSelectElement;
+  const diffSel = document.getElementById('difficulty') as HTMLSelectElement;
+
+  let category = 'all';
+
+  const apply = () => {
+    const diff = diffSel.value;
+    let visible = 0;
+
+    for (const card of cards) {
+      const ok =
+        (category === 'all' || card.dataset.category === category) &&
+        (diff === 'all' || card.dataset.difficulty === diff);
+      card.hidden = !ok;
+      if (ok) visible++;
+    }
+
+    // الترتيب
+    const sorted = [...cards].sort((a, b) => {
+      switch (sortSel.value) {
+        case 'oldest':
+          return Number(a.dataset.date) - Number(b.dataset.date);
+        case 'az':
+          return (a.dataset.title ?? '').localeCompare(b.dataset.title ?? '');
+        default:
+          return Number(b.dataset.date) - Number(a.dataset.date);
+      }
+    });
+    sorted.forEach((c) => grid.appendChild(c));
+
+    countEl.textContent = `Showing ${visible} ${visible === 1 ? 'pattern' : 'patterns'}`;
+    empty.hidden = visible > 0;
+
+    // مزامنة الرابط
+    const url = new URL(location.href);
+    category === 'all' ? url.searchParams.delete('category') : url.searchParams.set('category', category);
+    diff === 'all' ? url.searchParams.delete('level') : url.searchParams.set('level', diff);
+    history.replaceState(null, '', url);
+  };
+
+  document.querySelectorAll<HTMLButtonElement>('[data-filter="category"]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-filter="category"]').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      category = btn.dataset.value!;
+      apply();
+    });
+  });
+
+  sortSel.addEventListener('change', apply);
+  diffSel.addEventListener('change', apply);
+  document.getElementById('reset')?.addEventListener('click', () => {
+    category = 'all';
+    diffSel.value = 'all';
+    document.querySelectorAll('[data-filter="category"]').forEach((b) => b.classList.remove('is-active'));
+    document.querySelector('[data-value="all"]')?.classList.add('is-active');
+    apply();
+  });
+
+  // قراءة الفلاتر من الرابط عند الدخول
+  const params = new URLSearchParams(location.search);
+  const initCat = params.get('category');
+  if (initCat) {
+    const btn = document.querySelector<HTMLButtonElement>(`[data-filter="category"][data-value="${CSS.escape(initCat)}"]`);
+    if (btn) {
+      document.querySelectorAll('[data-filter="category"]').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      category = initCat;
+    }
+  }
+  const initLevel = params.get('level');
+  if (initLevel) diffSel.value = initLevel;
+  if (initCat || initLevel) apply();
+</script>

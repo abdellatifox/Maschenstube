@@ -1,0 +1,28 @@
+{
+  "name": "crochet-pattern-theme",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "wrangler dev",
+    "deploy": "astro build && wrangler deploy",
+    "astro": "astro",
+    "cf-typegen": "wrangler types",
+    "db:local": "wrangler d1 execute crochet-db --local --file=./db/schema.sql",
+    "db:remote": "wrangler d1 execute crochet-db --remote --file=./db/schema.sql",
+    "db:seed": "wrangler d1 execute crochet-db --remote --file=./db/seed.sql"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.6.0",
+    "@astrojs/sitemap": "^3.4.1",
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.13.0",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260911.1",
+    "wrangler": "^4.28.0"
+  }
+}

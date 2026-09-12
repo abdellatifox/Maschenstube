@@ -1,0 +1,3 @@
+# انسخه إلى .dev.vars للتطوير المحلي
+ADMIN_TOKEN=change-me-locally
+RESEND_API_KEY=

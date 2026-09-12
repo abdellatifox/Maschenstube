@@ -1,0 +1,116 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Icon from './Icon.astro';
+import { categoryMap } from '../data/site';
+
+interface Props { featured: CollectionEntry<'patterns'> }
+const { featured } = Astro.props;
+const d = featured.data;
+const cover = d.cover;
+---
+
+<section class="yarn-texture relative overflow-hidden border-b border-mauve-300/60">
+  <!-- توهّج وردي في الخلفية -->
+  <div
+    class="pointer-events-none absolute -top-40 -end-32 size-[34rem] rounded-full bg-blush-200/45 blur-3xl"
+    aria-hidden="true"
+  >
+  </div>
+  <div
+    class="pointer-events-none absolute -bottom-52 -start-24 size-[26rem] rounded-full bg-blush-100/70 blur-3xl"
+    aria-hidden="true"
+  >
+  </div>
+
+  <div class="container-editorial relative py-10 lg:py-16">
+    <div class="flex items-center justify-between gap-4 border-b border-mauve-300/70 pb-5">
+      <p class="eyebrow flex items-center gap-2">
+        <span class="size-1.5 rounded-full bg-blush-500"></span>
+        Crochet Atelier
+      </p>
+      <p class="eyebrow !text-mauve-500">For modern makers</p>
+    </div>
+
+    <div class="grid items-center gap-10 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pt-14">
+      <!-- العمود النصّي -->
+      <div class="animate-fade-up">
+        <h1 class="font-display text-hero font-bold tracking-[-0.035em] text-plum-900">
+          Free patterns,<br />
+          <span class="accent-italic">made</span> modern.
+        </h1>
+
+        <p class="mt-7 max-w-md text-[1.05rem] leading-relaxed text-plum-700">
+          A curated home for crocheters who love clean lines and gorgeous textures. Bags, amigurumi, baby clothes and
+          more — all free, all written with care.
+        </p>
+
+        <div class="mt-9 flex flex-wrap items-center gap-3">
+          <a
+            href="/patterns"
+            class="inline-flex items-center gap-2 rounded-full bg-blush-600 px-7 py-3.5 text-[0.78rem] font-bold tracking-[0.14em] text-white uppercase shadow-soft transition-all hover:-translate-y-0.5 hover:bg-blush-700 hover:shadow-lift"
+          >
+            Browse patterns
+            <Icon name="arrow-right" size={16} />
+          </a>
+          <button
+            type="button"
+            data-search-open
+            class="inline-flex items-center gap-2 rounded-full border border-plum-800/20 px-7 py-3.5 text-[0.78rem] font-bold tracking-[0.14em] text-plum-800 uppercase transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:bg-white"
+          >
+            <Icon name="search" size={16} />
+            Search
+          </button>
+        </div>
+
+        <dl class="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-mauve-300/70 pt-7">
+          {
+            [
+              ['120+', 'Free patterns'],
+              ['8', 'Collections'],
+              ['100%', 'Tested twice'],
+            ].map(([value, label]) => (
+              <div>
+                <dt class="font-display text-2xl font-bold text-blush-700 sm:text-3xl">{value}</dt>
+                <dd class="mt-1 text-[0.7rem] font-semibold tracking-[0.12em] text-plum-700 uppercase">{label}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+
+      <!-- بطاقة الباترون المميّز -->
+      <div class="relative">
+        <span
+          class="absolute -top-3 start-6 z-10 rounded-full bg-plum-900 px-4 py-2 text-[0.62rem] font-bold tracking-[0.2em] text-blush-100 uppercase shadow-soft"
+        >
+          Now showing
+        </span>
+
+        <a href={`/patterns/${featured.id}`} class="media-zoom group block overflow-hidden rounded-[1.75rem] bg-blush-100 shadow-lift">
+          <div class="relative aspect-[4/5]">
+            <img
+              src={cover}
+              alt={d.title}
+              width="1200"
+              height="1500"
+              fetchpriority="high"
+              class="size-full object-cover"
+            />
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-plum-900/85 via-plum-900/35 to-transparent p-6 pt-24">
+              <p class="text-[0.62rem] font-bold tracking-[0.2em] text-blush-200 uppercase">
+                Featured · {categoryMap[d.category]?.title}
+              </p>
+              <h2 class="mt-2 max-w-sm font-display text-2xl leading-tight font-bold tracking-tight text-white sm:text-[1.75rem]">
+                {d.title}
+              </h2>
+              <span class="mt-4 inline-flex items-center gap-2 text-[0.72rem] font-bold tracking-[0.14em] text-white uppercase">
+                Get the pattern
+                <Icon name="arrow-up-right" size={15} class="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

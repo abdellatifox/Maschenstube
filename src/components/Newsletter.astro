@@ -1,0 +1,123 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+  variant?: 'panel' | 'inline';
+  source?: string;
+  title?: string;
+  blurb?: string;
+}
+const {
+  variant = 'panel',
+  source = 'footer',
+  title = 'One pattern in your inbox, every Sunday.',
+  blurb = 'New releases, yarn substitutions and the occasional behind-the-scenes mess. No spam, unsubscribe in one click.',
+} = Astro.props;
+
+const id = `nl-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<div
+  class:list={[
+    'newsletter',
+    variant === 'panel' && 'rounded-3xl bg-plum-900 p-8 text-blush-100 sm:p-11',
+    variant === 'inline' && 'rounded-2xl border border-blush-200 bg-blush-50 p-6',
+  ]}
+  data-newsletter
+  data-source={source}
+>
+  <p class:list={['eyebrow', variant === 'panel' && '!text-blush-300']}>The Sunday Stitch</p>
+  <h3
+    class:list={[
+      'mt-3 font-display font-bold tracking-tight',
+      variant === 'panel' ? 'text-2xl text-white sm:text-3xl' : 'text-xl text-plum-900',
+    ]}
+  >
+    {title}
+  </h3>
+  <p class:list={['mt-3 max-w-lg text-[0.95rem] leading-relaxed', variant === 'panel' ? 'text-blush-200/80' : 'text-plum-700']}>
+    {blurb}
+  </p>
+
+  <form class="mt-6 flex flex-col gap-3 sm:flex-row" novalidate>
+    <label class="sr-only" for={id}>Email address</label>
+    <input
+      id={id}
+      name="email"
+      type="email"
+      required
+      autocomplete="email"
+      placeholder="you@example.com"
+      class:list={[
+        'min-w-0 flex-1 rounded-full px-5 py-3.5 text-[0.95rem] outline-none transition',
+        variant === 'panel'
+          ? 'bg-white/10 text-white placeholder:text-blush-200/50 focus:bg-white/15 focus:ring-2 focus:ring-blush-400'
+          : 'border border-mauve-300 bg-white text-plum-900 placeholder:text-mauve-500 focus:border-blush-400 focus:ring-2 focus:ring-blush-200',
+      ]}
+    />
+    <!-- فخ للبوتات -->
+    <input type="text" name="website" tabindex="-1" autocomplete="off" class="absolute -left-[9999px]" aria-hidden="true" />
+    <button
+      type="submit"
+      class:list={[
+        'inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-[0.78rem] font-bold tracking-[0.14em] uppercase transition-all hover:-translate-y-0.5 disabled:cursor-wait disabled:opacity-60',
+        variant === 'panel' ? 'bg-blush-500 text-white hover:bg-blush-400' : 'bg-blush-600 text-white hover:bg-blush-700',
+      ]}
+    >
+      <Icon name="mail" size={16} />
+      Subscribe
+    </button>
+  </form>
+
+  <p data-msg role="status" aria-live="polite" class="mt-3 min-h-[1.25rem] text-[0.85rem] font-medium"></p>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-newsletter]').forEach((box) => {
+    const form = box.querySelector('form')!;
+    const msg = box.querySelector<HTMLElement>('[data-msg]')!;
+    const btn = form.querySelector('button')!;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const email = String(data.get('email') ?? '').trim();
+
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+        msg.textContent = 'Please enter a valid email address.';
+        msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-medium text-blush-400';
+        return;
+      }
+
+      btn.disabled = true;
+      msg.textContent = 'Signing you up…';
+      msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-medium opacity-70';
+
+      try {
+        const res = await fetch('/api/newsletter', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({
+            email,
+            website: data.get('website') ?? '',
+            source: box.dataset.source ?? 'site',
+          }),
+        });
+        const out = await res.json();
+        if (res.ok && out.ok) {
+          form.reset();
+          msg.textContent = out.message ?? 'You are in! Check your inbox on Sunday.';
+          msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-semibold text-blush-300';
+        } else {
+          msg.textContent = out.error ?? 'Something went wrong. Try again in a moment.';
+          msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-medium text-blush-400';
+        }
+      } catch {
+        msg.textContent = 'Network error — please try again.';
+        msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-medium text-blush-400';
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  });
+</script>

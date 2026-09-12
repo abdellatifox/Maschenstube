@@ -1,0 +1,151 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+  slug: string;
+  pdfKey?: string;
+  pdfGated?: boolean;
+}
+const { slug, pdfKey, pdfGated = false } = Astro.props;
+---
+
+<!--
+  الأزرار التفاعلية:
+  • الإعجاب  → D1 (pattern_stats.likes) عبر /api/like
+  • المشاهدة → D1 تُسجَّل تلقائيًا عند التحميل
+  • التحميل  → R2 عبر /api/download/… (وقد يتطلّب بريدًا إن كان محميًا)
+-->
+<div class="flex flex-wrap items-center gap-3" data-actions data-slug={slug}>
+  {
+    pdfKey && (
+      <a
+        href={`/api/download/${pdfKey}`}
+        data-download
+        data-gated={pdfGated ? 'true' : 'false'}
+        class="inline-flex items-center gap-2 rounded-full bg-blush-600 px-6 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-white uppercase shadow-soft transition-all hover:-translate-y-0.5 hover:bg-blush-700"
+      >
+        <Icon name="download" size={16} />
+        {pdfGated ? 'Get the PDF' : 'Download PDF'}
+      </a>
+    )
+  }
+
+  <button
+    type="button"
+    data-like
+    aria-pressed="false"
+    class="group inline-flex items-center gap-2 rounded-full border border-mauve-300 bg-white px-5 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-plum-800 uppercase transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:text-blush-700 aria-pressed:border-blush-500 aria-pressed:bg-blush-500 aria-pressed:text-white"
+  >
+    <Icon name="heart" size={16} class="transition-transform group-active:scale-125" />
+    <span data-like-count>0</span>
+  </button>
+
+  <button
+    type="button"
+    onclick="window.print()"
+    class="inline-flex items-center gap-2 rounded-full border border-mauve-300 bg-white px-5 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-plum-800 uppercase transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:text-blush-700"
+  >
+    <Icon name="print" size={16} />
+    Print
+  </button>
+
+  <span class="inline-flex items-center gap-1.5 text-[0.78rem] text-plum-700">
+    <Icon name="eye" size={15} class="text-blush-500" />
+    <span data-views>—</span> views
+  </span>
+</div>
+
+<!-- نافذة جمع البريد للملفات المحميّة -->
+<dialog
+  data-gate
+  class="m-auto w-[min(92vw,28rem)] rounded-3xl border border-mauve-300 bg-cream p-7 shadow-lift backdrop:bg-plum-900/50 backdrop:backdrop-blur-sm"
+>
+  <p class="eyebrow">Members only</p>
+  <h3 class="mt-3 font-display text-xl font-bold text-plum-900">Pop in your email and the PDF is yours.</h3>
+  <p class="mt-2 text-[0.9rem] text-plum-700">
+    You will also get one new pattern each Sunday. Unsubscribe whenever you like.
+  </p>
+  <form class="mt-5 flex flex-col gap-2.5">
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="you@example.com"
+      class="rounded-full border border-mauve-300 bg-white px-5 py-3 text-[0.95rem] text-plum-900 outline-none focus:border-blush-400 focus:ring-2 focus:ring-blush-200"
+    />
+    <button
+      type="submit"
+      class="rounded-full bg-blush-600 px-6 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-white uppercase hover:bg-blush-700"
+    >
+      Send me the pattern
+    </button>
+    <button type="button" data-gate-close class="mt-1 text-[0.8rem] font-semibold text-mauve-500 hover:text-plum-800">
+      Maybe later
+    </button>
+  </form>
+</dialog>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-actions]').forEach((root) => {
+    const slug = root.dataset.slug!;
+    const likeBtn = root.querySelector<HTMLButtonElement>('[data-like]');
+    const likeCount = root.querySelector<HTMLElement>('[data-like-count]');
+    const views = root.querySelector<HTMLElement>('[data-views]');
+    const dl = root.querySelector<HTMLAnchorElement>('[data-download]');
+    const gate = root.parentElement?.querySelector<HTMLDialogElement>('[data-gate]');
+    const likedKey = `liked:${slug}`;
+
+    // 1) تسجيل مشاهدة + جلب الإحصاءات من D1
+    fetch(`/api/stats/${slug}`, { method: 'POST' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((s: any) => {
+        if (!s) return;
+        if (views) views.textContent = new Intl.NumberFormat('en', { notation: 'compact' }).format(s.views ?? 0);
+        if (likeCount) likeCount.textContent = String(s.likes ?? 0);
+      })
+      .catch(() => {});
+
+    // 2) الإعجاب
+    if (localStorage.getItem(likedKey)) likeBtn?.setAttribute('aria-pressed', 'true');
+
+    likeBtn?.addEventListener('click', async () => {
+      if (localStorage.getItem(likedKey)) return;
+      likeBtn.setAttribute('aria-pressed', 'true');
+      localStorage.setItem(likedKey, '1');
+      if (likeCount) likeCount.textContent = String(Number(likeCount.textContent ?? 0) + 1);
+      try {
+        const res = await fetch('/api/like', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ slug }),
+        });
+        const out = await res.json();
+        if (out?.likes != null && likeCount) likeCount.textContent = String(out.likes);
+      } catch {}
+    });
+
+    // 3) التحميل المحميّ
+    dl?.addEventListener('click', (e) => {
+      if (dl.dataset.gated !== 'true') return;
+      if (localStorage.getItem('subscribed') === '1') return;
+      e.preventDefault();
+      gate?.showModal();
+    });
+
+    gate?.querySelector('[data-gate-close]')?.addEventListener('click', () => gate.close());
+    gate?.querySelector('form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = String(new FormData(e.target as HTMLFormElement).get('email') ?? '');
+      try {
+        await fetch('/api/newsletter', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ email, source: `pattern:${slug}` }),
+        });
+      } catch {}
+      localStorage.setItem('subscribed', '1');
+      gate.close();
+      if (dl) window.location.href = dl.href;
+    });
+  });
+</script>

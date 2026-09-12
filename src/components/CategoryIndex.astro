@@ -1,0 +1,52 @@
+---
+import Icon from './Icon.astro';
+import { categories } from '../data/site';
+
+interface Props { counts: Record<string, number> }
+const { counts } = Astro.props;
+---
+
+<section id="the-index" class="container-editorial scroll-mt-24 py-20 lg:py-28">
+  <div class="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+    <div class="lg:sticky lg:top-28 lg:self-start" data-reveal>
+      <p class="eyebrow">The index</p>
+      <h2 class="mt-4 font-display text-issue font-bold tracking-tight text-plum-900">
+        Browse by <span class="accent-italic">category</span>
+      </h2>
+      <p class="mt-5 max-w-xs text-[0.95rem] leading-relaxed text-plum-700">
+        Seven main collections plus seasonal patterns. Pick a thread and pull.
+      </p>
+      <div class="rule-line mt-8 w-24"></div>
+    </div>
+
+    <ul class="divide-y divide-mauve-300/70 border-y border-mauve-300/70">
+      {
+        categories.map((c, i) => (
+          <li data-reveal style={`transition-delay:${i * 45}ms`}>
+            <a
+              href={`/category/${c.key}`}
+              class="group flex items-center gap-5 py-5 transition-colors hover:bg-blush-50/70 sm:gap-7 sm:px-3"
+            >
+              <span class="w-7 shrink-0 font-mono text-[0.72rem] font-bold text-blush-400">{c.no}</span>
+
+              <span class="min-w-0 flex-1">
+                <span class="block font-display text-lg font-bold tracking-tight text-plum-900 transition-colors group-hover:text-blush-700 sm:text-xl">
+                  {c.title}
+                </span>
+                <span class="mt-0.5 block truncate text-[0.83rem] text-plum-700">{c.blurb}</span>
+              </span>
+
+              <span class="hidden shrink-0 text-[0.7rem] font-bold tracking-[0.14em] text-mauve-500 uppercase sm:block">
+                {counts[c.key] ?? 0} {counts[c.key] === 1 ? 'pattern' : 'patterns'}
+              </span>
+
+              <span class="grid size-9 shrink-0 place-items-center rounded-full border border-mauve-300 text-plum-800 transition-all group-hover:border-blush-500 group-hover:bg-blush-500 group-hover:text-white">
+                <Icon name="arrow-right" size={15} />
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

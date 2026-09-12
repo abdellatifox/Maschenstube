@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Baby Blanket crochet">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#fbdbe6"/>
+      <stop offset="1" stop-color="#dd77a2"/>
+    </linearGradient>
+    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse">
+      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </pattern>
+    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
+      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#dd77a2" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#g)"/>
+  <rect width="1200" height="1500" fill="url(#stitch)"/>
+  <rect width="1200" height="1500" fill="url(#vig)"/>
+  <g opacity="0.92" transform="translate(600 710)">
+    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
+    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
+    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
+      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="600" y="910" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">BABY BLANKET</text>
+</svg>

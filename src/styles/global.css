@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+/* ╔═══════════════════════════════════════════════════════════════╗
+   ║  Crochet Atelier — Design Tokens                              ║
+   ║  لوحة وردية تحريرية: بلاش / روز / برقوقي                       ║
+   ╚═══════════════════════════════════════════════════════════════╝ */
+@theme {
+  /* ── الوردي الأساسي ── */
+  --color-blush-50:  #fff7fa;
+  --color-blush-100: #fdebf2;
+  --color-blush-200: #f9d5e4;
+  --color-blush-300: #f2b3cd;
+  --color-blush-400: #e88bb1;
+  --color-blush-500: #db6394;
+  --color-blush-600: #c4416f;
+  --color-blush-700: #a02c58;
+  --color-blush-800: #762658;
+  --color-blush-900: #4e1b3a;
+
+  /* ── الحبر البرقوقي والمحايدات الدافئة ── */
+  --color-plum-900: #2a1826;
+  --color-plum-800: #3d2438;
+  --color-plum-700: #5a4654;
+  --color-mauve-500: #b394a8;
+  --color-mauve-300: #dec5d7;
+  --color-shell:     #f4eaf0;
+  --color-cream:     #faf6f4;
+  --color-sand:      #efe6e0;
+
+  /* ── الخطوط ── */
+  --font-sans:    "Quicksand", ui-rounded, "Segoe UI", system-ui, sans-serif;
+  --font-display: "Quicksand", ui-rounded, "Segoe UI", system-ui, sans-serif;
+  --font-serif:   "Playfair Display", "Iowan Old Style", Georgia, serif;
+  --font-mono:    ui-monospace, "SFMono-Regular", "Cascadia Code", monospace;
+
+  /* ── مقاسات تحريرية ── */
+  --text-hero:  clamp(2.75rem, 8vw, 6rem);
+  --text-hero--line-height: 0.94;
+  --text-issue: clamp(1.75rem, 4vw, 3rem);
+  --text-issue--line-height: 1.05;
+
+  /* ── ظلال ناعمة وردية ── */
+  --shadow-soft:  0 2px 8px -2px rgb(118 38 88 / 0.08), 0 12px 32px -12px rgb(118 38 88 / 0.14);
+  --shadow-lift:  0 8px 20px -6px rgb(118 38 88 / 0.16), 0 24px 48px -20px rgb(118 38 88 / 0.22);
+
+  /* ── حركات ── */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-fade-up: fade-up 0.7s var(--ease-out-soft) both;
+  --animate-marquee: marquee 34s linear infinite;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── الأساسيات ── */
+@layer base {
+  :root { color-scheme: light; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    :root { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-plum-800);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; }
+
+  ::selection { background: var(--color-blush-200); color: var(--color-plum-900); }
+
+  :focus-visible {
+    outline: 2px solid var(--color-blush-600);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* شريط تمرير وردي */
+  ::-webkit-scrollbar { width: 11px; height: 11px; }
+  ::-webkit-scrollbar-track { background: var(--color-shell); }
+  ::-webkit-scrollbar-thumb { background: var(--color-mauve-500); border-radius: 99px; border: 3px solid var(--color-shell); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-blush-500); }
+}
+
+/* ── أدوات مخصّصة ── */
+@utility eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-blush-700);
+}
+
+@utility rule-line {
+  background-image: linear-gradient(to right, var(--color-mauve-300), transparent);
+  height: 1px;
+}
+
+/* نص مائل تحريري (الكلمة المميّزة داخل العنوان) */
+@utility accent-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-blush-600);
+  letter-spacing: -0.01em;
+}
+
+/* خلفية نسيج الكروشيه */
+@utility yarn-texture {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgb(219 99 148 / 0.10) 1px, transparent 0);
+  background-size: 14px 14px;
+}
+
+@utility container-editorial {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 82rem;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) { padding-inline: 2rem; }
+  @media (width >= 80rem) { padding-inline: 2.5rem; }
+}
+
+/* بطاقة صورة مع تكبير لطيف عند المرور */
+@utility media-zoom {
+  overflow: hidden;
+  & img { transition: transform 0.75s var(--ease-out-soft); will-change: transform; }
+  &:hover img { transform: scale(1.06); }
+}
+
+/* تنسيق محتوى الباترون (Markdown) */
+@utility prose-crochet {
+  color: var(--color-plum-800);
+  line-height: 1.75;
+
+  & > * + * { margin-block-start: 1.15em; }
+  & h2 {
+    font-size: 1.6rem; margin-block-start: 2.2em; margin-block-end: 0.6em;
+    padding-block-end: 0.4rem; border-block-end: 1px solid var(--color-mauve-300);
+  }
+  & h3 { font-size: 1.2rem; margin-block-start: 1.8em; margin-block-end: 0.4em; color: var(--color-blush-800); }
+  & a { color: var(--color-blush-700); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  & a:hover { color: var(--color-blush-500); }
+  & strong { font-weight: 700; color: var(--color-plum-900); }
+  & ul { list-style: none; padding-inline-start: 0; }
+  & ul > li { position: relative; padding-inline-start: 1.6rem; margin-block: 0.45rem; }
+  & ul > li::before {
+    content: ""; position: absolute; inset-inline-start: 0.25rem; inset-block-start: 0.7rem;
+    width: 7px; height: 7px; border-radius: 99px; background: var(--color-blush-400);
+  }
+  & ol { padding-inline-start: 1.4rem; }
+  & ol > li { margin-block: 0.5rem; padding-inline-start: 0.35rem; }
+  & ol > li::marker { color: var(--color-blush-600); font-weight: 700; }
+  & blockquote {
+    border-inline-start: 3px solid var(--color-blush-400);
+    background: var(--color-blush-50);
+    padding: 1rem 1.25rem; border-radius: 0 0.75rem 0.75rem 0;
+    font-family: var(--font-serif); font-style: italic; color: var(--color-plum-700);
+  }
+  & code {
+    background: var(--color-shell); color: var(--color-blush-800);
+    padding: 0.15em 0.4em; border-radius: 0.35rem; font-size: 0.9em; font-weight: 600;
+  }
+  & img { border-radius: 1rem; box-shadow: var(--shadow-soft); }
+  & table { width: 100%; border-collapse: collapse; font-size: 0.925rem; }
+  & th, & td { border-block-end: 1px solid var(--color-mauve-300); padding: 0.6rem 0.5rem; text-align: start; }
+  & th { color: var(--color-blush-800); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; }
+  & hr { border: 0; border-block-start: 1px solid var(--color-mauve-300); margin-block: 2.5rem; }
+}
