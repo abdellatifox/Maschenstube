@@ -1,27 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Lace Scarf crochet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0" stop-color="#f8d3e0"/>
-      <stop offset="1" stop-color="#cf6390"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fdeef4"/>
+      <stop offset="1" stop-color="#f7d3e2"/>
     </linearGradient>
-    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse">
-      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     </pattern>
-    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
-      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#cf6390" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="objclip"><path d="M430 470 h150 v760 q0 90-75 90 t-75-90 Z"/><path d="M620 470 h150 v860 q0 90-75 90 t-75-90 Z"/></clipPath>
   </defs>
-  <rect width="1200" height="1500" fill="url(#g)"/>
-  <rect width="1200" height="1500" fill="url(#stitch)"/>
-  <rect width="1200" height="1500" fill="url(#vig)"/>
-  <g opacity="0.92" transform="translate(600 710)">
-    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
-    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
-    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
-      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#b85684" opacity="0.13"/>
+
+  <g>
+    <path d="M430 470 h150 v760 q0 90-75 90 t-75-90 Z" fill="#d97fa6" />
+    <path d="M620 470 h150 v860 q0 90-75 90 t-75-90 Z" fill="#f0abc6" />
   </g>
-  <text x="600" y="910" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">LACE SCARF</text>
+  <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
+  <g fill="none" stroke="#fff" stroke-opacity=".42" stroke-width="8">
+        <path d="M436 520 h138"/><path d="M626 520 h138"/><path d="M436 572 h138"/><path d="M626 572 h138"/><path d="M436 624 h138"/><path d="M626 624 h138"/><path d="M436 676 h138"/><path d="M626 676 h138"/><path d="M436 728 h138"/><path d="M626 728 h138"/><path d="M436 780 h138"/><path d="M626 780 h138"/><path d="M436 832 h138"/><path d="M626 832 h138"/><path d="M436 884 h138"/><path d="M626 884 h138"/><path d="M436 936 h138"/><path d="M626 936 h138"/><path d="M436 988 h138"/><path d="M626 988 h138"/><path d="M436 1040 h138"/><path d="M626 1040 h138"/><path d="M436 1092 h138"/><path d="M626 1092 h138"/><path d="M436 1144 h138"/><path d="M626 1144 h138"/><path d="M436 1196 h138"/><path d="M626 1196 h138"/><path d="M436 1248 h138"/><path d="M626 1248 h138"/><path d="M436 1300 h138"/><path d="M626 1300 h138"/>
+      </g>
+      <g stroke="#b85684" stroke-width="8" stroke-linecap="round" opacity=".55">
+        <path d="M446 1322 v70"/><path d="M636 1422 v70"/><path d="M476 1322 v70"/><path d="M666 1422 v70"/><path d="M506 1322 v70"/><path d="M696 1422 v70"/><path d="M536 1322 v70"/><path d="M726 1422 v70"/><path d="M566 1322 v70"/><path d="M756 1422 v70"/>
+      </g>
 </svg>

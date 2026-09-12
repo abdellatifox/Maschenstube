@@ -1,27 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Ballet Pink crochet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0" stop-color="#fce4ec"/>
-      <stop offset="1" stop-color="#eda0bd"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fff2f7"/>
+      <stop offset="1" stop-color="#fadfeb"/>
     </linearGradient>
-    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
-      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     </pattern>
-    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
-      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#eda0bd" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="objclip"><path d="M240 1096 h330 a36 36 0 0 1 0 72 H240 a36 36 0 0 1 0-72 Z"/><path d="M252 1096 c0-74 42-120 112-138 c80-20 150 4 194 46 c26 24 30 56 30 92 Z"/><path d="M630 1096 h330 a36 36 0 0 1 0 72 H630 a36 36 0 0 1 0-72 Z"/><path d="M642 1096 c0-74 42-120 112-138 c80-20 150 4 194 46 c26 24 30 56 30 92 Z"/></clipPath>
   </defs>
-  <rect width="1200" height="1500" fill="url(#g)"/>
-  <rect width="1200" height="1500" fill="url(#stitch)"/>
-  <rect width="1200" height="1500" fill="url(#vig)"/>
-  <g opacity="0.92" transform="translate(600 710)">
-    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
-    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
-    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
-      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#cc7395" opacity="0.13"/>
+
+  <g>
+    <path d="M240 1096 h330 a36 36 0 0 1 0 72 H240 a36 36 0 0 1 0-72 Z" fill="#cc7395" />
+    <path d="M252 1096 c0-74 42-120 112-138 c80-20 150 4 194 46 c26 24 30 56 30 92 Z" fill="#eda0bd" />
+    <path d="M630 1096 h330 a36 36 0 0 1 0 72 H630 a36 36 0 0 1 0-72 Z" fill="#cc7395" />
+    <path d="M642 1096 c0-74 42-120 112-138 c80-20 150 4 194 46 c26 24 30 56 30 92 Z" fill="#eda0bd" />
   </g>
-  <text x="600" y="910" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">BALLET PINK</text>
+  <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
+  <ellipse cx="398" cy="998" rx="92" ry="32" transform="rotate(-9 398 998)" fill="#fbd5e4"/>
+      <ellipse cx="788" cy="998" rx="92" ry="32" transform="rotate(-9 788 998)" fill="#fbd5e4"/>
+      <g stroke="#cc7395" stroke-width="11" fill="none" stroke-linecap="round" opacity=".85">
+        <path d="M300 1006 L482 1062"/><path d="M482 1006 L300 1062"/>
+        <path d="M690 1006 L872 1062"/><path d="M872 1006 L690 1062"/>
+      </g>
+      <circle cx="391" cy="1034" r="19" fill="#fff"/><circle cx="391" cy="1034" r="19" fill="none" stroke="#cc7395" stroke-width="4" opacity=".5"/>
+      <circle cx="781" cy="1034" r="19" fill="#fff"/><circle cx="781" cy="1034" r="19" fill="none" stroke="#cc7395" stroke-width="4" opacity=".5"/>
+      <g fill="none" stroke="#fff" stroke-opacity=".34" stroke-width="6">
+        <path d="M262 1046 q150 26 314 0"/><path d="M652 1046 q150 26 314 0"/><path d="M262 1066 q150 26 314 0"/><path d="M652 1066 q150 26 314 0"/><path d="M262 1086 q150 26 314 0"/><path d="M652 1086 q150 26 314 0"/>
+      </g>
 </svg>

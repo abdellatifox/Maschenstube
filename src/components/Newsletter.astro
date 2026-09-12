@@ -20,22 +20,22 @@ const id = `nl-${Math.random().toString(36).slice(2, 8)}`;
 <div
   class:list={[
     'newsletter',
-    variant === 'panel' && 'rounded-3xl bg-plum-900 p-8 text-blush-100 sm:p-11',
-    variant === 'inline' && 'rounded-2xl border border-blush-200 bg-blush-50 p-6',
+    variant === 'panel' && 'rounded-3xl bg-panel p-8 text-panel-ink sm:p-11',
+    variant === 'inline' && 'rounded-2xl border border-tint-3 bg-tint p-6',
   ]}
   data-newsletter
   data-source={source}
 >
-  <p class:list={['eyebrow', variant === 'panel' && '!text-blush-300']}>The Sunday Stitch</p>
+  <p class:list={['eyebrow', variant === 'panel' && '!text-panel-accent']}>The Sunday Stitch</p>
   <h3
     class:list={[
       'mt-3 font-display font-bold tracking-tight',
-      variant === 'panel' ? 'text-2xl text-white sm:text-3xl' : 'text-xl text-plum-900',
+      variant === 'panel' ? 'text-2xl text-white sm:text-3xl' : 'text-xl text-ink-strong',
     ]}
   >
     {title}
   </h3>
-  <p class:list={['mt-3 max-w-lg text-[0.95rem] leading-relaxed', variant === 'panel' ? 'text-blush-200/80' : 'text-plum-700']}>
+  <p class:list={['mt-3 max-w-lg text-[0.95rem] leading-relaxed', variant === 'panel' ? 'text-panel-ink-soft/80' : 'text-ink-soft']}>
     {blurb}
   </p>
 
@@ -51,8 +51,8 @@ const id = `nl-${Math.random().toString(36).slice(2, 8)}`;
       class:list={[
         'min-w-0 flex-1 rounded-full px-5 py-3.5 text-[0.95rem] outline-none transition',
         variant === 'panel'
-          ? 'bg-white/10 text-white placeholder:text-blush-200/50 focus:bg-white/15 focus:ring-2 focus:ring-blush-400'
-          : 'border border-mauve-300 bg-white text-plum-900 placeholder:text-mauve-500 focus:border-blush-400 focus:ring-2 focus:ring-blush-200',
+          ? 'bg-white/10 text-white placeholder:text-panel-ink-soft/50 focus:bg-white/15 focus:ring-2 focus:ring-blush-400'
+          : 'border border-line bg-surface text-ink-strong placeholder:text-muted focus:border-blush-400 focus:ring-2 focus:ring-tint-3',
       ]}
     />
     <!-- فخ للبوتات -->
@@ -107,7 +107,7 @@ const id = `nl-${Math.random().toString(36).slice(2, 8)}`;
         if (res.ok && out.ok) {
           form.reset();
           msg.textContent = out.message ?? 'You are in! Check your inbox on Sunday.';
-          msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-semibold text-blush-300';
+          msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-semibold text-panel-accent';
         } else {
           msg.textContent = out.error ?? 'Something went wrong. Try again in a moment.';
           msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-medium text-blush-400';

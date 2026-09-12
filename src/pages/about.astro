@@ -21,16 +21,16 @@ const timeline = [
 ---
 
 <BaseLayout title="About" description={`Meet ${site.author}, the maker behind ${site.name}.`}>
-  <section class="yarn-texture border-b border-mauve-300/60">
+  <section class="yarn-texture border-b border-line/60">
     <div class="container-editorial py-12 lg:py-16">
       <Breadcrumbs items={[{ label: 'About' }]} />
       <div class="mt-8 grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
           <p class="eyebrow">The maker</p>
-          <h1 class="mt-4 font-display text-hero font-bold tracking-[-0.035em] text-plum-900">
+          <h1 class="mt-4 font-display text-hero font-bold tracking-[-0.035em] text-ink-strong">
             Hi, I'm <span class="accent-italic">{site.author}</span>.
           </h1>
-          <p class="mt-6 max-w-xl text-[1.05rem] leading-relaxed text-plum-700">
+          <p class="mt-6 max-w-xl text-[1.05rem] leading-relaxed text-ink-soft">
             I design crochet patterns for people who want the finished thing to look like it came from a shop — and
             want to understand every stitch that got them there.
           </p>
@@ -43,7 +43,7 @@ const timeline = [
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.label}
-                    class="grid size-11 place-items-center rounded-full border border-mauve-300 bg-white text-plum-700 transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:bg-blush-500 hover:text-white"
+                    class="grid size-11 place-items-center rounded-full border border-line bg-surface text-ink-soft transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:bg-blush-500 hover:text-white"
                   >
                     <Icon name={s.icon as any} size={18} />
                   </a>
@@ -87,22 +87,22 @@ const timeline = [
   </section>
 
   <!-- القيم -->
-  <section class="border-y border-blush-100 bg-blush-50/60 py-16 lg:py-24">
+  <section class="border-y border-tint-2 bg-tint/60 py-16 lg:py-24">
     <div class="container-editorial">
       <p class="eyebrow">The promise</p>
-      <h2 class="mt-3 font-display text-issue font-bold tracking-tight text-plum-900">
+      <h2 class="mt-3 font-display text-issue font-bold tracking-tight text-ink-strong">
         Four things every pattern <span class="accent-italic">gets right</span>
       </h2>
 
       <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {
           values.map((v, i) => (
-            <div class="rounded-2xl border border-blush-200 bg-white p-6" data-reveal style={`transition-delay:${i * 70}ms`}>
-              <span class="grid size-11 place-items-center rounded-full bg-blush-100 text-blush-700">
+            <div class="rounded-2xl border border-tint-3 bg-surface p-6" data-reveal style={`transition-delay:${i * 70}ms`}>
+              <span class="grid size-11 place-items-center rounded-full bg-tint-2 text-accent-soft">
                 <Icon name={v.icon as any} size={19} />
               </span>
-              <h3 class="mt-4 font-display text-lg font-bold text-plum-900">{v.title}</h3>
-              <p class="mt-2 text-[0.9rem] leading-relaxed text-plum-700">{v.body}</p>
+              <h3 class="mt-4 font-display text-lg font-bold text-ink-strong">{v.title}</h3>
+              <p class="mt-2 text-[0.9rem] leading-relaxed text-ink-soft">{v.body}</p>
             </div>
           ))
         }
@@ -113,14 +113,14 @@ const timeline = [
   <!-- الخط الزمني -->
   <section class="container-editorial py-16 lg:py-24">
     <p class="eyebrow">The long way round</p>
-    <ul class="mt-8 divide-y divide-mauve-300/70 border-y border-mauve-300/70">
+    <ul class="mt-8 divide-y divide-line/70 border-y border-line/70">
       {
         timeline.map(([year, title, body]) => (
           <li class="grid gap-2 py-6 sm:grid-cols-[7rem_1fr] sm:gap-8" data-reveal>
             <span class="font-mono text-sm font-bold text-blush-500">{year}</span>
             <div>
-              <h3 class="font-display text-lg font-bold text-plum-900">{title}</h3>
-              <p class="mt-1 text-[0.93rem] leading-relaxed text-plum-700">{body}</p>
+              <h3 class="font-display text-lg font-bold text-ink-strong">{title}</h3>
+              <p class="mt-1 text-[0.93rem] leading-relaxed text-ink-soft">{body}</p>
             </div>
           </li>
         ))

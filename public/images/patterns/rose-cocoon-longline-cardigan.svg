@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
-      <stop offset="0" stop-color="#f5e4ec"/>
-      <stop offset="1" stop-color="#e6c9d8"/>
+      <stop offset="0" stop-color="#fdeef4"/>
+      <stop offset="1" stop-color="#f7d3e2"/>
     </linearGradient>
     <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
       <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -17,25 +17,25 @@
 
   <rect width="1200" height="1500" fill="url(#bg)"/>
   <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
-  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#722c4d" opacity="0.13"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#b85684" opacity="0.13"/>
 
   <g>
-    <path d="M362 706 L232 762 q-16 254 24 336 l108-36 Z" fill="#722c4d" />
-    <path d="M838 706 L968 762 q16 254-24 336 l-108-36 Z" fill="#722c4d" />
-    <path d="M362 702 q122-42 236-18 v648 q-122 16-236-6 Z" fill="#a4416e" />
-    <path d="M838 702 q-122-42-236-18 v648 q122 16 236-6 Z" fill="#a4416e" />
+    <path d="M362 706 L232 762 q-16 254 24 336 l108-36 Z" fill="#b85684" />
+    <path d="M838 706 L968 762 q16 254-24 336 l-108-36 Z" fill="#b85684" />
+    <path d="M362 702 q122-42 236-18 v648 q-122 16-236-6 Z" fill="#d97fa6" />
+    <path d="M838 702 q-122-42-236-18 v648 q122 16 236-6 Z" fill="#d97fa6" />
   </g>
   <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
-  <path d="M474 684 q128-44 254-14 l-14 48 q-114-26-226 8 Z" fill="#cc7ba0"/>
-      <path d="M584 692 v646 h30 V692 Z" fill="#cc7ba0" opacity=".9"/>
-      <path d="M598 692 v646" stroke="#722c4d" stroke-width="4" opacity=".35" fill="none"/>
-      <rect x="404" y="1058" width="132" height="132" rx="18" fill="#722c4d" opacity=".3"/>
-      <rect x="664" y="1058" width="132" height="132" rx="18" fill="#722c4d" opacity=".3"/>
+  <path d="M474 684 q128-44 254-14 l-14 48 q-114-26-226 8 Z" fill="#f0abc6"/>
+      <path d="M584 692 v646 h30 V692 Z" fill="#f0abc6" opacity=".9"/>
+      <path d="M598 692 v646" stroke="#b85684" stroke-width="4" opacity=".35" fill="none"/>
+      <rect x="404" y="1058" width="132" height="132" rx="18" fill="#b85684" opacity=".3"/>
+      <rect x="664" y="1058" width="132" height="132" rx="18" fill="#b85684" opacity=".3"/>
       <g fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="7">
         <path d="M372 780 q112 16 216 0"/><path d="M612 780 q112 16 216 0"/><path d="M372 824 q112 16 216 0"/><path d="M612 824 q112 16 216 0"/><path d="M372 868 q112 16 216 0"/><path d="M612 868 q112 16 216 0"/><path d="M372 912 q112 16 216 0"/><path d="M612 912 q112 16 216 0"/><path d="M372 956 q112 16 216 0"/><path d="M612 956 q112 16 216 0"/><path d="M372 1000 q112 16 216 0"/><path d="M612 1000 q112 16 216 0"/><path d="M372 1044 q112 16 216 0"/><path d="M612 1044 q112 16 216 0"/><path d="M372 1088 q112 16 216 0"/><path d="M612 1088 q112 16 216 0"/><path d="M372 1132 q112 16 216 0"/><path d="M612 1132 q112 16 216 0"/><path d="M372 1176 q112 16 216 0"/><path d="M612 1176 q112 16 216 0"/><path d="M372 1220 q112 16 216 0"/><path d="M612 1220 q112 16 216 0"/><path d="M372 1264 q112 16 216 0"/><path d="M612 1264 q112 16 216 0"/><path d="M372 1308 q112 16 216 0"/><path d="M612 1308 q112 16 216 0"/><path d="M372 1352 q112 16 216 0"/><path d="M612 1352 q112 16 216 0"/>
       </g>
       
-  <g stroke="#722c4d" stroke-width="9" fill="none" stroke-linecap="round">
+  <g stroke="#b85684" stroke-width="9" fill="none" stroke-linecap="round">
     <path d="M600 622 v-26 a26 26 0 0 1 26 26" />
     <path d="M450 706 L600 626 L750 706" stroke-linejoin="round"/>
     <path d="M450 706 h300" />

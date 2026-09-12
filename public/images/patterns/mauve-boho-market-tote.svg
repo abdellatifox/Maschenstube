@@ -1,27 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Mauve Boho crochet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0" stop-color="#e9d6e2"/>
-      <stop offset="1" stop-color="#b394a8"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#f7eef4"/>
+      <stop offset="1" stop-color="#e9d6e2"/>
     </linearGradient>
-    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
-      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     </pattern>
-    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
-      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#b394a8" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="objclip"><path d="M340 620 h520 l58 620 a70 70 0 0 1-70 76 H352 a70 70 0 0 1-70-76 Z"/><path d="M340 620 h120 l-42 696 h-66 a70 70 0 0 1-70-76 Z"/><path d="M282 1240 h636 a70 70 0 0 1-70 76 H352 a70 70 0 0 1-70-76 Z"/></clipPath>
   </defs>
-  <rect width="1200" height="1500" fill="url(#g)"/>
-  <rect width="1200" height="1500" fill="url(#stitch)"/>
-  <rect width="1200" height="1500" fill="url(#vig)"/>
-  <g opacity="0.92" transform="translate(600 710)">
-    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
-    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
-    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
-      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#8b6c81" opacity="0.13"/>
+
+  <g>
+    <path d="M340 620 h520 l58 620 a70 70 0 0 1-70 76 H352 a70 70 0 0 1-70-76 Z" fill="#b394a8" />
+    <path d="M340 620 h120 l-42 696 h-66 a70 70 0 0 1-70-76 Z" fill="#8b6c81" opacity=".22"/>
+    <path d="M282 1240 h636 a70 70 0 0 1-70 76 H352 a70 70 0 0 1-70-76 Z" fill="#8b6c81" opacity=".18"/>
   </g>
-  <text x="600" y="910" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">MAUVE BOHO</text>
+  <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
+  <g fill="none" stroke="#8b6c81" stroke-width="18" stroke-linecap="round" opacity=".85">
+        <path d="M430 626 v-74 a70 70 0 0 1 140 0 v74"/>
+        <path d="M630 626 v-74 a70 70 0 0 1 140 0 v74"/>
+      </g>
+      <g fill="none" stroke="#fff" stroke-width="7" opacity=".38">
+        <path d="M300 700 q300 34 600 0"/><path d="M300 762 q300 34 600 0"/><path d="M300 824 q300 34 600 0"/><path d="M300 886 q300 34 600 0"/><path d="M300 948 q300 34 600 0"/><path d="M300 1010 q300 34 600 0"/><path d="M300 1072 q300 34 600 0"/><path d="M300 1134 q300 34 600 0"/><path d="M300 1196 q300 34 600 0"/>
+      </g>
 </svg>

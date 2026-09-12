@@ -14,36 +14,36 @@ const rows = [
 ].filter((r) => Boolean(r.value));
 ---
 
-<aside class="rounded-3xl border border-blush-200 bg-blush-50/70 p-6 sm:p-7">
+<aside class="rounded-3xl border border-tint-3 bg-tint/70 p-6 sm:p-7">
   <p class="eyebrow">At a glance</p>
 
   <div class="mt-5 space-y-4">
     {
       rows.map((r) => (
         <div class="flex items-center gap-3">
-          <span class="grid size-9 shrink-0 place-items-center rounded-full bg-white text-blush-600 ring-1 ring-blush-200">
+          <span class="grid size-9 shrink-0 place-items-center rounded-full bg-surface text-accent ring-1 ring-tint-3">
             <Icon name={r.icon as any} size={17} />
           </span>
           <span>
-            <span class="block text-[0.65rem] font-bold tracking-[0.16em] text-mauve-500 uppercase">{r.label}</span>
-            <span class="block text-[0.92rem] font-semibold text-plum-900">{r.value}</span>
+            <span class="block text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">{r.label}</span>
+            <span class="block text-[0.92rem] font-semibold text-ink-strong">{r.value}</span>
           </span>
         </div>
       ))
     }
 
     <div class="flex items-center gap-3">
-      <span class="grid size-9 shrink-0 place-items-center rounded-full bg-white text-blush-600 ring-1 ring-blush-200">
+      <span class="grid size-9 shrink-0 place-items-center rounded-full bg-surface text-accent ring-1 ring-tint-3">
         <Icon name="star" size={17} />
       </span>
       <span>
-        <span class="block text-[0.65rem] font-bold tracking-[0.16em] text-mauve-500 uppercase">Difficulty</span>
+        <span class="block text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Difficulty</span>
         <span class="flex items-center gap-1.5">
-          <span class="text-[0.92rem] font-semibold text-plum-900 capitalize">{d.difficulty}</span>
+          <span class="text-[0.92rem] font-semibold text-ink-strong capitalize">{d.difficulty}</span>
           <span class="flex gap-1">
             {
               Array.from({ length: 4 }).map((_, i) => (
-                <span class:list={['size-1.5 rounded-full', i < difficultyDots(d.difficulty) ? 'bg-blush-500' : 'bg-mauve-300']} />
+                <span class:list={['size-1.5 rounded-full', i < difficultyDots(d.difficulty) ? 'bg-blush-500' : 'bg-line']} />
               ))
             }
           </span>
@@ -54,20 +54,20 @@ const rows = [
 
   {
     d.gauge && (
-      <div class="mt-6 border-t border-blush-200 pt-5">
-        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-mauve-500 uppercase">Gauge</p>
-        <p class="mt-1.5 text-[0.9rem] leading-relaxed text-plum-800">{d.gauge}</p>
+      <div class="mt-6 border-t border-tint-3 pt-5">
+        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Gauge</p>
+        <p class="mt-1.5 text-[0.9rem] leading-relaxed text-ink">{d.gauge}</p>
       </div>
     )
   }
 
   {
     d.sizes.length > 0 && (
-      <div class="mt-5 border-t border-blush-200 pt-5">
-        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-mauve-500 uppercase">Sizes</p>
+      <div class="mt-5 border-t border-tint-3 pt-5">
+        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Sizes</p>
         <ul class="mt-2 flex flex-wrap gap-1.5">
           {d.sizes.map((s) => (
-            <li class="rounded-full bg-white px-3 py-1 text-[0.75rem] font-semibold text-plum-800 ring-1 ring-blush-200">
+            <li class="rounded-full bg-surface px-3 py-1 text-[0.75rem] font-semibold text-ink ring-1 ring-tint-3">
               {s}
             </li>
           ))}
@@ -78,11 +78,11 @@ const rows = [
 
   {
     d.stitches.length > 0 && (
-      <div class="mt-5 border-t border-blush-200 pt-5">
-        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-mauve-500 uppercase">Stitches used</p>
+      <div class="mt-5 border-t border-tint-3 pt-5">
+        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Stitches used</p>
         <ul class="mt-2 flex flex-wrap gap-1.5">
           {d.stitches.map((s) => (
-            <li class="rounded-full bg-blush-200/60 px-3 py-1 font-mono text-[0.72rem] font-semibold text-blush-800">
+            <li class="rounded-full bg-tint-3/60 px-3 py-1 font-mono text-[0.72rem] font-semibold text-accent-strong">
               {s}
             </li>
           ))}
@@ -93,11 +93,11 @@ const rows = [
 
   {
     d.colors.length > 0 && (
-      <div class="mt-5 border-t border-blush-200 pt-5">
-        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-mauve-500 uppercase">Colourway</p>
+      <div class="mt-5 border-t border-tint-3 pt-5">
+        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Colourway</p>
         <ul class="mt-2 space-y-1.5">
           {d.colors.map((c) => (
-            <li class="text-[0.85rem] text-plum-800">{c}</li>
+            <li class="text-[0.85rem] text-ink">{c}</li>
           ))}
         </ul>
       </div>

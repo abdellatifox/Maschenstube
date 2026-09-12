@@ -25,7 +25,7 @@ const titles = {
 
 <article class="group" data-reveal>
   <a href={`/patterns/${entry.id}`} class="block">
-    <div class={`media-zoom relative ${ratios[size]} overflow-hidden rounded-2xl bg-blush-100`}>
+    <div class={`media-zoom relative ${ratios[size]} overflow-hidden rounded-2xl bg-tint-2`}>
       <img
         src={cover}
         alt={d.title}
@@ -38,7 +38,7 @@ const titles = {
 
       {
         d.featured && (
-          <span class="absolute start-3 top-3 rounded-full bg-plum-900/85 px-3 py-1.5 text-[0.6rem] font-bold tracking-[0.18em] text-blush-100 uppercase backdrop-blur-sm">
+          <span class="absolute start-3 top-3 rounded-full bg-plum-900/85 px-3 py-1.5 text-[0.6rem] font-bold tracking-[0.18em] text-panel-ink uppercase backdrop-blur-sm">
             Featured
           </span>
         )
@@ -47,7 +47,7 @@ const titles = {
       {
         d.pdfKey && (
           <span
-            class="absolute end-3 top-3 grid size-8 place-items-center rounded-full bg-white/90 text-blush-700 backdrop-blur-sm"
+            class="absolute end-3 top-3 grid size-8 place-items-center rounded-full bg-surface/90 text-accent-soft backdrop-blur-sm"
             title="Printable PDF available"
           >
             <Icon name="download" size={15} />
@@ -56,27 +56,27 @@ const titles = {
       }
 
       <span
-        class="absolute inset-x-3 bottom-3 flex translate-y-2 items-center justify-between rounded-full bg-white/92 px-4 py-2 opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+        class="absolute inset-x-3 bottom-3 flex translate-y-2 items-center justify-between rounded-full bg-surface/92 px-4 py-2 opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
       >
-        <span class="text-[0.68rem] font-bold tracking-[0.14em] text-plum-900 uppercase">Read pattern</span>
-        <Icon name="arrow-right" size={15} class="text-blush-600" />
+        <span class="text-[0.68rem] font-bold tracking-[0.14em] text-ink-strong uppercase">Read pattern</span>
+        <Icon name="arrow-right" size={15} class="text-accent" />
       </span>
     </div>
 
     <div class="mt-4">
-      <p class="flex items-center gap-2 text-[0.65rem] font-bold tracking-[0.18em] text-blush-600 uppercase">
+      <p class="flex items-center gap-2 text-[0.65rem] font-bold tracking-[0.18em] text-accent uppercase">
         {cat?.title}
-        {index !== undefined && <span class="text-mauve-500">/ {String(index + 1).padStart(2, '0')}</span>}
+        {index !== undefined && <span class="text-muted">/ {String(index + 1).padStart(2, '0')}</span>}
       </p>
-      <h3 class={`mt-2 font-display font-bold tracking-tight text-plum-900 transition-colors group-hover:text-blush-700 ${titles[size]}`}>
+      <h3 class={`mt-2 font-display font-bold tracking-tight text-ink-strong transition-colors group-hover:text-accent-soft ${titles[size]}`}>
         {d.title}
       </h3>
 
-      {size === 'lg' && <p class="mt-3 max-w-md text-[0.95rem] leading-relaxed text-plum-700">{d.excerpt}</p>}
+      {size === 'lg' && <p class="mt-3 max-w-md text-[0.95rem] leading-relaxed text-ink-soft">{d.excerpt}</p>}
 
       {
         showMeta && (
-          <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-[0.75rem] text-plum-700">
+          <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-[0.75rem] text-ink-soft">
             <span class="inline-flex items-center gap-1.5">
               <Icon name="hook" size={14} class="text-blush-500" />
               {d.hook}
@@ -92,7 +92,7 @@ const titles = {
                 <span
                   class:list={[
                     'size-1.5 rounded-full',
-                    i < difficultyDots(d.difficulty) ? 'bg-blush-500' : 'bg-mauve-300',
+                    i < difficultyDots(d.difficulty) ? 'bg-blush-500' : 'bg-line',
                   ]}
                 />
               ))}

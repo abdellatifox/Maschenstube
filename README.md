@@ -11,9 +11,10 @@
 | الصفحة الرئيسية | Hero تحريري + فهرس التصنيفات + أقسام "Issue no. 0X" + أحدث الإضافات + تعريف بالكاتبة |
 | مكتبة الباترونات | `/patterns` مع فلترة بالتصنيف والمستوى وترتيب، ومزامنة الفلاتر مع الرابط |
 | صفحة الباترون | مواصفات جانبية، فهرس محتوى، أزرار (تحميل PDF، إعجاب، طباعة، عدّاد مشاهدات)، مقترحات، JSON-LD من نوع `HowTo` |
-| صفحات التصنيف | `/category/<key>` لكل مجموعة من ثمانٍ |
+| صفحات التصنيف | `/category/<key>` لكل مجموعة من سبع |
 | صفحات ثابتة | About · Contact · Privacy · Terms · Disclaimer · 404 |
 | البحث | نافذة بحث فورية (⌘K / Ctrl+K) على فهرس `/search.json` يُبنى وقت البناء |
+| الوضع الليلي | زر تبديل فاتح/داكن يتبع تفضيل النظام، يُحفظ في المتصفّح، بلا وميض عند التحميل |
 | SEO | sitemap · RSS · robots · Open Graph · JSON-LD |
 
 ### أين تُستخدم موارد Cloudflare
@@ -98,15 +99,15 @@ npx wrangler d1 execute crochet-db --remote --file=./db/seed.sql   # اختيا�
 ### 3) رفع ملفات الباترونات إلى R2
 
 ```bash
-npx wrangler r2 object put crochet-media/patterns/dusty-rose-bell-top.pdf \
-  --file=./sample/dusty-rose-bell-top.pdf --content-type=application/pdf --remote
+npx wrangler r2 object put crochet-media/patterns/blush-puff-envelope-bag.pdf \
+  --file=./sample/blush-puff-envelope-bag.pdf --content-type=application/pdf --remote
 ```
 
 ثم سجّل الملف في D1 حتى يعمل عدّاد التحميل والحماية:
 
 ```sql
 INSERT INTO media_files (r2_key, slug, kind, title, gated)
-VALUES ('patterns/dusty-rose-bell-top.pdf', 'dusty-rose-bell-top', 'pdf', 'Dusty Rose Bell Top', 0);
+VALUES ('patterns/blush-puff-envelope-bag.pdf', 'blush-puff-envelope-bag', 'pdf', 'Blush Puff Envelope Bag', 0);
 ```
 
 > إن ربطت نطاقًا مخصّصًا بحاوية R2 (مثل `media.example.com`) ضعه في `vars.PUBLIC_R2_URL` داخل `wrangler.jsonc`،
@@ -152,7 +153,7 @@ git push -u origin main
 ---
 title: "Blush Puff Stitch Beanie"
 excerpt: "سطر واحد يصف القطعة."
-category: "accessories"        # accessories | amigurumi | baby-kids | clothing | blankets | footwear | home-decor | seasonal
+category: "accessories"        # accessories | baby-kids | clothing | blankets | footwear | home-decor | seasonal
 cover: "/images/patterns/my-pattern.svg"
 publishDate: 2026-09-20
 featured: false
@@ -176,21 +177,51 @@ tags: ["beanie", "puff stitch"]
 ...
 ```
 
-المخطط الكامل في `src/content.config.ts`. الصور توضع في `public/images/patterns/`.
+المخطط الكامل في `src/content.config.ts`.
+
+**الصور:** أغلفة الباترونات في `public/images/patterns/<slug>.svg` وهي حاليًا **رسوم توضيحية مولّدة**
+(كل رسم يُظهر القطعة نفسها بنسيج غُرز الكروشيه). استبدلها بصورك الفوتوغرافية الحقيقية:
+ضع الملف في نفس المجلّد وحدّث حقل `cover`، أو ارفعها إلى R2 واستعمل رابطها الكامل.
+المقاس الموصى به 1200×1500 (نسبة 4:5).
 
 ---
 
-## تخصيص الهوية
+## تخصيص الهوية والوضع الليلي
 
-كل الألوان والخطوط في كتلة `@theme` أعلى `src/styles/global.css`:
+كل الألوان في كتلة `@theme` أعلى `src/styles/global.css`، وهي مقسومة قسمين:
+
+**1) سلّم الوردي** — القيم الخام، معناها ثابت في الوضعين:
 
 ```css
 --color-blush-500: #db6394;   /* الوردي الأساسي */
 --color-blush-600: #c4416f;   /* أزرار الحثّ */
---color-plum-800:  #3d2438;   /* لون النصّ */
---color-cream:     #faf6f4;   /* الخلفية */
---font-display:    "Quicksand", …;
---font-serif:      "Playfair Display", …;   /* الكلمة المائلة المميّزة */
+```
+
+**2) الرموز الدلالية** — هذه وحدها هي التي تنقلب في الوضع الليلي:
+
+| الرمز | الاستعمال | فاتح | داكن |
+| --- | --- | --- | --- |
+| `bg` | خلفية الصفحة | `#faf6f4` | `#170f14` |
+| `surface` | البطاقات والحقول | `#ffffff` | `#211620` |
+| `surface-2` | أقسام مميّزة | `#f4eaf0` | `#2b1b26` |
+| `tint` / `tint-2` / `tint-3` | أسطح وردية خفيفة | فاتحة | داكنة |
+| `ink-strong` / `ink` / `ink-soft` | العناوين / النصّ / الفقرات | برقوقي | وردي فاتح |
+| `muted` | نصّ ثانوي | `#b394a8` | `#9b8090` |
+| `line` | الحدود والفواصل | `#dec5d7` | `#3f2a37` |
+| `accent` / `accent-soft` / `accent-strong` | الروابط والعناوين الفرعية | وردي داكن | وردي فاتح |
+| `panel` + `panel-ink` | اللوحة الداكنة (النشرة البريدية) | برقوقي + وردي | — |
+
+> ⚠️ داخل المكوّنات استعمل الرموز الدلالية دائمًا (`bg-surface` و `text-ink`) ولا تستعمل
+> `bg-white` أو `text-plum-800`، وإلّا لن ينقلب العنصر في الوضع الليلي.
+
+لتغيير ألوان الوضع الليلي عدّل كتلة `:root[data-theme='dark']` في نفس الملف.
+منطق التبديل في `src/components/ThemeToggle.astro`، وسكربت منع الوميض داخل `<head>` في `src/layouts/BaseLayout.astro`.
+
+**الخطوط:**
+
+```css
+--font-display: "Quicksand", …;
+--font-serif:   "Playfair Display", …;   /* الكلمة المائلة المميّزة */
 ```
 
 اسم الموقع والقوائم والتصنيفات في `src/data/site.ts`.
@@ -201,7 +232,7 @@ tags: ["beanie", "puff stitch"]
 
 ```
 src/
-├─ components/     Header · Footer · Hero · PatternCard · IssueSection · SearchDialog · …
+├─ components/     Header · Footer · Hero · PatternCard · IssueSection · SearchDialog · ThemeToggle · …
 ├─ content/        باترونات Markdown
 ├─ data/site.ts    اسم الموقع، القوائم، التصنيفات
 ├─ layouts/        BaseLayout (SEO + الخطوط + الهيكل)

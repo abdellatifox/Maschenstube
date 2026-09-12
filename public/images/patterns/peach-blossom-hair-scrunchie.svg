@@ -1,27 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Scrunchies crochet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0" stop-color="#fde4ec"/>
-      <stop offset="1" stop-color="#ef9dbd"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fff5f9"/>
+      <stop offset="1" stop-color="#fbe4ee"/>
     </linearGradient>
-    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse">
-      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     </pattern>
-    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
-      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#ef9dbd" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="objclip"><path d="M430 780 m-150 0 a150 150 0 1 0 300 0 a150 150 0 1 0-300 0 Z M430 780 m-62 0 a62 62 0 1 0 124 0 a62 62 0 1 0-124 0 Z"/><path d="M760 940 m-150 0 a150 150 0 1 0 300 0 a150 150 0 1 0-300 0 Z M760 940 m-62 0 a62 62 0 1 0 124 0 a62 62 0 1 0-124 0 Z"/><path d="M580 1160 m-140 0 a140 140 0 1 0 280 0 a140 140 0 1 0-280 0 Z M580 1160 m-58 0 a58 58 0 1 0 116 0 a58 58 0 1 0-116 0 Z"/></clipPath>
   </defs>
-  <rect width="1200" height="1500" fill="url(#g)"/>
-  <rect width="1200" height="1500" fill="url(#stitch)"/>
-  <rect width="1200" height="1500" fill="url(#vig)"/>
-  <g opacity="0.92" transform="translate(600 710)">
-    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
-    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
-    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
-      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#d086a6" opacity="0.13"/>
+
+  <g>
+    <path d="M430 780 m-150 0 a150 150 0 1 0 300 0 a150 150 0 1 0-300 0 Z M430 780 m-62 0 a62 62 0 1 0 124 0 a62 62 0 1 0-124 0 Z" fill="#fde3ee" fill-rule="evenodd"/>
+    <path d="M760 940 m-150 0 a150 150 0 1 0 300 0 a150 150 0 1 0-300 0 Z M760 940 m-62 0 a62 62 0 1 0 124 0 a62 62 0 1 0-124 0 Z" fill="#f2b3cd" fill-rule="evenodd"/>
+    <path d="M580 1160 m-140 0 a140 140 0 1 0 280 0 a140 140 0 1 0-280 0 Z M580 1160 m-58 0 a58 58 0 1 0 116 0 a58 58 0 1 0-116 0 Z" fill="#d086a6" fill-rule="evenodd"/>
   </g>
-  <text x="600" y="910" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">SCRUNCHIES</text>
+  <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
+  <g fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="7">
+        <path d="M500 780 L578 780"/>
+                  <path d="M830 940 L908 940"/><path d="M495.7784834550136 803.9414100327969 L569.0745078763144 830.618981212199"/>
+                  <path d="M825.7784834550135 963.9414100327969 L899.0745078763144 990.618981212199"/><path d="M483.6231110183285 824.9951326780578 L543.3745775816087 875.1325662336078"/>
+                  <path d="M813.6231110183285 984.9951326780578 L873.3745775816087 1035.1325662336078"/><path d="M465 840.6217782649107 L504 908.1717597600968"/>
+                  <path d="M795 1000.6217782649107 L834 1068.1717597600968"/><path d="M442.1553724366851 848.9365427108546 L455.6999302947057 925.7515474458068"/>
+                  <path d="M772.1553724366852 1008.9365427108546 L785.6999302947057 1085.7515474458069"/><path d="M417.8446275633149 848.9365427108546 L404.30006970529433 925.7515474458068"/>
+                  <path d="M747.8446275633149 1008.9365427108546 L734.3000697052943 1085.7515474458069"/><path d="M395 840.6217782649107 L356 908.171759760097"/>
+                  <path d="M725 1000.6217782649107 L686 1068.1717597600968"/><path d="M376.3768889816715 824.9951326780578 L316.6254224183913 875.1325662336078"/>
+                  <path d="M706.3768889816715 984.9951326780578 L646.6254224183913 1035.1325662336078"/><path d="M364.2215165449864 803.9414100327969 L290.92549212368556 830.618981212199"/>
+                  <path d="M694.2215165449865 963.9414100327969 L620.9254921236856 990.618981212199"/><path d="M360 780 L282 780"/>
+                  <path d="M690 940 L612 940"/><path d="M364.2215165449864 756.0585899672031 L290.92549212368556 729.381018787801"/>
+                  <path d="M694.2215165449865 916.0585899672031 L620.9254921236856 889.381018787801"/><path d="M376.3768889816715 735.0048673219422 L316.6254224183912 684.8674337663922"/>
+                  <path d="M706.3768889816715 895.0048673219422 L646.6254224183913 844.8674337663922"/><path d="M395 719.3782217350893 L355.99999999999994 651.8282402399032"/>
+                  <path d="M725 879.3782217350893 L685.9999999999999 811.8282402399032"/><path d="M417.8446275633149 711.0634572891454 L404.30006970529433 634.2484525541932"/>
+                  <path d="M747.8446275633149 871.0634572891454 L734.3000697052943 794.2484525541932"/><path d="M442.15537243668507 711.0634572891454 L455.6999302947056 634.2484525541931"/>
+                  <path d="M772.1553724366851 871.0634572891454 L785.6999302947056 794.2484525541931"/><path d="M465 719.3782217350893 L504 651.8282402399032"/>
+                  <path d="M795 879.3782217350893 L834 811.8282402399032"/><path d="M483.6231110183285 735.0048673219422 L543.3745775816087 684.8674337663922"/>
+                  <path d="M813.6231110183285 895.0048673219422 L873.3745775816087 844.8674337663922"/><path d="M495.77848345501354 756.0585899672031 L569.0745078763143 729.3810187878009"/>
+                  <path d="M825.7784834550135 916.0585899672031 L899.0745078763143 889.3810187878009"/>
+      </g>
 </svg>

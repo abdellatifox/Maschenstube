@@ -2,10 +2,14 @@
 
 /* ╔═══════════════════════════════════════════════════════════════╗
    ║  Crochet Atelier — Design Tokens                              ║
-   ║  لوحة وردية تحريرية: بلاش / روز / برقوقي                       ║
+   ║  لوحة وردية تحريرية + وضع ليلي                                 ║
+   ║                                                               ║
+   ║  الرموز الدلالية (bg / surface / ink / line / accent …)        ║
+   ║  هي التي تنقلب في الوضع الليلي. لا تستعمل ألوانًا صريحة        ║
+   ║  مثل bg-white في المكوّنات — استعمل bg-surface.                ║
    ╚═══════════════════════════════════════════════════════════════╝ */
 @theme {
-  /* ── الوردي الأساسي ── */
+  /* ── سلّم الوردي (ثابت المعنى في الوضعين) ── */
   --color-blush-50:  #fff7fa;
   --color-blush-100: #fdebf2;
   --color-blush-200: #f9d5e4;
@@ -17,15 +21,41 @@
   --color-blush-800: #762658;
   --color-blush-900: #4e1b3a;
 
-  /* ── الحبر البرقوقي والمحايدات الدافئة ── */
   --color-plum-900: #2a1826;
   --color-plum-800: #3d2438;
   --color-plum-700: #5a4654;
   --color-mauve-500: #b394a8;
   --color-mauve-300: #dec5d7;
-  --color-shell:     #f4eaf0;
   --color-cream:     #faf6f4;
-  --color-sand:      #efe6e0;
+  --color-shell:     #f4eaf0;
+
+  /* ── الأسطح ── */
+  --color-bg:        #faf6f4;   /* خلفية الصفحة */
+  --color-surface:   #ffffff;   /* البطاقات والحقول */
+  --color-surface-2: #f4eaf0;   /* أقسام مميّزة */
+
+  /* ── أسطح وردية خفيفة ── */
+  --color-tint:   #fff7fa;
+  --color-tint-2: #fdebf2;
+  --color-tint-3: #f9d5e4;
+
+  /* ── النصّ ── */
+  --color-ink-strong: #2a1826;  /* العناوين */
+  --color-ink:        #3d2438;  /* النصّ الأساسي */
+  --color-ink-soft:   #5a4654;  /* الفقرات */
+  --color-muted:      #b394a8;  /* نصّ ثانوي */
+  --color-line:       #dec5d7;  /* الحدود والفواصل */
+
+  /* ── لون الحثّ النصّي ── */
+  --color-accent:        #c4416f;
+  --color-accent-soft:   #a02c58;
+  --color-accent-strong: #762658;
+
+  /* ── اللوحة الداكنة (النشرة البريدية، أشرطة CTA) ── */
+  --color-panel:          #2a1826;
+  --color-panel-ink:      #fdebf2;
+  --color-panel-ink-soft: #f9d5e4;
+  --color-panel-accent:   #f2b3cd;
 
   /* ── الخطوط ── */
   --font-sans:    "Quicksand", ui-rounded, "Segoe UI", system-ui, sans-serif;
@@ -39,7 +69,7 @@
   --text-issue: clamp(1.75rem, 4vw, 3rem);
   --text-issue--line-height: 1.05;
 
-  /* ── ظلال ناعمة وردية ── */
+  /* ── ظلال ── */
   --shadow-soft:  0 2px 8px -2px rgb(118 38 88 / 0.08), 0 12px 32px -12px rgb(118 38 88 / 0.14);
   --shadow-lift:  0 8px 20px -6px rgb(118 38 88 / 0.16), 0 24px 48px -20px rgb(118 38 88 / 0.22);
 
@@ -47,6 +77,47 @@
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
   --animate-fade-up: fade-up 0.7s var(--ease-out-soft) both;
   --animate-marquee: marquee 34s linear infinite;
+}
+
+/* ╔══════════════════════════════════════════╗
+   ║  الوضع الليلي                             ║
+   ║  قلب قيم الرموز الدلالية فقط              ║
+   ╚══════════════════════════════════════════╝ */
+/* الوضع الليلي: سكربت صغير في <head> يضبط data-theme قبل الرسم،
+   فلا وميض ولا حاجة إلى تكرار الكتلة داخل media query. */
+:root[data-theme='dark'] {
+  --color-bg:        #170f14;
+  --color-surface:   #211620;
+  --color-surface-2: #2b1b26;
+
+  --color-tint:   #1e1319;
+  --color-tint-2: #271822;
+  --color-tint-3: #3a2331;
+
+  --color-ink-strong: #fdebf2;
+  --color-ink:        #f2dde7;
+  --color-ink-soft:   #cbb0c0;
+  --color-muted:      #9b8090;
+  --color-line:       #3f2a37;
+
+  --color-accent:        #f2b3cd;
+  --color-accent-soft:   #e88bb1;
+  --color-accent-strong: #f9d5e4;
+
+  --color-panel:          #2b1b26;
+  --color-panel-ink:      #fdebf2;
+  --color-panel-ink-soft: #e7cddb;
+  --color-panel-accent:   #f2b3cd;
+
+  /* أزرار أكثر إشراقًا قليلًا على الخلفية الداكنة */
+  --color-blush-600: #d4548a;
+  --color-blush-700: #c4416f;
+
+  /* ظلال سوداء بدل الوردية */
+  --shadow-soft: 0 2px 8px -2px rgb(0 0 0 / 0.35), 0 12px 32px -12px rgb(0 0 0 / 0.55);
+  --shadow-lift: 0 8px 20px -6px rgb(0 0 0 / 0.45), 0 24px 48px -20px rgb(0 0 0 / 0.65);
+
+  color-scheme: dark;
 }
 
 @keyframes fade-up {
@@ -61,33 +132,34 @@
 /* ── الأساسيات ── */
 @layer base {
   :root { color-scheme: light; scroll-behavior: smooth; }
+
   @media (prefers-reduced-motion: reduce) {
     :root { scroll-behavior: auto; }
     *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
   }
 
   body {
-    background-color: var(--color-cream);
-    color: var(--color-plum-800);
+    background-color: var(--color-bg);
+    color: var(--color-ink);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    transition: background-color 0.3s var(--ease-out-soft), color 0.3s var(--ease-out-soft);
   }
 
   h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; }
 
-  ::selection { background: var(--color-blush-200); color: var(--color-plum-900); }
+  ::selection { background: var(--color-tint-3); color: var(--color-ink-strong); }
 
   :focus-visible {
-    outline: 2px solid var(--color-blush-600);
+    outline: 2px solid var(--color-accent);
     outline-offset: 3px;
     border-radius: 4px;
   }
 
-  /* شريط تمرير وردي */
   ::-webkit-scrollbar { width: 11px; height: 11px; }
-  ::-webkit-scrollbar-track { background: var(--color-shell); }
-  ::-webkit-scrollbar-thumb { background: var(--color-mauve-500); border-radius: 99px; border: 3px solid var(--color-shell); }
+  ::-webkit-scrollbar-track { background: var(--color-surface-2); }
+  ::-webkit-scrollbar-thumb { background: var(--color-muted); border-radius: 99px; border: 3px solid var(--color-surface-2); }
   ::-webkit-scrollbar-thumb:hover { background: var(--color-blush-500); }
 }
 
@@ -97,11 +169,11 @@
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-blush-700);
+  color: var(--color-accent-soft);
 }
 
 @utility rule-line {
-  background-image: linear-gradient(to right, var(--color-mauve-300), transparent);
+  background-image: linear-gradient(to right, var(--color-line), transparent);
   height: 1px;
 }
 
@@ -110,14 +182,14 @@
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 400;
-  color: var(--color-blush-600);
+  color: var(--color-accent);
   letter-spacing: -0.01em;
 }
 
 /* خلفية نسيج الكروشيه */
 @utility yarn-texture {
   background-image:
-    radial-gradient(circle at 1px 1px, rgb(219 99 148 / 0.10) 1px, transparent 0);
+    radial-gradient(circle at 1px 1px, color-mix(in oklab, var(--color-accent) 22%, transparent) 1px, transparent 0);
   background-size: 14px 14px;
 }
 
@@ -139,18 +211,19 @@
 
 /* تنسيق محتوى الباترون (Markdown) */
 @utility prose-crochet {
-  color: var(--color-plum-800);
+  color: var(--color-ink);
   line-height: 1.75;
 
   & > * + * { margin-block-start: 1.15em; }
   & h2 {
     font-size: 1.6rem; margin-block-start: 2.2em; margin-block-end: 0.6em;
-    padding-block-end: 0.4rem; border-block-end: 1px solid var(--color-mauve-300);
+    padding-block-end: 0.4rem; border-block-end: 1px solid var(--color-line);
+    color: var(--color-ink-strong);
   }
-  & h3 { font-size: 1.2rem; margin-block-start: 1.8em; margin-block-end: 0.4em; color: var(--color-blush-800); }
-  & a { color: var(--color-blush-700); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  & h3 { font-size: 1.2rem; margin-block-start: 1.8em; margin-block-end: 0.4em; color: var(--color-accent-strong); }
+  & a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
   & a:hover { color: var(--color-blush-500); }
-  & strong { font-weight: 700; color: var(--color-plum-900); }
+  & strong { font-weight: 700; color: var(--color-ink-strong); }
   & ul { list-style: none; padding-inline-start: 0; }
   & ul > li { position: relative; padding-inline-start: 1.6rem; margin-block: 0.45rem; }
   & ul > li::before {
@@ -159,20 +232,20 @@
   }
   & ol { padding-inline-start: 1.4rem; }
   & ol > li { margin-block: 0.5rem; padding-inline-start: 0.35rem; }
-  & ol > li::marker { color: var(--color-blush-600); font-weight: 700; }
+  & ol > li::marker { color: var(--color-accent); font-weight: 700; }
   & blockquote {
     border-inline-start: 3px solid var(--color-blush-400);
-    background: var(--color-blush-50);
+    background: var(--color-tint);
     padding: 1rem 1.25rem; border-radius: 0 0.75rem 0.75rem 0;
-    font-family: var(--font-serif); font-style: italic; color: var(--color-plum-700);
+    font-family: var(--font-serif); font-style: italic; color: var(--color-ink-soft);
   }
   & code {
-    background: var(--color-shell); color: var(--color-blush-800);
+    background: var(--color-surface-2); color: var(--color-accent-strong);
     padding: 0.15em 0.4em; border-radius: 0.35rem; font-size: 0.9em; font-weight: 600;
   }
   & img { border-radius: 1rem; box-shadow: var(--shadow-soft); }
   & table { width: 100%; border-collapse: collapse; font-size: 0.925rem; }
-  & th, & td { border-block-end: 1px solid var(--color-mauve-300); padding: 0.6rem 0.5rem; text-align: start; }
-  & th { color: var(--color-blush-800); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; }
-  & hr { border: 0; border-block-start: 1px solid var(--color-mauve-300); margin-block: 2.5rem; }
+  & th, & td { border-block-end: 1px solid var(--color-line); padding: 0.6rem 0.5rem; text-align: start; }
+  & th { color: var(--color-accent-strong); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; }
+  & hr { border: 0; border-block-start: 1px solid var(--color-line); margin-block: 2.5rem; }
 }

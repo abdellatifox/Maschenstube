@@ -3,7 +3,8 @@ interface Props {
   name:
     | 'search' | 'arrow-right' | 'arrow-up-right' | 'heart' | 'download' | 'clock'
     | 'hook' | 'yarn' | 'ruler' | 'star' | 'menu' | 'close' | 'mail' | 'check'
-    | 'pinterest' | 'instagram' | 'youtube' | 'ravelry' | 'print' | 'eye' | 'chevron-down';
+    | 'pinterest' | 'instagram' | 'youtube' | 'ravelry' | 'print' | 'eye' | 'chevron-down'
+    | 'sun' | 'moon';
   size?: number;
   class?: string;
   stroke?: number;
@@ -28,6 +29,8 @@ const paths: Record<string, string> = {
   eye: '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/>',
   print: '<path d="M7 9V3h10v6"/><rect x="3.5" y="9" width="17" height="7" rx="2"/><path d="M7 14h10v7H7z"/>',
   'chevron-down': '<path d="m6 9 6 6 6-6"/>',
+  sun: '<circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6"/>',
+  moon: '<path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z"/>',
   pinterest:
     '<path d="M12 3a9 9 0 0 0-3.3 17.4c-.1-.8-.2-2 0-2.8l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.4 1.8-2.4.9 0 1.3.6 1.3 1.4 0 .9-.6 2.2-.9 3.4-.2 1 .5 1.8 1.5 1.8 1.8 0 3.1-2.3 3.1-5 0-2.1-1.4-3.6-3.9-3.6-2.8 0-4.5 2.1-4.5 4.3 0 .8.2 1.3.6 1.8.2.2.2.3.1.5l-.2.8c0 .3-.2.4-.5.2-1.3-.5-1.9-2-1.9-3.6 0-2.7 2.3-5.9 6.8-5.9 3.6 0 6 2.6 6 5.4 0 3.7-2 6.4-5 6.4-1 0-2-.5-2.3-1.2l-.6 2.4c-.2.8-.7 1.8-1.1 2.4A9 9 0 1 0 12 3Z"/>',
   instagram:

@@ -34,7 +34,7 @@ const { slug, pdfKey, pdfGated = false } = Astro.props;
     type="button"
     data-like
     aria-pressed="false"
-    class="group inline-flex items-center gap-2 rounded-full border border-mauve-300 bg-white px-5 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-plum-800 uppercase transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:text-blush-700 aria-pressed:border-blush-500 aria-pressed:bg-blush-500 aria-pressed:text-white"
+    class="group inline-flex items-center gap-2 rounded-full border border-line bg-surface px-5 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-ink uppercase transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:text-accent-soft aria-pressed:border-blush-500 aria-pressed:bg-blush-500 aria-pressed:text-white"
   >
     <Icon name="heart" size={16} class="transition-transform group-active:scale-125" />
     <span data-like-count>0</span>
@@ -43,13 +43,13 @@ const { slug, pdfKey, pdfGated = false } = Astro.props;
   <button
     type="button"
     onclick="window.print()"
-    class="inline-flex items-center gap-2 rounded-full border border-mauve-300 bg-white px-5 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-plum-800 uppercase transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:text-blush-700"
+    class="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-5 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-ink uppercase transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:text-accent-soft"
   >
     <Icon name="print" size={16} />
     Print
   </button>
 
-  <span class="inline-flex items-center gap-1.5 text-[0.78rem] text-plum-700">
+  <span class="inline-flex items-center gap-1.5 text-[0.78rem] text-ink-soft">
     <Icon name="eye" size={15} class="text-blush-500" />
     <span data-views>—</span> views
   </span>
@@ -58,11 +58,11 @@ const { slug, pdfKey, pdfGated = false } = Astro.props;
 <!-- نافذة جمع البريد للملفات المحميّة -->
 <dialog
   data-gate
-  class="m-auto w-[min(92vw,28rem)] rounded-3xl border border-mauve-300 bg-cream p-7 shadow-lift backdrop:bg-plum-900/50 backdrop:backdrop-blur-sm"
+  class="m-auto w-[min(92vw,28rem)] rounded-3xl border border-line bg-bg p-7 shadow-lift backdrop:bg-plum-900/50 backdrop:backdrop-blur-sm"
 >
   <p class="eyebrow">Members only</p>
-  <h3 class="mt-3 font-display text-xl font-bold text-plum-900">Pop in your email and the PDF is yours.</h3>
-  <p class="mt-2 text-[0.9rem] text-plum-700">
+  <h3 class="mt-3 font-display text-xl font-bold text-ink-strong">Pop in your email and the PDF is yours.</h3>
+  <p class="mt-2 text-[0.9rem] text-ink-soft">
     You will also get one new pattern each Sunday. Unsubscribe whenever you like.
   </p>
   <form class="mt-5 flex flex-col gap-2.5">
@@ -71,7 +71,7 @@ const { slug, pdfKey, pdfGated = false } = Astro.props;
       name="email"
       required
       placeholder="you@example.com"
-      class="rounded-full border border-mauve-300 bg-white px-5 py-3 text-[0.95rem] text-plum-900 outline-none focus:border-blush-400 focus:ring-2 focus:ring-blush-200"
+      class="rounded-full border border-line bg-surface px-5 py-3 text-[0.95rem] text-ink-strong outline-none focus:border-blush-400 focus:ring-2 focus:ring-tint-3"
     />
     <button
       type="submit"
@@ -79,7 +79,7 @@ const { slug, pdfKey, pdfGated = false } = Astro.props;
     >
       Send me the pattern
     </button>
-    <button type="button" data-gate-close class="mt-1 text-[0.8rem] font-semibold text-mauve-500 hover:text-plum-800">
+    <button type="button" data-gate-close class="mt-1 text-[0.8rem] font-semibold text-muted hover:text-ink">
       Maybe later
     </button>
   </form>

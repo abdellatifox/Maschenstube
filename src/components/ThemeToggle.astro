@@ -1,0 +1,77 @@
+---
+import Icon from './Icon.astro';
+
+interface Props { class?: string; withLabel?: boolean }
+const { class: cls = '', withLabel = false } = Astro.props;
+---
+
+<button
+  type="button"
+  data-theme-toggle
+  class:list={[
+    'group relative grid place-items-center rounded-full text-ink transition-colors hover:bg-tint-2 hover:text-accent',
+    withLabel ? 'w-full justify-start gap-3 px-3 py-2.5' : 'size-10',
+    cls,
+  ]}
+  aria-label="Switch to dark mode"
+  title="Light / dark"
+>
+  <span class:list={['grid', withLabel ? '' : 'place-items-center']}>
+    <!-- أيقونتان متراكبتان: تظهر واحدة حسب الوضع -->
+    <Icon name="sun" size={19} class="col-start-1 row-start-1 scale-100 opacity-100 transition-all duration-300 dark-hide" />
+    <Icon name="moon" size={18} class="col-start-1 row-start-1 scale-50 opacity-0 transition-all duration-300 dark-show" />
+  </span>
+  {withLabel && <span class="text-lg font-semibold" data-theme-label>Dark mode</span>}
+</button>
+
+<style>
+  :root[data-theme='dark'] .dark-hide {
+    opacity: 0;
+    transform: scale(0.5) rotate(-90deg);
+  }
+  :root[data-theme='dark'] .dark-show {
+    opacity: 1;
+    transform: scale(1);
+  }
+</style>
+
+<script>
+  const META_LIGHT = '#db6394';
+  const META_DARK = '#170f14';
+
+  const apply = (theme: 'light' | 'dark', persist: boolean) => {
+    document.documentElement.dataset.theme = theme;
+    if (persist) {
+      try {
+        localStorage.setItem('theme', theme);
+      } catch {}
+    }
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute('content', theme === 'dark' ? META_DARK : META_LIGHT);
+
+    for (const btn of document.querySelectorAll('[data-theme-toggle]')) {
+      btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      const label = btn.querySelector('[data-theme-label]');
+      if (label) label.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+    }
+  };
+
+  // الحالة الابتدائية ضُبطت في <head>؛ هنا نزامن التسميات فقط
+  apply((document.documentElement.dataset.theme as 'light' | 'dark') ?? 'light', false);
+
+  document.querySelectorAll('[data-theme-toggle]').forEach((btn) =>
+    btn.addEventListener('click', () => {
+      apply(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }),
+  );
+
+  // اتباع النظام ما دام المستخدم لم يختر يدويًا
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    let stored: string | null = null;
+    try {
+      stored = localStorage.getItem('theme');
+    } catch {}
+    if (!stored) apply(e.matches ? 'dark' : 'light', false);
+  });
+</script>

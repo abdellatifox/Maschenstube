@@ -1,27 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Pinafore crochet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0" stop-color="#f9d5e2"/>
-      <stop offset="1" stop-color="#d76e9c"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fef1f6"/>
+      <stop offset="1" stop-color="#f9dae7"/>
     </linearGradient>
-    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse">
-      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     </pattern>
-    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
-      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#d76e9c" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="objclip"><path d="M470 760 h260 v90 H470 Z"/><path d="M420 850 h360 l90 480 H330 Z"/><path d="M420 850 h180 v480 H330 Z"/></clipPath>
   </defs>
-  <rect width="1200" height="1500" fill="url(#g)"/>
-  <rect width="1200" height="1500" fill="url(#stitch)"/>
-  <rect width="1200" height="1500" fill="url(#vig)"/>
-  <g opacity="0.92" transform="translate(600 710)">
-    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
-    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
-    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
-      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#c4416f" opacity="0.13"/>
+
+  <g>
+    <path d="M470 760 h260 v90 H470 Z" fill="#e58bb0" />
+    <path d="M420 850 h360 l90 480 H330 Z" fill="#e58bb0" />
+    <path d="M420 850 h180 v480 H330 Z" fill="#f8c3d8" opacity=".45"/>
   </g>
-  <text x="600" y="910" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">PINAFORE</text>
+  <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
+  <g stroke="#e58bb0" stroke-width="26" fill="none" stroke-linecap="round">
+        <path d="M500 762 v-120"/><path d="M700 762 v-120"/>
+      </g>
+      <circle cx="500" cy="640" r="22" fill="#c4416f"/>
+      <circle cx="700" cy="640" r="22" fill="#c4416f"/>
+      <g fill="none" stroke="#fff" stroke-opacity=".38" stroke-width="7">
+        <path d="M412.4 890 h375.2"/><path d="M403.65999999999997 936 h392.68"/><path d="M394.91999999999996 982 h410.16"/><path d="M386.18 1028 h427.64"/><path d="M377.44 1074 h445.12"/><path d="M368.7 1120 h462.6"/><path d="M359.96000000000004 1166 h480.08"/><path d="M351.22 1212 h497.56"/><path d="M342.48 1258 h515.04"/><path d="M333.74 1304 h532.52"/>
+      </g>
 </svg>

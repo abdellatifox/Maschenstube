@@ -17,16 +17,16 @@ const legal = [
 ];
 ---
 
-<footer class="mt-24 border-t border-mauve-300/70 bg-shell">
+<footer class="mt-24 border-t border-line/70 bg-surface-2">
   <!-- شريط متحرّك -->
-  <div class="overflow-hidden border-b border-mauve-300/70 bg-blush-100 py-3">
+  <div class="overflow-hidden border-b border-line/70 bg-tint-2 py-3">
     <div class="flex w-max animate-marquee gap-10 will-change-transform">
       {
         Array.from({ length: 2 }).map(() => (
           <div class="flex shrink-0 gap-10">
             {['Free patterns', 'Written in US terms', 'Tested twice', 'Printable PDFs', 'Made with pink yarn', 'New every Sunday'].map(
               (t) => (
-                <span class="flex items-center gap-10 text-[0.7rem] font-bold tracking-[0.28em] text-blush-700 uppercase">
+                <span class="flex items-center gap-10 text-[0.7rem] font-bold tracking-[0.28em] text-accent-soft uppercase">
                   {t}
                   <span class="size-1.5 rounded-full bg-blush-400" />
                 </span>
@@ -43,10 +43,10 @@ const legal = [
 
     <div class="mt-16 grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
       <div>
-        <h2 class="font-display text-2xl font-bold tracking-tight text-plum-900">
+        <h2 class="font-display text-2xl font-bold tracking-tight text-ink-strong">
           Crochet <span class="accent-italic">Atelier</span>
         </h2>
-        <p class="mt-4 max-w-xs text-[0.92rem] leading-relaxed text-plum-700">{site.description}</p>
+        <p class="mt-4 max-w-xs text-[0.92rem] leading-relaxed text-ink-soft">{site.description}</p>
         <ul class="mt-6 flex gap-2">
           {
             site.social.map((s) => (
@@ -56,7 +56,7 @@ const legal = [
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={s.label}
-                  class="grid size-10 place-items-center rounded-full border border-mauve-300 bg-white text-plum-700 transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:bg-blush-500 hover:text-white"
+                  class="grid size-10 place-items-center rounded-full border border-line bg-surface text-ink-soft transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:bg-blush-500 hover:text-white"
                 >
                   <Icon name={s.icon as any} size={17} />
                 </a>
@@ -74,7 +74,7 @@ const legal = [
               <li>
                 <a
                   href={`/category/${c.key}`}
-                  class="text-[0.9rem] text-plum-700 transition-colors hover:text-blush-600"
+                  class="text-[0.9rem] text-ink-soft transition-colors hover:text-accent"
                 >
                   {c.title}
                 </a>
@@ -90,7 +90,7 @@ const legal = [
           {
             explore.map((l) => (
               <li>
-                <a href={l.href} class="text-[0.9rem] text-plum-700 transition-colors hover:text-blush-600">
+                <a href={l.href} class="text-[0.9rem] text-ink-soft transition-colors hover:text-accent">
                   {l.label}
                 </a>
               </li>
@@ -105,7 +105,7 @@ const legal = [
           {
             legal.map((l) => (
               <li>
-                <a href={l.href} class="text-[0.9rem] text-plum-700 transition-colors hover:text-blush-600">
+                <a href={l.href} class="text-[0.9rem] text-ink-soft transition-colors hover:text-accent">
                   {l.label}
                 </a>
               </li>
@@ -116,12 +116,12 @@ const legal = [
     </div>
 
     <div
-      class="mt-14 flex flex-col items-center justify-between gap-3 border-t border-mauve-300/70 pt-7 text-center sm:flex-row sm:text-start"
+      class="mt-14 flex flex-col items-center justify-between gap-3 border-t border-line/70 pt-7 text-center sm:flex-row sm:text-start"
     >
-      <p class="text-[0.7rem] font-semibold tracking-[0.16em] text-plum-700 uppercase">
+      <p class="text-[0.7rem] font-semibold tracking-[0.16em] text-ink-soft uppercase">
         © {year} {site.name} — all rights reserved
       </p>
-      <p class="text-[0.7rem] font-semibold tracking-[0.16em] text-mauve-500 uppercase">
+      <p class="text-[0.7rem] font-semibold tracking-[0.16em] text-muted uppercase">
         Built with Astro on Cloudflare
       </p>
     </div>

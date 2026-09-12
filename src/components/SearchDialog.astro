@@ -4,30 +4,30 @@ import Icon from './Icon.astro';
 
 <dialog
   id="search-dialog"
-  class="m-0 w-full max-w-2xl rounded-3xl border border-mauve-300 bg-cream p-0 shadow-lift backdrop:bg-plum-900/50 backdrop:backdrop-blur-sm sm:mx-auto sm:mt-[12vh]"
+  class="m-0 w-full max-w-2xl rounded-3xl border border-line bg-bg p-0 shadow-lift backdrop:bg-plum-900/50 backdrop:backdrop-blur-sm sm:mx-auto sm:mt-[12vh]"
   aria-label="Search patterns"
 >
-  <div class="flex items-center gap-3 border-b border-mauve-300/70 px-5 py-4">
-    <Icon name="search" size={20} class="shrink-0 text-blush-600" />
+  <div class="flex items-center gap-3 border-b border-line/70 px-5 py-4">
+    <Icon name="search" size={20} class="shrink-0 text-accent" />
     <input
       id="search-input"
       type="search"
       placeholder="Search patterns, stitches, yarn weight…"
       autocomplete="off"
-      class="w-full bg-transparent text-lg text-plum-900 outline-none placeholder:text-mauve-500"
+      class="w-full bg-transparent text-lg text-ink-strong outline-none placeholder:text-muted"
     />
-    <kbd class="hidden rounded-md border border-mauve-300 bg-white px-2 py-1 text-[0.65rem] font-bold text-mauve-500 sm:block">
+    <kbd class="hidden rounded-md border border-line bg-surface px-2 py-1 text-[0.65rem] font-bold text-muted sm:block">
       ESC
     </kbd>
   </div>
 
   <div id="search-results" class="max-h-[58vh] overflow-y-auto p-3">
-    <p class="px-3 py-8 text-center text-[0.9rem] text-mauve-500">Start typing to search the pattern library.</p>
+    <p class="px-3 py-8 text-center text-[0.9rem] text-muted">Start typing to search the pattern library.</p>
   </div>
 
-  <div class="flex items-center justify-between border-t border-mauve-300/70 px-5 py-3">
-    <span class="text-[0.68rem] font-bold tracking-[0.16em] text-mauve-500 uppercase">Crochet Atelier search</span>
-    <a href="/patterns" class="text-[0.75rem] font-semibold text-blush-700 hover:text-blush-500">Browse all →</a>
+  <div class="flex items-center justify-between border-t border-line/70 px-5 py-3">
+    <span class="text-[0.68rem] font-bold tracking-[0.16em] text-muted uppercase">Crochet Atelier search</span>
+    <a href="/patterns" class="text-[0.75rem] font-semibold text-accent-soft hover:text-blush-500">Browse all →</a>
   </div>
 </dialog>
 
@@ -70,23 +70,23 @@ import Icon from './Icon.astro';
     if (!results) return;
     if (!q) {
       results.innerHTML =
-        '<p class="px-3 py-8 text-center text-[0.9rem] text-mauve-500">Start typing to search the pattern library.</p>';
+        '<p class="px-3 py-8 text-center text-[0.9rem] text-muted">Start typing to search the pattern library.</p>';
       return;
     }
     if (!items.length) {
-      results.innerHTML = `<p class="px-3 py-8 text-center text-[0.9rem] text-mauve-500">No pattern matches “${escapeHtml(q)}”.</p>`;
+      results.innerHTML = `<p class="px-3 py-8 text-center text-[0.9rem] text-muted">No pattern matches “${escapeHtml(q)}”.</p>`;
       return;
     }
     results.innerHTML = items
       .map(
         (i) => `
-      <a href="/patterns/${i.slug}" class="flex items-center gap-4 rounded-2xl px-3 py-3 transition-colors hover:bg-blush-100">
+      <a href="/patterns/${i.slug}" class="flex items-center gap-4 rounded-2xl px-3 py-3 transition-colors hover:bg-tint-2">
         <img src="${i.cover}" alt="" width="56" height="56" loading="lazy"
              class="size-14 shrink-0 rounded-xl object-cover" />
         <span class="min-w-0 flex-1">
-          <span class="block text-[0.7rem] font-bold tracking-[0.16em] text-blush-600 uppercase">${escapeHtml(i.category.replace('-', ' & '))}</span>
-          <span class="block truncate font-semibold text-plum-900">${escapeHtml(i.title)}</span>
-          <span class="block truncate text-[0.8rem] text-plum-700">${escapeHtml(i.hook)} · ${escapeHtml(i.difficulty)}</span>
+          <span class="block text-[0.7rem] font-bold tracking-[0.16em] text-accent uppercase">${escapeHtml(i.category.replace('-', ' & '))}</span>
+          <span class="block truncate font-semibold text-ink-strong">${escapeHtml(i.title)}</span>
+          <span class="block truncate text-[0.8rem] text-ink-soft">${escapeHtml(i.hook)} · ${escapeHtml(i.difficulty)}</span>
         </span>
       </a>`,
       )

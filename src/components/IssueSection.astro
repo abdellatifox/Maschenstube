@@ -17,21 +17,21 @@ const hasLead = Boolean(lead);
 ---
 
 {hasLead && (
-<section class:list={['py-16 lg:py-24', tint && 'bg-blush-50/60 border-y border-blush-100']}>
+<section class:list={['py-16 lg:py-24', tint && 'bg-tint/60 border-y border-tint-2']}>
   <div class="container-editorial">
     <!-- ترويسة العدد -->
-    <div class="flex flex-wrap items-end justify-between gap-4 border-b border-mauve-300/70 pb-6" data-reveal>
+    <div class="flex flex-wrap items-end justify-between gap-4 border-b border-line/70 pb-6" data-reveal>
       <div class="flex flex-wrap items-baseline gap-4">
-        <span class="rounded-full bg-blush-200 px-3.5 py-1.5 text-[0.6rem] font-bold tracking-[0.2em] text-blush-800 uppercase">
+        <span class="rounded-full bg-tint-3 px-3.5 py-1.5 text-[0.6rem] font-bold tracking-[0.2em] text-accent-strong uppercase">
           Issue no. {issue}
         </span>
-        <h2 class="font-display text-issue font-bold tracking-tight text-plum-900">
+        <h2 class="font-display text-issue font-bold tracking-tight text-ink-strong">
           {cat?.title.split(' ')[0]} <span class="accent-italic">{cat?.kicker}</span>
         </h2>
       </div>
       <a
         href={`/category/${category}`}
-        class="group inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-plum-800 uppercase transition-colors hover:text-blush-600"
+        class="group inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-ink uppercase transition-colors hover:text-accent"
       >
         View all
         <Icon name="arrow-right" size={15} class="transition-transform group-hover:translate-x-1" />

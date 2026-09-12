@@ -19,20 +19,20 @@ for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 
   title="All free crochet patterns"
   description="Every free crochet pattern in the library — filter by category, difficulty and hook size."
 >
-  <section class="yarn-texture border-b border-mauve-300/60">
+  <section class="yarn-texture border-b border-line/60">
     <div class="container-editorial py-12 lg:py-16">
       <Breadcrumbs items={[{ label: 'Patterns' }]} />
-      <h1 class="mt-6 font-display text-hero font-bold tracking-[-0.035em] text-plum-900">
+      <h1 class="mt-6 font-display text-hero font-bold tracking-[-0.035em] text-ink-strong">
         The <span class="accent-italic">library</span>
       </h1>
-      <p class="mt-5 max-w-lg text-[1.02rem] leading-relaxed text-plum-700">
+      <p class="mt-5 max-w-lg text-[1.02rem] leading-relaxed text-ink-soft">
         {all.length} free patterns, written in US terms and tested twice. Filter your way to the next project.
       </p>
     </div>
   </section>
 
   <!-- شريط الفلاتر -->
-  <div class="z-30 border-b border-mauve-300/70 bg-cream/92 backdrop-blur-md lg:sticky lg:top-[74px]">
+  <div class="z-30 border-b border-line/70 bg-bg/92 backdrop-blur-md lg:sticky lg:top-[74px]">
     <div class="container-editorial flex flex-col gap-3 py-4 lg:flex-row lg:items-center lg:justify-between">
       <div
         class="-mx-5 flex items-center gap-1.5 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:flex-wrap md:overflow-visible md:px-0 md:pb-0"
@@ -62,7 +62,7 @@ for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 
         <label class="sr-only" for="sort">Sort patterns</label>
         <select
           id="sort"
-          class="rounded-full border border-mauve-300 bg-white px-4 py-2 text-[0.78rem] font-semibold text-plum-800 outline-none focus:border-blush-400"
+          class="rounded-full border border-line bg-surface px-4 py-2 text-[0.78rem] font-semibold text-ink outline-none focus:border-blush-400"
         >
           <option value="newest">Newest first</option>
           <option value="oldest">Oldest first</option>
@@ -71,7 +71,7 @@ for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 
 
         <select
           id="difficulty"
-          class="rounded-full border border-mauve-300 bg-white px-4 py-2 text-[0.78rem] font-semibold text-plum-800 capitalize outline-none focus:border-blush-400"
+          class="rounded-full border border-line bg-surface px-4 py-2 text-[0.78rem] font-semibold text-ink capitalize outline-none focus:border-blush-400"
         >
           <option value="all">Any difficulty</option>
           {difficulties.map((d) => <option value={d}>{d}</option>)}
@@ -99,9 +99,9 @@ for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 
       }
     </div>
 
-    <p id="empty" hidden class="py-20 text-center text-plum-700">
+    <p id="empty" hidden class="py-20 text-center text-ink-soft">
       No patterns match those filters yet.
-      <button type="button" id="reset" class="font-semibold text-blush-700 underline underline-offset-4">Reset</button>
+      <button type="button" id="reset" class="font-semibold text-accent-soft underline underline-offset-4">Reset</button>
     </p>
   </section>
 

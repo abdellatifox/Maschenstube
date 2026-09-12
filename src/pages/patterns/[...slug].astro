@@ -56,7 +56,7 @@ const jsonLd = {
 >
   <article>
     <!-- الترويسة -->
-    <header class="yarn-texture border-b border-mauve-300/60">
+    <header class="yarn-texture border-b border-line/60">
       <div class="container-editorial py-10 lg:py-14">
         <Breadcrumbs
           items={[{ label: 'Patterns', href: '/patterns' }, { label: cat?.title ?? '', href: `/category/${d.category}` }, { label: d.title }]}
@@ -65,17 +65,17 @@ const jsonLd = {
         <div class="mt-8 grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-14">
           <div>
             <p class="eyebrow">{cat?.title} · {formatDate(d.publishDate)}</p>
-            <h1 class="mt-4 max-w-2xl font-display text-4xl leading-[1.05] font-bold tracking-[-0.03em] text-plum-900 sm:text-5xl lg:text-[3.4rem]">
+            <h1 class="mt-4 max-w-2xl font-display text-4xl leading-[1.05] font-bold tracking-[-0.03em] text-ink-strong sm:text-5xl lg:text-[3.4rem]">
               {d.title}
             </h1>
-            <p class="mt-6 max-w-xl text-[1.05rem] leading-relaxed text-plum-700">{d.excerpt}</p>
+            <p class="mt-6 max-w-xl text-[1.05rem] leading-relaxed text-ink-soft">{d.excerpt}</p>
 
             <div class="mt-8">
               <PatternActions slug={entry.id} pdfKey={d.pdfKey} pdfGated={d.pdfGated} />
             </div>
           </div>
 
-          <div class="media-zoom overflow-hidden rounded-[1.75rem] bg-blush-100 shadow-lift">
+          <div class="media-zoom overflow-hidden rounded-[1.75rem] bg-tint-2 shadow-lift">
             <img src={cover} alt={d.title} width="1200" height="1500" fetchpriority="high" class="aspect-[4/5] size-full object-cover" />
           </div>
         </div>
@@ -89,12 +89,12 @@ const jsonLd = {
           <!-- فهرس المحتوى -->
           {
             toc.length > 2 && (
-              <nav class="mb-10 rounded-2xl border border-mauve-300/70 bg-white p-5 lg:hidden" aria-label="On this page">
+              <nav class="mb-10 rounded-2xl border border-line/70 bg-surface p-5 lg:hidden" aria-label="On this page">
                 <p class="eyebrow">On this page</p>
                 <ul class="mt-3 space-y-1.5">
                   {toc.map((h) => (
                     <li>
-                      <a href={`#${h.slug}`} class="text-[0.9rem] text-plum-700 hover:text-blush-600">
+                      <a href={`#${h.slug}`} class="text-[0.9rem] text-ink-soft hover:text-accent">
                         {h.text}
                       </a>
                     </li>
@@ -111,10 +111,10 @@ const jsonLd = {
           <!-- الوسوم -->
           {
             d.tags.length > 0 && (
-              <div class="mt-12 flex flex-wrap items-center gap-2 border-t border-mauve-300/70 pt-8">
+              <div class="mt-12 flex flex-wrap items-center gap-2 border-t border-line/70 pt-8">
                 <span class="eyebrow me-2">Tagged</span>
                 {d.tags.map((t) => (
-                  <span class="rounded-full bg-blush-100 px-3.5 py-1.5 text-[0.75rem] font-semibold text-blush-800">#{t}</span>
+                  <span class="rounded-full bg-tint-2 px-3.5 py-1.5 text-[0.75rem] font-semibold text-accent-strong">#{t}</span>
                 ))}
               </div>
             )
@@ -131,12 +131,12 @@ const jsonLd = {
 
           {
             toc.length > 2 && (
-              <nav class="mt-6 hidden rounded-2xl border border-mauve-300/70 bg-white p-5 lg:block" aria-label="On this page">
+              <nav class="mt-6 hidden rounded-2xl border border-line/70 bg-surface p-5 lg:block" aria-label="On this page">
                 <p class="eyebrow">On this page</p>
                 <ul class="mt-3 space-y-1.5">
                   {toc.map((h) => (
                     <li>
-                      <a href={`#${h.slug}`} class="block text-[0.88rem] text-plum-700 transition-colors hover:text-blush-600">
+                      <a href={`#${h.slug}`} class="block text-[0.88rem] text-ink-soft transition-colors hover:text-accent">
                         {h.text}
                       </a>
                     </li>
@@ -146,9 +146,9 @@ const jsonLd = {
             )
           }
 
-          <div class="mt-6 rounded-2xl bg-plum-900 p-6 text-blush-100">
-            <p class="eyebrow !text-blush-300">Save it</p>
-            <p class="mt-3 text-[0.9rem] leading-relaxed text-blush-200/80">
+          <div class="mt-6 rounded-2xl bg-panel p-6 text-panel-ink">
+            <p class="eyebrow !text-panel-accent">Save it</p>
+            <p class="mt-3 text-[0.9rem] leading-relaxed text-panel-ink-soft/80">
               Pin this pattern so it is waiting for you next time the yarn basket calls.
             </p>
             <a
@@ -167,15 +167,15 @@ const jsonLd = {
   </article>
 
   <!-- مقترحات -->
-  <section class="border-t border-mauve-300/70 bg-blush-50/60 py-16 lg:py-24">
+  <section class="border-t border-line/70 bg-tint/60 py-16 lg:py-24">
     <div class="container-editorial">
-      <div class="flex flex-wrap items-end justify-between gap-4 border-b border-mauve-300/70 pb-6">
-        <h2 class="font-display text-issue font-bold tracking-tight text-plum-900">
+      <div class="flex flex-wrap items-end justify-between gap-4 border-b border-line/70 pb-6">
+        <h2 class="font-display text-issue font-bold tracking-tight text-ink-strong">
           Keep <span class="accent-italic">going</span>
         </h2>
         <a
           href={`/category/${d.category}`}
-          class="group inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-plum-800 uppercase hover:text-blush-600"
+          class="group inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-ink uppercase hover:text-accent"
         >
           More {cat?.title}
           <Icon name="arrow-right" size={15} class="transition-transform group-hover:translate-x-1" />

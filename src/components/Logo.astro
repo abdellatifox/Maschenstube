@@ -4,8 +4,8 @@ const { class: cls = '', compact = false } = Astro.props;
 ---
 
 <a href="/" class={`group inline-flex items-center gap-2.5 ${cls}`} aria-label="Crochet Atelier — home">
-  <span class="relative grid size-11 shrink-0 place-items-center rounded-full bg-blush-100 ring-1 ring-blush-200 transition-colors group-hover:bg-blush-200">
-    <svg viewBox="0 0 40 40" class="size-7 text-blush-700" fill="none" aria-hidden="true">
+  <span class="relative grid size-11 shrink-0 place-items-center rounded-full bg-tint-2 ring-1 ring-tint-3 transition-colors group-hover:bg-tint-3">
+    <svg viewBox="0 0 40 40" class="size-7 text-accent-soft" fill="none" aria-hidden="true">
       <circle cx="20" cy="20" r="12.5" stroke="currentColor" stroke-width="1.8" />
       <path d="M8.5 16.5c7.5 1.9 15.5 1.9 23 0M7.8 23.5c8 2 16.4 2 24.4 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".75" />
       <path d="M16 8c-2.6 8-2.6 16 0 24M24 8c2.6 8 2.6 16 0 24" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".75" />
@@ -15,7 +15,7 @@ const { class: cls = '', compact = false } = Astro.props;
   {
     !compact && (
       <span class="leading-none">
-        <span class="block font-display text-[1.05rem] font-bold tracking-tight text-plum-900">Crochet</span>
+        <span class="block font-display text-[1.05rem] font-bold tracking-tight text-ink-strong">Crochet</span>
         <span class="block accent-italic text-[1.05rem] leading-tight">Atelier</span>
       </span>
     )

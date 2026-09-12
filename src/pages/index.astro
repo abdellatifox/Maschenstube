@@ -43,7 +43,7 @@ const jsonLd = {
 ---
 
 <BaseLayout jsonLd={jsonLd}>
-  <Hero featured={featured} />
+  <Hero featured={featured} total={all.length} />
 
   <CategoryIndex counts={counts} />
 
@@ -55,16 +55,16 @@ const jsonLd = {
 
   <!-- أحدث الإضافات -->
   <section class="container-editorial py-16 lg:py-24">
-    <div class="flex flex-wrap items-end justify-between gap-4 border-b border-mauve-300/70 pb-6" data-reveal>
+    <div class="flex flex-wrap items-end justify-between gap-4 border-b border-line/70 pb-6" data-reveal>
       <div>
         <p class="eyebrow">Fresh off the hook</p>
-        <h2 class="mt-3 font-display text-issue font-bold tracking-tight text-plum-900">
+        <h2 class="mt-3 font-display text-issue font-bold tracking-tight text-ink-strong">
           Latest <span class="accent-italic">releases</span>
         </h2>
       </div>
       <a
         href="/patterns"
-        class="group inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-plum-800 uppercase transition-colors hover:text-blush-600"
+        class="group inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-ink uppercase transition-colors hover:text-accent"
       >
         All patterns
         <Icon name="arrow-right" size={15} class="transition-transform group-hover:translate-x-1" />

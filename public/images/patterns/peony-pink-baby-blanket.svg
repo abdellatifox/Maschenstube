@@ -1,27 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Baby Blanket crochet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0" stop-color="#fbdbe6"/>
-      <stop offset="1" stop-color="#dd77a2"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fdeaf2"/>
+      <stop offset="1" stop-color="#f7cfe0"/>
     </linearGradient>
-    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse">
-      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     </pattern>
-    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
-      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#dd77a2" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="objclip"><path d="M250 640 h700 a30 30 0 0 1 30 30 v660 a30 30 0 0 1-30 30 H250 a30 30 0 0 1-30-30 V670 a30 30 0 0 1 30-30 Z"/><path d="M290 690 h620 v560 H290 Z"/></clipPath>
   </defs>
-  <rect width="1200" height="1500" fill="url(#g)"/>
-  <rect width="1200" height="1500" fill="url(#stitch)"/>
-  <rect width="1200" height="1500" fill="url(#vig)"/>
-  <g opacity="0.92" transform="translate(600 710)">
-    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
-    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
-    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
-      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#a83a6a" opacity="0.13"/>
+
+  <g>
+    <path d="M250 640 h700 a30 30 0 0 1 30 30 v660 a30 30 0 0 1-30 30 H250 a30 30 0 0 1-30-30 V670 a30 30 0 0 1 30-30 Z" fill="#db6394" />
+    <path d="M290 690 h620 v560 H290 Z" fill="#f4a8c6" opacity=".55"/>
   </g>
-  <text x="600" y="910" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">BABY BLANKET</text>
+  <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
+  <g fill="#a83a6a" opacity=".35">
+        <circle cx="330" cy="740" r="20"/><circle cx="408" cy="740" r="20"/><circle cx="486" cy="740" r="20"/><circle cx="564" cy="740" r="20"/><circle cx="642" cy="740" r="20"/><circle cx="720" cy="740" r="20"/><circle cx="798" cy="740" r="20"/><circle cx="876" cy="740" r="20"/><circle cx="330" cy="836" r="20"/><circle cx="408" cy="836" r="20"/><circle cx="486" cy="836" r="20"/><circle cx="564" cy="836" r="20"/><circle cx="642" cy="836" r="20"/><circle cx="720" cy="836" r="20"/><circle cx="798" cy="836" r="20"/><circle cx="876" cy="836" r="20"/><circle cx="330" cy="932" r="20"/><circle cx="408" cy="932" r="20"/><circle cx="486" cy="932" r="20"/><circle cx="564" cy="932" r="20"/><circle cx="642" cy="932" r="20"/><circle cx="720" cy="932" r="20"/><circle cx="798" cy="932" r="20"/><circle cx="876" cy="932" r="20"/><circle cx="330" cy="1028" r="20"/><circle cx="408" cy="1028" r="20"/><circle cx="486" cy="1028" r="20"/><circle cx="564" cy="1028" r="20"/><circle cx="642" cy="1028" r="20"/><circle cx="720" cy="1028" r="20"/><circle cx="798" cy="1028" r="20"/><circle cx="876" cy="1028" r="20"/><circle cx="330" cy="1124" r="20"/><circle cx="408" cy="1124" r="20"/><circle cx="486" cy="1124" r="20"/><circle cx="564" cy="1124" r="20"/><circle cx="642" cy="1124" r="20"/><circle cx="720" cy="1124" r="20"/><circle cx="798" cy="1124" r="20"/><circle cx="876" cy="1124" r="20"/><circle cx="330" cy="1220" r="20"/><circle cx="408" cy="1220" r="20"/><circle cx="486" cy="1220" r="20"/><circle cx="564" cy="1220" r="20"/><circle cx="642" cy="1220" r="20"/><circle cx="720" cy="1220" r="20"/><circle cx="798" cy="1220" r="20"/><circle cx="876" cy="1220" r="20"/>
+      </g>
+      <g fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="7">
+        <path d="M240 680 h720"/><path d="M240 728 h720"/><path d="M240 776 h720"/><path d="M240 824 h720"/><path d="M240 872 h720"/><path d="M240 920 h720"/><path d="M240 968 h720"/><path d="M240 1016 h720"/><path d="M240 1064 h720"/><path d="M240 1112 h720"/><path d="M240 1160 h720"/><path d="M240 1208 h720"/><path d="M240 1256 h720"/><path d="M240 1304 h720"/>
+      </g>
+      <path d="M220 640 h760 v60 H220 Z" fill="#a83a6a" opacity=".22"/>
 </svg>

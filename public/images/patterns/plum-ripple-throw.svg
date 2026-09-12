@@ -1,27 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Plum Ripple crochet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0" stop-color="#e5cfe0"/>
-      <stop offset="1" stop-color="#762658"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#f3e2ed"/>
+      <stop offset="1" stop-color="#e2c7d9"/>
     </linearGradient>
-    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
-      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     </pattern>
-    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
-      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#762658" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="objclip"><path d="M230 600 h740 v800 H230 Z"/></clipPath>
   </defs>
-  <rect width="1200" height="1500" fill="url(#g)"/>
-  <rect width="1200" height="1500" fill="url(#stitch)"/>
-  <rect width="1200" height="1500" fill="url(#vig)"/>
-  <g opacity="0.92" transform="translate(600 710)">
-    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
-    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
-    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
-      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#5f2647" opacity="0.13"/>
+
+  <g>
+    <path d="M230 600 h740 v800 H230 Z" fill="#e2c7d9" />
   </g>
-  <text x="600" y="910" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">PLUM RIPPLE</text>
+  <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
+  <clipPath id="rt"><rect x="230" y="600" width="740" height="800" rx="30"/></clipPath><g clip-path="url(#rt)"><path d="M190 600 q92 70 184 0 t184 0 t184 0 t184 0 t184 0 V800 H190 Z" fill="#5f2647"/><path d="M190 686 q92 70 184 0 t184 0 t184 0 t184 0 t184 0 V886 H190 Z" fill="#8f3f6c"/><path d="M190 772 q92 70 184 0 t184 0 t184 0 t184 0 t184 0 V972 H190 Z" fill="#c176a0"/><path d="M190 858 q92 70 184 0 t184 0 t184 0 t184 0 t184 0 V1058 H190 Z" fill="#5f2647"/><path d="M190 944 q92 70 184 0 t184 0 t184 0 t184 0 t184 0 V1144 H190 Z" fill="#8f3f6c"/><path d="M190 1030 q92 70 184 0 t184 0 t184 0 t184 0 t184 0 V1230 H190 Z" fill="#c176a0"/><path d="M190 1116 q92 70 184 0 t184 0 t184 0 t184 0 t184 0 V1316 H190 Z" fill="#5f2647"/><path d="M190 1202 q92 70 184 0 t184 0 t184 0 t184 0 t184 0 V1402 H190 Z" fill="#8f3f6c"/><path d="M190 1288 q92 70 184 0 t184 0 t184 0 t184 0 t184 0 V1488 H190 Z" fill="#c176a0"/><path d="M190 1374 q92 70 184 0 t184 0 t184 0 t184 0 t184 0 V1574 H190 Z" fill="#5f2647"/></g><g fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="6" clip-path="url(#rt)">
+        <path d="M190 612 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 646 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 680 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 714 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 748 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 782 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 816 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 850 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 884 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 918 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 952 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 986 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1020 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1054 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1088 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1122 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1156 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1190 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1224 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1258 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1292 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1326 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1360 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/><path d="M190 1394 q92 60 184 0 t184 0 t184 0 t184 0 t184 0"/>
+      </g><rect x="230" y="600" width="740" height="800" rx="30" fill="none" stroke="#5f2647" stroke-width="14" opacity=".45"/>
 </svg>

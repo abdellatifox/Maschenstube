@@ -13,13 +13,13 @@ const faqs = [
 ---
 
 <BaseLayout title="Contact" description={`Get in touch with ${site.author} about patterns, corrections and collaborations.`}>
-  <section class="yarn-texture border-b border-mauve-300/60">
+  <section class="yarn-texture border-b border-line/60">
     <div class="container-editorial py-12 lg:py-16">
       <Breadcrumbs items={[{ label: 'Contact' }]} />
-      <h1 class="mt-6 font-display text-hero font-bold tracking-[-0.035em] text-plum-900">
+      <h1 class="mt-6 font-display text-hero font-bold tracking-[-0.035em] text-ink-strong">
         Say <span class="accent-italic">hello</span>.
       </h1>
-      <p class="mt-5 max-w-lg text-[1.02rem] leading-relaxed text-plum-700">
+      <p class="mt-5 max-w-lg text-[1.02rem] leading-relaxed text-ink-soft">
         Pattern questions, corrections, collaborations, or a photo of what you made — all welcome.
       </p>
     </div>
@@ -37,7 +37,7 @@ const faqs = [
                 id="name"
                 name="name"
                 required
-                class="mt-2 w-full rounded-2xl border border-mauve-300 bg-white px-4 py-3 text-[0.95rem] text-plum-900 outline-none transition focus:border-blush-400 focus:ring-2 focus:ring-blush-200"
+                class="mt-2 w-full rounded-2xl border border-line bg-surface px-4 py-3 text-[0.95rem] text-ink-strong outline-none transition focus:border-blush-400 focus:ring-2 focus:ring-tint-3"
               />
             </div>
             <div>
@@ -47,7 +47,7 @@ const faqs = [
                 name="email"
                 type="email"
                 required
-                class="mt-2 w-full rounded-2xl border border-mauve-300 bg-white px-4 py-3 text-[0.95rem] text-plum-900 outline-none transition focus:border-blush-400 focus:ring-2 focus:ring-blush-200"
+                class="mt-2 w-full rounded-2xl border border-line bg-surface px-4 py-3 text-[0.95rem] text-ink-strong outline-none transition focus:border-blush-400 focus:ring-2 focus:ring-tint-3"
               />
             </div>
           </div>
@@ -57,7 +57,7 @@ const faqs = [
             <select
               id="subject"
               name="subject"
-              class="mt-2 w-full rounded-2xl border border-mauve-300 bg-white px-4 py-3 text-[0.95rem] text-plum-900 outline-none transition focus:border-blush-400 focus:ring-2 focus:ring-blush-200"
+              class="mt-2 w-full rounded-2xl border border-line bg-surface px-4 py-3 text-[0.95rem] text-ink-strong outline-none transition focus:border-blush-400 focus:ring-2 focus:ring-tint-3"
             >
               <option>Pattern question</option>
               <option>Report a correction</option>
@@ -73,7 +73,7 @@ const faqs = [
               name="body"
               rows="6"
               required
-              class="mt-2 w-full resize-y rounded-2xl border border-mauve-300 bg-white px-4 py-3 text-[0.95rem] text-plum-900 outline-none transition focus:border-blush-400 focus:ring-2 focus:ring-blush-200"
+              class="mt-2 w-full resize-y rounded-2xl border border-line bg-surface px-4 py-3 text-[0.95rem] text-ink-strong outline-none transition focus:border-blush-400 focus:ring-2 focus:ring-tint-3"
             ></textarea>
           </div>
 
@@ -94,28 +94,28 @@ const faqs = [
       <!-- الأسئلة الشائعة -->
       <aside>
         <p class="eyebrow">Before you write</p>
-        <div class="mt-5 divide-y divide-mauve-300/70 border-y border-mauve-300/70">
+        <div class="mt-5 divide-y divide-line/70 border-y border-line/70">
           {
             faqs.map(([q, a]) => (
               <details class="group py-4">
-                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-plum-900">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-ink-strong">
                   {q}
-                  <span class="grid size-7 shrink-0 place-items-center rounded-full border border-mauve-300 text-blush-600 transition-transform group-open:rotate-180">
+                  <span class="grid size-7 shrink-0 place-items-center rounded-full border border-line text-accent transition-transform group-open:rotate-180">
                     <Icon name="chevron-down" size={14} />
                   </span>
                 </summary>
-                <p class="mt-3 text-[0.92rem] leading-relaxed text-plum-700">{a}</p>
+                <p class="mt-3 text-[0.92rem] leading-relaxed text-ink-soft">{a}</p>
               </details>
             ))
           }
         </div>
 
-        <div class="mt-8 rounded-2xl bg-plum-900 p-6 text-blush-100">
-          <p class="eyebrow !text-blush-300">Prefer email?</p>
-          <a href={`mailto:${site.email}`} class="mt-3 block font-display text-lg font-bold text-white hover:text-blush-300">
+        <div class="mt-8 rounded-2xl bg-panel p-6 text-panel-ink">
+          <p class="eyebrow !text-panel-accent">Prefer email?</p>
+          <a href={`mailto:${site.email}`} class="mt-3 block font-display text-lg font-bold text-white hover:text-panel-accent">
             {site.email}
           </a>
-          <p class="mt-2 text-[0.86rem] text-blush-200/75">I reply to everything, usually within two days.</p>
+          <p class="mt-2 text-[0.86rem] text-panel-ink-soft/75">I reply to everything, usually within two days.</p>
         </div>
       </aside>
     </div>
@@ -134,7 +134,7 @@ const faqs = [
 
     if (!payload.name || !payload.email || !payload.body) {
       msg.textContent = 'Please fill in your name, email and message.';
-      msg.className = 'min-h-[1.5rem] text-[0.88rem] font-medium text-blush-600';
+      msg.className = 'min-h-[1.5rem] text-[0.88rem] font-medium text-accent';
       return;
     }
 
@@ -152,14 +152,14 @@ const faqs = [
       if (res.ok && out.ok) {
         form.reset();
         msg.textContent = 'Thank you — your message is with me.';
-        msg.className = 'min-h-[1.5rem] text-[0.88rem] font-semibold text-blush-700';
+        msg.className = 'min-h-[1.5rem] text-[0.88rem] font-semibold text-accent-soft';
       } else {
         msg.textContent = out.error ?? 'Something went wrong. Try again shortly.';
-        msg.className = 'min-h-[1.5rem] text-[0.88rem] font-medium text-blush-600';
+        msg.className = 'min-h-[1.5rem] text-[0.88rem] font-medium text-accent';
       }
     } catch {
       msg.textContent = 'Network error — please try again.';
-      msg.className = 'min-h-[1.5rem] text-[0.88rem] font-medium text-blush-600';
+      msg.className = 'min-h-[1.5rem] text-[0.88rem] font-medium text-accent';
     } finally {
       btn.disabled = false;
     }

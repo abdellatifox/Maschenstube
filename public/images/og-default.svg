@@ -1,27 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Crochet Atelier crochet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0" stop-color="#fbdfe8"/>
-      <stop offset="1" stop-color="#db6394"/>
-    </linearGradient>
-    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
-      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fdeaf2"/><stop offset="1" stop-color="#f7cfe0"/></linearGradient>
+    <pattern id="st" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.30" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.30" stroke-width="6" stroke-linecap="round"/>
     </pattern>
-    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
-      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#db6394" stop-opacity="0.55"/>
-    </radialGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect width="1200" height="630" fill="url(#stitch)"/>
-  <rect width="1200" height="630" fill="url(#vig)"/>
-  <g opacity="0.92" transform="translate(600 275)">
-    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
-    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
-    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
-      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#st)"/>
+  <g transform="translate(950 315)" opacity=".9">
+    <circle r="150" fill="#fff" fill-opacity=".45"/>
+    <path d="M-95 0 a95 95 0 1 0 190 0 a95 95 0 1 0-190 0 M-62 -40 q62 46 124 0 M-62 6 q62 46 124 0 M-62 52 q62 46 124 0"
+      fill="none" stroke="#a83a6a" stroke-width="9" stroke-linecap="round"/>
   </g>
-  <text x="600" y="475" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">CROCHET ATELIER</text>
+  <text x="90" y="270" font-family="Quicksand, sans-serif" font-size="86" font-weight="700" fill="#3d2438">Free patterns,</text>
+  <text x="90" y="370" font-family="Playfair Display, Georgia, serif" font-style="italic" font-size="86" fill="#a83a6a">made modern.</text>
+  <text x="94" y="450" font-family="Quicksand, sans-serif" font-size="26" font-weight="700" fill="#a83a6a" letter-spacing="8">CROCHET ATELIER</text>
 </svg>

@@ -46,6 +46,20 @@ const ogImage = new URL(image, Astro.site ?? site.url).href;
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="theme-color" content="#db6394" />
 
+    <!-- ضبط الوضع (فاتح/داكن) قبل الرسم الأول لمنع الوميض -->
+    <script is:inline>
+      (() => {
+        try {
+          const stored = localStorage.getItem('theme');
+          const dark = stored ? stored === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+          if (dark) document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#170f14');
+        } catch {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+
     <!-- Open Graph -->
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={site.name} />

@@ -1,27 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Rose Quartz crochet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0" stop-color="#fde7ef"/>
-      <stop offset="1" stop-color="#f0a8c4"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fff3f8"/>
+      <stop offset="1" stop-color="#fbe0ec"/>
     </linearGradient>
-    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
-      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     </pattern>
-    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
-      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#f0a8c4" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="objclip"><path d="M470 690 q130-46 260 0 v130 H470 Z"/><path d="M440 820 h320 l40 150 H400 Z"/><path d="M390 970 h420 l50 170 H340 Z"/><path d="M330 1140 h540 l60 190 H270 Z"/></clipPath>
   </defs>
-  <rect width="1200" height="1500" fill="url(#g)"/>
-  <rect width="1200" height="1500" fill="url(#stitch)"/>
-  <rect width="1200" height="1500" fill="url(#vig)"/>
-  <g opacity="0.92" transform="translate(600 710)">
-    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
-    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
-    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
-      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#d2748f" opacity="0.13"/>
+
+  <g>
+    <path d="M470 690 q130-46 260 0 v130 H470 Z" fill="#f0a8c4" />
+    <path d="M440 820 h320 l40 150 H400 Z" fill="#fbd8e6" />
+    <path d="M390 970 h420 l50 170 H340 Z" fill="#f0a8c4" />
+    <path d="M330 1140 h540 l60 190 H270 Z" fill="#fbd8e6" />
   </g>
-  <text x="600" y="910" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">ROSE QUARTZ</text>
+  <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
+  <g fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="7">
+        <path d="M423.2 860 q176.8 26 353.6 0"/><path d="M406.4 900 q193.6 26 387.2 0"/><path d="M360.2 1010 q239.8 26 479.6 0"/><path d="M339.2 1060 q260.8 26 521.6 0"/><path d="M318.2 1110 q281.8 26 563.6 0"/><path d="M284.6 1190 q315.4 26 630.8 0"/><path d="M259.4 1250 q340.6 26 681.2 0"/><path d="M234.20000000000005 1310 q365.79999999999995 26 731.5999999999999 0"/>
+      </g>
+      <path d="M470 690 q130-46 260 0" fill="none" stroke="#d2748f" stroke-width="12" opacity=".6"/>
+      <circle cx="600" cy="820" r="18" fill="#d2748f" opacity=".5"/>
+      
+  <g stroke="#d2748f" stroke-width="9" fill="none" stroke-linecap="round">
+    <path d="M600 614 v-26 a26 26 0 0 1 26 26" />
+    <path d="M450 698 L600 618 L750 698" stroke-linejoin="round"/>
+    <path d="M450 698 h300" />
+  </g>
 </svg>

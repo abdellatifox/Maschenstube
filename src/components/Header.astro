@@ -1,6 +1,7 @@
 ---
 import Logo from './Logo.astro';
 import Icon from './Icon.astro';
+import ThemeToggle from './ThemeToggle.astro';
 import { nav, categories } from '../data/site';
 
 const path = Astro.url.pathname;
@@ -11,14 +12,14 @@ const isActive = (href: string) => href === '/' ? path === '/' : path.startsWith
 <div
   id="announce"
   hidden
-  class="bg-plum-900 px-4 py-2 text-center text-[0.7rem] font-semibold tracking-[0.18em] text-blush-200 uppercase"
+  class="bg-panel px-4 py-2 text-center text-[0.7rem] font-semibold tracking-[0.18em] text-panel-ink-soft uppercase"
 >
   <span id="announce-text"></span>
 </div>
 
 <header
   id="site-header"
-  class="sticky top-0 z-50 border-b border-mauve-300/60 bg-cream/85 backdrop-blur-md transition-shadow duration-300"
+  class="sticky top-0 z-50 border-b border-line/60 bg-bg/85 backdrop-blur-md transition-shadow duration-300"
 >
   <div class="container-editorial flex h-[74px] items-center justify-between gap-4">
     <Logo />
@@ -33,7 +34,7 @@ const isActive = (href: string) => href === '/' ? path === '/' : path.startsWith
                 href={item.href}
                 class:list={[
                   'flex items-center gap-1 rounded-full px-4 py-2 text-[0.82rem] font-semibold tracking-wide transition-colors',
-                  isActive(item.href) ? 'text-blush-700' : 'text-plum-800 hover:text-blush-600',
+                  isActive(item.href) ? 'text-accent-soft' : 'text-ink hover:text-accent',
                 ]}
                 aria-haspopup="true"
               >
@@ -41,19 +42,19 @@ const isActive = (href: string) => href === '/' ? path === '/' : path.startsWith
                 <Icon name="chevron-down" size={14} class="transition-transform group-hover:rotate-180" />
               </a>
               <div class="invisible absolute start-0 top-full w-[30rem] translate-y-2 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
-                <div class="grid grid-cols-2 gap-1 rounded-2xl border border-mauve-300/70 bg-white p-3 shadow-lift">
+                <div class="grid grid-cols-2 gap-1 rounded-2xl border border-line/70 bg-surface p-3 shadow-lift">
                   {categories.map((c) => (
                     <a
                       href={`/category/${c.key}`}
-                      class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-blush-50"
+                      class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-tint"
                     >
                       <span class="font-mono text-[0.68rem] font-bold text-blush-400">{c.no}</span>
-                      <span class="text-[0.85rem] font-semibold text-plum-800">{c.title}</span>
+                      <span class="text-[0.85rem] font-semibold text-ink">{c.title}</span>
                     </a>
                   ))}
                   <a
                     href="/patterns"
-                    class="col-span-2 mt-1 flex items-center justify-between rounded-xl bg-plum-900 px-3 py-2.5 text-[0.78rem] font-bold tracking-[0.14em] text-blush-100 uppercase"
+                    class="col-span-2 mt-1 flex items-center justify-between rounded-xl bg-panel px-3 py-2.5 text-[0.78rem] font-bold tracking-[0.14em] text-panel-ink uppercase"
                   >
                     Browse all patterns
                     <Icon name="arrow-right" size={16} />
@@ -66,7 +67,7 @@ const isActive = (href: string) => href === '/' ? path === '/' : path.startsWith
               href={item.href}
               class:list={[
                 'rounded-full px-4 py-2 text-[0.82rem] font-semibold tracking-wide transition-colors',
-                isActive(item.href) ? 'text-blush-700' : 'text-plum-800 hover:text-blush-600',
+                isActive(item.href) ? 'text-accent-soft' : 'text-ink hover:text-accent',
               ]}
             >
               {item.label}
@@ -77,10 +78,12 @@ const isActive = (href: string) => href === '/' ? path === '/' : path.startsWith
     </nav>
 
     <div class="flex items-center gap-2">
+      <ThemeToggle />
+
       <button
         type="button"
         data-search-open
-        class="grid size-10 place-items-center rounded-full text-plum-800 transition-colors hover:bg-blush-100 hover:text-blush-700"
+        class="grid size-10 place-items-center rounded-full text-ink transition-colors hover:bg-tint-2 hover:text-accent-soft"
         aria-label="Search patterns"
       >
         <Icon name="search" size={19} />
@@ -96,7 +99,7 @@ const isActive = (href: string) => href === '/' ? path === '/' : path.startsWith
       <button
         type="button"
         id="menu-open"
-        class="grid size-10 place-items-center rounded-full text-plum-800 transition-colors hover:bg-blush-100 lg:hidden"
+        class="grid size-10 place-items-center rounded-full text-ink transition-colors hover:bg-tint-2 lg:hidden"
         aria-label="Open menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
@@ -112,14 +115,14 @@ const isActive = (href: string) => href === '/' ? path === '/' : path.startsWith
   <div class="absolute inset-0 bg-plum-900/45 backdrop-blur-sm" data-menu-close></div>
   <div
     id="mobile-panel"
-    class="absolute inset-y-0 end-0 flex w-[min(88vw,22rem)] translate-x-full flex-col bg-cream transition-transform duration-300 ease-out"
+    class="absolute inset-y-0 end-0 flex w-[min(88vw,22rem)] translate-x-full flex-col bg-bg transition-transform duration-300 ease-out"
   >
-    <div class="flex items-center justify-between border-b border-mauve-300/70 px-5 py-4">
+    <div class="flex items-center justify-between border-b border-line/70 px-5 py-4">
       <Logo compact />
       <button
         type="button"
         data-menu-close
-        class="grid size-10 place-items-center rounded-full text-plum-800 hover:bg-blush-100"
+        class="grid size-10 place-items-center rounded-full text-ink hover:bg-tint-2"
         aria-label="Close menu"
       >
         <Icon name="close" size={20} />
@@ -134,7 +137,7 @@ const isActive = (href: string) => href === '/' ? path === '/' : path.startsWith
             <li>
               <a
                 href={item.href}
-                class="block rounded-xl px-3 py-2.5 text-lg font-semibold text-plum-800 transition-colors hover:bg-blush-100 hover:text-blush-700"
+                class="block rounded-xl px-3 py-2.5 text-lg font-semibold text-ink transition-colors hover:bg-tint-2 hover:text-accent-soft"
               >
                 {item.label}
               </a>
@@ -150,10 +153,10 @@ const isActive = (href: string) => href === '/' ? path === '/' : path.startsWith
             <li>
               <a
                 href={`/category/${c.key}`}
-                class="flex items-center gap-3 rounded-xl px-3 py-2 transition-colors hover:bg-blush-50"
+                class="flex items-center gap-3 rounded-xl px-3 py-2 transition-colors hover:bg-tint"
               >
                 <span class="font-mono text-[0.7rem] font-bold text-blush-400">{c.no}</span>
-                <span class="text-[0.95rem] font-medium text-plum-800">{c.title}</span>
+                <span class="text-[0.95rem] font-medium text-ink">{c.title}</span>
               </a>
             </li>
           ))
@@ -161,7 +164,8 @@ const isActive = (href: string) => href === '/' ? path === '/' : path.startsWith
       </ul>
     </nav>
 
-    <div class="border-t border-mauve-300/70 p-5">
+    <div class="border-t border-line/70 p-5">
+      <ThemeToggle withLabel class="mb-2" />
       <a
         href="/patterns"
         class="block rounded-full bg-blush-600 px-5 py-3 text-center text-[0.8rem] font-bold tracking-[0.12em] text-white uppercase"

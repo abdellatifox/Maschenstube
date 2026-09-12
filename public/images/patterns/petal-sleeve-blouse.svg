@@ -1,27 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Petal Blouse crochet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0" stop-color="#fcdfeb"/>
-      <stop offset="1" stop-color="#dd7aab"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fdeaf2"/>
+      <stop offset="1" stop-color="#f7cfe0"/>
     </linearGradient>
-    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse">
-      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     </pattern>
-    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
-      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#dd7aab" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="objclip"><path d="M440 700 q160-54 320 0 l40 40 v520 q-200 44-400 0 V740 Z"/><path d="M440 700 l-140 90 q-10 190 80 250 q90-120 60-260 Z"/><path d="M760 700 l140 90 q10 190-80 250 q-90-120-60-260 Z"/></clipPath>
   </defs>
-  <rect width="1200" height="1500" fill="url(#g)"/>
-  <rect width="1200" height="1500" fill="url(#stitch)"/>
-  <rect width="1200" height="1500" fill="url(#vig)"/>
-  <g opacity="0.92" transform="translate(600 710)">
-    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
-    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
-    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
-      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#a83a6a" opacity="0.13"/>
+
+  <g>
+    <path d="M440 700 q160-54 320 0 l40 40 v520 q-200 44-400 0 V740 Z" fill="#db6394" />
+    <path d="M440 700 l-140 90 q-10 190 80 250 q90-120 60-260 Z" fill="#f4a8c6" />
+    <path d="M760 700 l140 90 q10 190-80 250 q-90-120-60-260 Z" fill="#f4a8c6" />
   </g>
-  <text x="600" y="910" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">PETAL BLOUSE</text>
+  <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
+  <path d="M520 690 q80-40 160 0 q-60 90-80 130 q-20-40-80-130 Z" fill="#a83a6a" opacity=".45"/>
+      <g fill="none" stroke="#fff" stroke-opacity=".38" stroke-width="7">
+        <path d="M452 820 q148 22 296 0"/><path d="M452 864 q148 22 296 0"/><path d="M452 908 q148 22 296 0"/><path d="M452 952 q148 22 296 0"/><path d="M452 996 q148 22 296 0"/><path d="M452 1040 q148 22 296 0"/><path d="M452 1084 q148 22 296 0"/><path d="M452 1128 q148 22 296 0"/><path d="M452 1172 q148 22 296 0"/><path d="M452 1216 q148 22 296 0"/>
+        <path d="M318 820 q40 100 100 150"/><path d="M882 820 q-40 100-100 150"/><path d="M336 840 q40 100 100 150"/><path d="M864 840 q-40 100-100 150"/><path d="M354 860 q40 100 100 150"/><path d="M846 860 q-40 100-100 150"/><path d="M372 880 q40 100 100 150"/><path d="M828 880 q-40 100-100 150"/>
+      </g>
+      
+  <g stroke="#a83a6a" stroke-width="9" fill="none" stroke-linecap="round">
+    <path d="M600 622 v-26 a26 26 0 0 1 26 26" />
+    <path d="M450 706 L600 626 L750 706" stroke-linejoin="round"/>
+    <path d="M450 706 h300" />
+  </g>
 </svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fdeaf2"/>
+      <stop offset="1" stop-color="#f7cfe0"/>
+    </linearGradient>
+    <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="objclip"><path d="M600 620 L920 1300 H280 Z"/><path d="M600 620 q-120 0-150 130 q150 60 300 0 q-30-130-150-130 Z"/><path d="M600 620 L760 1300 H440 Z"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#a83a6a" opacity="0.13"/>
+
+  <g>
+    <path d="M600 620 L920 1300 H280 Z" fill="#db6394" />
+    <path d="M600 620 q-120 0-150 130 q150 60 300 0 q-30-130-150-130 Z" fill="#f4a8c6" />
+    <path d="M600 620 L760 1300 H440 Z" fill="#f4a8c6" opacity=".35"/>
+  </g>
+  <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
+  <path d="M470 640 q130-160 260 0 q-130 70-260 0 Z" fill="#a83a6a" opacity=".5"/>
+      <g fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="8">
+        <path d="M515.2941176470588 800 h169.41176470588235"/><path d="M488 858 h224"/><path d="M460.70588235294116 916 h278.5882352941177"/><path d="M433.4117647058823 974 h333.1764705882353"/><path d="M406.11764705882354 1032 h387.7647058823529"/><path d="M378.8235294117647 1090 h442.3529411764706"/><path d="M351.52941176470586 1148 h496.94117647058823"/><path d="M324.2352941176471 1206 h551.5294117647059"/><path d="M296.94117647058823 1264 h606.1176470588235"/>
+      </g>
+      <g stroke="#a83a6a" stroke-width="7" opacity=".45" stroke-linecap="round">
+        <path d="M290 1302 v56"/><path d="M342 1302 v56"/><path d="M394 1302 v56"/><path d="M446 1302 v56"/><path d="M498 1302 v56"/><path d="M550 1302 v56"/><path d="M602 1302 v56"/><path d="M654 1302 v56"/><path d="M706 1302 v56"/><path d="M758 1302 v56"/><path d="M810 1302 v56"/><path d="M862 1302 v56"/><path d="M914 1302 v56"/>
+      </g>
+</svg>

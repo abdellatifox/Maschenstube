@@ -1,27 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Strawberry crochet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0" stop-color="#fbd7dc"/>
-      <stop offset="1" stop-color="#e0708a"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fdedf0"/>
+      <stop offset="1" stop-color="#f8d3da"/>
     </linearGradient>
-    <pattern id="stitch" width="60" height="52" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
-      <path d="M6 46 L30 8 L54 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M-24 46 L0 8 L24 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36 46 L60 8 L84 46" fill="none" stroke="#ffffff" stroke-opacity="0.30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <pattern id="stitch" width="52" height="46" patternUnits="userSpaceOnUse">
+      <path d="M4 40 L26 8 L48 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-22 40 L0 8 L22 40" fill="none" stroke="#fff" stroke-opacity="0.20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     </pattern>
-    <radialGradient id="vig" cx="0.5" cy="0.38" r="0.85">
-      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#e0708a" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="objclip"><path d="M220 560 h760 v830 H220 Z"/></clipPath>
   </defs>
-  <rect width="1200" height="1500" fill="url(#g)"/>
-  <rect width="1200" height="1500" fill="url(#stitch)"/>
-  <rect width="1200" height="1500" fill="url(#vig)"/>
-  <g opacity="0.92" transform="translate(600 710)">
-    <circle r="120" fill="#ffffff" fill-opacity="0.16"/>
-    <circle r="120" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
-    <path d="M-72 0 a72 72 0 1 0 144 0 a72 72 0 1 0 -144 0 M-46 -30 q46 34 92 0 M-46 6 q46 34 92 0 M-46 42 q46 34 92 0"
-      fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="6" stroke-linecap="round"/>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="640" r="470" fill="url(#glow)"/>
+  <ellipse cx="600" cy="1372" rx="330" ry="46" fill="#b34a63" opacity="0.13"/>
+
+  <g>
+    <path d="M220 560 h760 v830 H220 Z" fill="#f8d3da" />
   </g>
-  <text x="600" y="910" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="52" font-weight="700" fill="#fff" fill-opacity="0.9" letter-spacing="6">STRAWBERRY</text>
+  <g clip-path="url(#objclip)"><rect width="1200" height="1500" fill="url(#stitch)"/></g>
+  <clipPath id="bl"><rect x="220" y="560" width="760" height="830" rx="26"/></clipPath><g clip-path="url(#bl)"><path d="M180 640 L250 560 L320 640 L390 560 L460 640 L530 560 L600 640 L670 560 L740 640 L810 560 L880 640 L950 560 L1020 640 L1090 560 L1160 640 L1060 760 L180 760 Z" fill="#e0708a"/><path d="M180 720 L250 640 L320 720 L390 640 L460 720 L530 640 L600 720 L670 640 L740 720 L810 640 L880 720 L950 640 L1020 720 L1090 640 L1160 720 L1060 840 L180 840 Z" fill="#f6b0c0"/><path d="M180 800 L250 720 L320 800 L390 720 L460 800 L530 720 L600 800 L670 720 L740 800 L810 720 L880 800 L950 720 L1020 800 L1090 720 L1160 800 L1060 920 L180 920 Z" fill="#b34a63"/><path d="M180 880 L250 800 L320 880 L390 800 L460 880 L530 800 L600 880 L670 800 L740 880 L810 800 L880 880 L950 800 L1020 880 L1090 800 L1160 880 L1060 1000 L180 1000 Z" fill="#e0708a"/><path d="M180 960 L250 880 L320 960 L390 880 L460 960 L530 880 L600 960 L670 880 L740 960 L810 880 L880 960 L950 880 L1020 960 L1090 880 L1160 960 L1060 1080 L180 1080 Z" fill="#f6b0c0"/><path d="M180 1040 L250 960 L320 1040 L390 960 L460 1040 L530 960 L600 1040 L670 960 L740 1040 L810 960 L880 1040 L950 960 L1020 1040 L1090 960 L1160 1040 L1060 1160 L180 1160 Z" fill="#b34a63"/><path d="M180 1120 L250 1040 L320 1120 L390 1040 L460 1120 L530 1040 L600 1120 L670 1040 L740 1120 L810 1040 L880 1120 L950 1040 L1020 1120 L1090 1040 L1160 1120 L1060 1240 L180 1240 Z" fill="#e0708a"/><path d="M180 1200 L250 1120 L320 1200 L390 1120 L460 1200 L530 1120 L600 1200 L670 1120 L740 1200 L810 1120 L880 1200 L950 1120 L1020 1200 L1090 1120 L1160 1200 L1060 1320 L180 1320 Z" fill="#f6b0c0"/><path d="M180 1280 L250 1200 L320 1280 L390 1200 L460 1280 L530 1200 L600 1280 L670 1200 L740 1280 L810 1200 L880 1280 L950 1200 L1020 1280 L1090 1200 L1160 1280 L1060 1400 L180 1400 Z" fill="#b34a63"/><path d="M180 1360 L250 1280 L320 1360 L390 1280 L460 1360 L530 1280 L600 1360 L670 1280 L740 1360 L810 1280 L880 1360 L950 1280 L1020 1360 L1090 1280 L1160 1360 L1060 1480 L180 1480 Z" fill="#e0708a"/><path d="M180 1440 L250 1360 L320 1440 L390 1360 L460 1440 L530 1360 L600 1440 L670 1360 L740 1440 L810 1360 L880 1440 L950 1360 L1020 1440 L1090 1360 L1160 1440 L1060 1560 L180 1560 Z" fill="#f6b0c0"/></g><g fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="6" clip-path="url(#bl)">
+        <path d="M220 570 h760"/><path d="M220 600 h760"/><path d="M220 630 h760"/><path d="M220 660 h760"/><path d="M220 690 h760"/><path d="M220 720 h760"/><path d="M220 750 h760"/><path d="M220 780 h760"/><path d="M220 810 h760"/><path d="M220 840 h760"/><path d="M220 870 h760"/><path d="M220 900 h760"/><path d="M220 930 h760"/><path d="M220 960 h760"/><path d="M220 990 h760"/><path d="M220 1020 h760"/><path d="M220 1050 h760"/><path d="M220 1080 h760"/><path d="M220 1110 h760"/><path d="M220 1140 h760"/><path d="M220 1170 h760"/><path d="M220 1200 h760"/><path d="M220 1230 h760"/><path d="M220 1260 h760"/><path d="M220 1290 h760"/><path d="M220 1320 h760"/><path d="M220 1350 h760"/><path d="M220 1380 h760"/>
+      </g><rect x="220" y="560" width="760" height="830" rx="26" fill="none" stroke="#b34a63" stroke-width="14" opacity=".5"/>
 </svg>

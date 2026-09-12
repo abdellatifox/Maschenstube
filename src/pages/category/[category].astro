@@ -26,7 +26,7 @@ const others = categories.filter((c) => c.key !== cat.key);
 ---
 
 <BaseLayout title={`${cat.title} crochet patterns`} description={cat.blurb}>
-  <section class="yarn-texture border-b border-mauve-300/60">
+  <section class="yarn-texture border-b border-line/60">
     <div class="container-editorial py-12 lg:py-16">
       <Breadcrumbs items={[{ label: 'Patterns', href: '/patterns' }, { label: cat.title }]} />
 
@@ -36,13 +36,13 @@ const others = categories.filter((c) => c.key !== cat.key);
             <span class="font-mono text-blush-400">{cat.no}</span>
             Collection
           </p>
-          <h1 class="mt-4 max-w-3xl font-display text-hero font-bold tracking-[-0.035em] text-plum-900">
+          <h1 class="mt-4 max-w-3xl font-display text-hero font-bold tracking-[-0.035em] text-ink-strong">
             {cat.title.split(' ')[0]} <span class="accent-italic">{cat.kicker}</span>
           </h1>
-          <p class="mt-5 max-w-lg text-[1.02rem] leading-relaxed text-plum-700">{cat.blurb}</p>
+          <p class="mt-5 max-w-lg text-[1.02rem] leading-relaxed text-ink-soft">{cat.blurb}</p>
         </div>
 
-        <p class="rounded-full bg-blush-200 px-4 py-2 text-[0.68rem] font-bold tracking-[0.18em] text-blush-800 uppercase">
+        <p class="rounded-full bg-tint-3 px-4 py-2 text-[0.68rem] font-bold tracking-[0.18em] text-accent-strong uppercase">
           {entries.length} {entries.length === 1 ? 'pattern' : 'patterns'}
         </p>
       </div>
@@ -58,9 +58,9 @@ const others = categories.filter((c) => c.key !== cat.key);
           ))}
         </div>
       ) : (
-        <div class="rounded-3xl border border-dashed border-mauve-300 py-20 text-center">
-          <p class="font-display text-xl font-bold text-plum-900">Nothing here just yet.</p>
-          <p class="mt-2 text-plum-700">This collection is on the hook — subscribe and you will hear first.</p>
+        <div class="rounded-3xl border border-dashed border-line py-20 text-center">
+          <p class="font-display text-xl font-bold text-ink-strong">Nothing here just yet.</p>
+          <p class="mt-2 text-ink-soft">This collection is on the hook — subscribe and you will hear first.</p>
           <a
             href="/patterns"
             class="mt-6 inline-flex items-center gap-2 rounded-full bg-blush-600 px-6 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-white uppercase"
@@ -74,7 +74,7 @@ const others = categories.filter((c) => c.key !== cat.key);
   </section>
 
   <!-- تصنيفات أخرى -->
-  <section class="border-t border-mauve-300/70 bg-blush-50/60 py-16">
+  <section class="border-t border-line/70 bg-tint/60 py-16">
     <div class="container-editorial">
       <p class="eyebrow">Keep browsing</p>
       <ul class="mt-6 flex flex-wrap gap-2.5">
@@ -83,7 +83,7 @@ const others = categories.filter((c) => c.key !== cat.key);
             <li>
               <a
                 href={`/category/${c.key}`}
-                class="inline-flex items-center gap-2.5 rounded-full border border-mauve-300 bg-white px-4 py-2.5 text-[0.82rem] font-semibold text-plum-800 transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:text-blush-700"
+                class="inline-flex items-center gap-2.5 rounded-full border border-line bg-surface px-4 py-2.5 text-[0.82rem] font-semibold text-ink transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:text-accent-soft"
               >
                 <span class="font-mono text-[0.68rem] text-blush-400">{c.no}</span>
                 {c.title}

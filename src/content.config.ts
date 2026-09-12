@@ -2,7 +2,7 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const categoryEnum = z.enum([
-  'accessories', 'amigurumi', 'baby-kids', 'clothing',
+  'accessories', 'baby-kids', 'clothing',
   'blankets', 'footwear', 'home-decor', 'seasonal',
 ]);
 
