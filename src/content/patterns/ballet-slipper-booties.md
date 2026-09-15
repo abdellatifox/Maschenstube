@@ -1,78 +1,82 @@
 ---
-title: "Ballet Slipper Baby Booties"
-excerpt: "Tiny ballet flats with a crossed ribbon strap - the fastest gift on the site."
+title: "Ballerina-Babyschühchen"
+excerpt: "Winzige Ballerinas mit gekreuztem Bändchen – das schnellste Geschenk auf der Seite."
 category: "footwear"
 cover: "/images/patterns/ballet-slipper-booties.svg"
 publishDate: 2026-08-20
 featured: false
 difficulty: "beginner"
-hook: "3.5 mm (E)"
+hook: "3,5 mm"
 yarnWeight: "Sport (2)"
-yardage: "120 yd / 110 m"
-gauge: "Sole measures 3.5 (4, 4.5) in long"
-time: "2 hours"
-sizes: ["0-3m", "3-6m", "6-12m"]
-stitches: ["ch", "sc", "dc", "hdc", "sl st"]
+yardage: "110 m / 120 yd"
+gauge: "Sohle misst 9 (10, 11,5) cm lang"
+time: "2 Stunden"
+sizes: ["0–3 Mon.", "3–6 Mon.", "6–12 Mon."]
+stitches: ["Lm", "fM", "Stb", "hStb", "Km"]
 materials:
-  - "Sport yarn in Ballet Pink - 1 skein"
-  - "3.5 mm hook"
-  - "1 m of narrow satin ribbon"
-  - "2 small pearl buttons"
-colors: ["Ballet Pink", "Ivory"]
-tags: ["booties", "baby", "quick make", "beginner"]
+  - "Sport-Garn in Ballettrosa – 1 Knäuel"
+  - "Häkelnadel 3,5 mm"
+  - "1 m schmales Satinband"
+  - "2 kleine Perlmuttknöpfe"
+colors: ["Ballettrosa", "Elfenbein"]
+tags: ["Babyschuhe", "Baby", "schnelles Projekt", "Anfänger"]
 ---
 
-## Why you will love it
+## Warum du sie lieben wirst
 
-Tiny ballet flats with a crossed ribbon strap - the fastest gift on the site. This one is written the way I would explain it to a friend sitting next to me - every round counted, every shaping step spelled out, and no surprises at the finish line.
+Winzige Ballerinas mit gekreuztem Bändchen – das schnellste Geschenk auf der Seite. Diese Anleitung ist so geschrieben, wie ich sie einer Freundin erklären würde, die neben mir sitzt – jede Runde gezählt, jeder Formschritt ausbuchstabiert und keine Überraschungen auf der Zielgeraden.
 
-> Skill level: **beginner** - Hook **3.5 mm (E)** - Yarn **Sport (2)**
+> Schwierigkeit: **Anfänger** – Nadel **3,5 mm** – Garn **Sport (2)**
 
-## Materials
+## Material
 
-- Sport yarn in Ballet Pink - 1 skein
-- 3.5 mm hook
-- 1 m of narrow satin ribbon
-- 2 small pearl buttons
+- Sport-Garn in Ballettrosa – 1 Knäuel
+- Häkelnadel 3,5 mm
+- 1 m schmales Satinband
+- 2 kleine Perlmuttknöpfe
 
-## Gauge
+## Maschenprobe
 
-Sole measures 3.5 (4, 4.5) in long. Take the two minutes to swatch - with sport (2) yarn a half-stitch difference compounds fast.
+Sohle misst 9 (10, 11,5) cm lang. Nimm dir die zwei Minuten für eine Maschenprobe – bei Sport-Garn (2) summiert sich ein halber Maschenunterschied schnell.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| hdc | half double crochet |
-| dc | double crochet |
-| sl st | slip stitch |
-| inc / dec | increase / decrease |
-| blo | back loop only |
-| st(s) | stitch(es) |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| hStb | halbes Stäbchen |
+| Stb | Stäbchen |
+| Km | Kettmasche |
+| Zun / Abn | zunehmen / abnehmen |
+| hMg | nur hinteres Maschenglied |
+| M | Masche(n) |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- The turning chain does *not* count as a stitch unless stated.
-- Mark the first stitch of every round; it saves a lot of counting later.
-- Read the whole pattern once before you pick up the hook.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Die Wendeluftmasche zählt *nicht* als Masche, sofern nicht anders angegeben.
+- Markiere die erste Masche jeder Runde; das spart später viel Zählerei.
+- Lies die ganze Anleitung einmal durch, bevor du zur Nadel greifst.
+- **Für Einsteiger:** Schau dir vorab kurz an, wie eine **feste Masche (fM)** und ein **Stäbchen (Stb)** gehäkelt werden – dann fällt dir alles Weitere ganz leicht.
+- Verzählt? Passiert wirklich jedem. Trenn einfach bis zur letzten Markierung zurück und häkle von dort in Ruhe weiter.
 
-## Instructions
+## Anleitung
 
-1. Sole: ch 11, work around both sides of the chain in sc for 3 rounds.
-2. Rnd 4: work 1 round of sc in back loops only to lift the sides.
-3. Rnds 5-7: work even in sc.
-4. Rnd 8: decrease 6 sts across the toe to shape the front.
-5. Rnd 9-10: work even, then sl st to close the heel.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Sohle: 11 Lm, über 3 Runden an beiden Seiten der Luftmaschenkette in fM häkeln.
+2. Rd 4: 1 Runde fM nur ins hintere Maschenglied häkeln, um die Seiten aufzustellen.
+3. Rd 5–7: gerade in fM weiterhäkeln.
+4. Rd 8: 6 M über die Spitze verteilt abnehmen, um die Vorderseite zu formen.
+5. Rd 9–10: gerade häkeln, dann mit Km die Ferse schließen.
 
-- Cut the ribbon in half and thread each piece through the sides, crossing over the instep.
-- Sew a pearl button where the ribbon crosses.
-- Repeat for the second bootie - check they mirror each other.
+## Fertigstellung
 
-## Make it yours
+- Schneide das Band in zwei Hälften und ziehe jedes Stück durch die Seiten, über dem Spann gekreuzt.
+- Nähe dort einen Perlmuttknopf an, wo sich das Band kreuzt.
+- Wiederhole alles für das zweite Schühchen – prüfe, dass sie spiegelbildlich sind.
 
-Swap the main colour for anything in the same weight - this shape carries a bold shade just as well as it carries ballet pink. If you make one, tag it so I can see it; nothing beats seeing a pattern out in the world.
+## Mach sie zu deiner
+
+Tausch die Hauptfarbe gegen eine beliebige Farbe derselben Stärke – diese Form trägt einen kräftigen Ton genauso gut wie Ballettrosa. Wenn du ein Paar machst, markiere es, damit ich es sehen kann; nichts geht über eine Anleitung, die draußen in der Welt lebt.

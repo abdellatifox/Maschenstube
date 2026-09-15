@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
+import { categoryMap, difficultyLabels } from '../data/site';
 
 /** فهرس بحث ثابت يُبنى وقت البناء ويُستهلك من مربّع البحث في المتصفّح. */
 export const GET: APIRoute = async () => {
@@ -11,8 +12,8 @@ export const GET: APIRoute = async () => {
       slug: p.id,
       title: p.data.title,
       excerpt: p.data.excerpt,
-      category: p.data.category,
-      difficulty: p.data.difficulty,
+      category: categoryMap[p.data.category]?.title ?? p.data.category,
+      difficulty: difficultyLabels[p.data.difficulty] ?? p.data.difficulty,
       hook: p.data.hook,
       yarn: p.data.yarnWeight,
       tags: [...p.data.tags, ...p.data.stitches],

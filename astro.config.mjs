@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://crochet-theme.pages.dev', // ⇦ غيّرها إلى نطاقك
+  site: 'https://maschenstube.de', // ⇦ غيّرها إلى نطاقك
   output: 'static', // الصفحات ثابتة + مسارات API ديناميكية (prerender = false)
   adapter: cloudflare({
     platformProxy: { enabled: true }, // يوفّر D1/KV/R2 محليًا أثناء `astro dev`

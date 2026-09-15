@@ -1,79 +1,83 @@
 ---
-title: "Peony Granny Square Cardigan"
-excerpt: "Twelve oversized granny squares in a pink-on-pink gradient, seamed into a slouchy boyfriend cardigan."
+title: "Granny-Square-Cardigan in Pfingstrose"
+excerpt: "Zwölf überdimensionale Granny Squares in einem Rosa-auf-Rosa-Verlauf, zu einem lässigen Boyfriend-Cardigan zusammengenäht."
 category: "clothing"
 cover: "/images/patterns/peony-granny-square-cardigan.svg"
 publishDate: 2026-09-02
 featured: true
 difficulty: "advanced"
-hook: "5.5 mm (I)"
-yarnWeight: "Worsted (4)"
-yardage: "1,240 yd / 1,134 m"
-gauge: "One square = 11 in (28 cm) after blocking"
-time: "20-25 hours"
+hook: "5,5 mm"
+yarnWeight: "Medium (4)"
+yardage: "1.134 m / 1.240 yd"
+gauge: "Ein Square = 28 cm nach dem Spannen"
+time: "20–25 Stunden"
 sizes: ["S/M", "L/XL", "2X/3X"]
-stitches: ["ch", "dc", "sl st", "sc", "join-as-you-go"]
+stitches: ["Lm", "Stb", "Km", "fM", "Anhäkeln"]
 materials:
-  - "Worsted wool blend - 3 skeins Peony, 2 Blush, 2 Plum"
-  - "5.5 mm hook"
-  - "Blocking mats and pins"
-  - "Tapestry needle"
-colors: ["Peony", "Blush", "Plum", "Cream"]
+  - "Medium-Wollmischung – 3 Knäuel Pfingstrose, 2 Zartrosa, 2 Pflaume"
+  - "Häkelnadel 5,5 mm"
+  - "Spannmatten und Nadeln"
+  - "Wollnadel"
+colors: ["Pfingstrose", "Zartrosa", "Pflaume", "Creme"]
 pdfKey: "patterns/peony-granny-square-cardigan.pdf"
 pdfGated: true
-tags: ["cardigan", "granny square", "gradient", "advanced"]
+tags: ["Cardigan", "Granny Square", "Farbverlauf", "Fortgeschritten"]
 ---
 
-## Why you will love it
+## Warum du ihn lieben wirst
 
-Twelve oversized granny squares in a pink-on-pink gradient, seamed into a slouchy boyfriend cardigan. This one is written the way I would explain it to a friend sitting next to me - every round counted, every shaping step spelled out, and no surprises at the finish line.
+Zwölf überdimensionale Granny Squares in einem Rosa-auf-Rosa-Verlauf, zu einem lässigen Boyfriend-Cardigan zusammengenäht. Diese Anleitung ist so geschrieben, wie ich sie einer Freundin erklären würde, die neben mir sitzt – jede Runde gezählt, jeder Formschritt ausbuchstabiert und keine Überraschungen auf der Zielgeraden.
 
-> Skill level: **advanced** - Hook **5.5 mm (I)** - Yarn **Worsted (4)**
+> Schwierigkeit: **Fortgeschritten** – Nadel **5,5 mm** – Garn **Medium (4)**
 
-## Materials
+## Material
 
-- Worsted wool blend - 3 skeins Peony, 2 Blush, 2 Plum
-- 5.5 mm hook
-- Blocking mats and pins
-- Tapestry needle
+- Medium-Wollmischung – 3 Knäuel Pfingstrose, 2 Zartrosa, 2 Pflaume
+- Häkelnadel 5,5 mm
+- Spannmatten und Nadeln
+- Wollnadel
 
-## Gauge
+## Maschenprobe
 
-One square = 11 in (28 cm) after blocking. Take the two minutes to swatch - with worsted (4) yarn a half-stitch difference compounds fast.
+Ein Square = 28 cm nach dem Spannen. Nimm dir die zwei Minuten für eine Maschenprobe – bei Medium-Garn (4) summiert sich ein halber Maschenunterschied schnell.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| hdc | half double crochet |
-| dc | double crochet |
-| sl st | slip stitch |
-| inc / dec | increase / decrease |
-| blo | back loop only |
-| st(s) | stitch(es) |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| hStb | halbes Stäbchen |
+| Stb | Stäbchen |
+| Km | Kettmasche |
+| Zun / Abn | zunehmen / abnehmen |
+| hMg | nur hinteres Maschenglied |
+| M | Masche(n) |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- The turning chain does *not* count as a stitch unless stated.
-- Mark the first stitch of every round; it saves a lot of counting later.
-- Read the whole pattern once before you pick up the hook.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Die Wendeluftmasche zählt *nicht* als Masche, sofern nicht anders angegeben.
+- Markiere die erste Masche jeder Runde; das spart später viel Zählerei.
+- Lies die ganze Anleitung einmal durch, bevor du zur Nadel greifst.
+- **Für Einsteiger:** Schau dir vorab kurz an, wie eine **feste Masche (fM)** und ein **Stäbchen (Stb)** gehäkelt werden – dann fällt dir alles Weitere ganz leicht.
+- Verzählt? Passiert wirklich jedem. Trenn einfach bis zur letzten Markierung zurück und häkle von dort in Ruhe weiter.
 
-## Instructions
+## Anleitung
 
-1. Make 12 (14, 16) squares: 8 rounds of classic granny, changing colour every 2 rounds.
-2. Block every square to exactly 11 in before assembly - this is non-negotiable.
-3. Join 4 squares for the back, 2 for each front, and 2 per sleeve using the flat braid join.
-4. Seam the shoulders, then fold and seam the sleeves.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Häkle 12 (14, 16) Squares: 8 Runden klassisches Granny, alle 2 Runden die Farbe wechseln.
+2. Spanne jedes Square vor dem Zusammensetzen auf genau 28 cm – das ist Pflicht.
+3. Verbinde 4 Squares für den Rücken, 2 für jedes Vorderteil und 2 pro Ärmel mit der flachen Zopf-Verbindung.
+4. Nähe die Schultern, dann falte und nähe die Ärmel.
 
-- Work 5 rounds of sc around the full front and neck for a firm band.
-- Add 4 rounds of sc at each cuff to pull them in slightly.
-- Wet-block the finished cardigan and dry flat over a towel.
+## Fertigstellung
 
-## Make it yours
+- Häkle 5 Runden fM rund um die gesamte Vorderkante und den Hals für einen festen Rand.
+- Ergänze 4 Runden fM an jedem Bündchen, um sie leicht einzuziehen.
+- Spanne den fertigen Cardigan nass und trockne ihn flach auf einem Handtuch.
 
-Swap the main colour for anything in the same weight - this shape carries a bold shade just as well as it carries peony. If you make one, tag it so I can see it; nothing beats seeing a pattern out in the world.
+## Mach ihn zu deinem
+
+Tausch die Hauptfarbe gegen eine beliebige Farbe derselben Stärke – diese Form trägt einen kräftigen Ton genauso gut wie Pfingstrose. Wenn du einen machst, markiere ihn, damit ich ihn sehen kann; nichts geht über eine Anleitung, die draußen in der Welt lebt.

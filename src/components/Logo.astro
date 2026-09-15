@@ -3,7 +3,7 @@ interface Props { class?: string; compact?: boolean }
 const { class: cls = '', compact = false } = Astro.props;
 ---
 
-<a href="/" class={`group inline-flex items-center gap-2.5 ${cls}`} aria-label="Crochet Atelier — home">
+<a href="/" class={`group inline-flex items-center gap-2.5 ${cls}`} aria-label="Maschenstube — Startseite">
   <span class="relative grid size-11 shrink-0 place-items-center rounded-full bg-tint-2 ring-1 ring-tint-3 transition-colors group-hover:bg-tint-3">
     <svg viewBox="0 0 40 40" class="size-7 text-accent-soft" fill="none" aria-hidden="true">
       <circle cx="20" cy="20" r="12.5" stroke="currentColor" stroke-width="1.8" />
@@ -15,8 +15,8 @@ const { class: cls = '', compact = false } = Astro.props;
   {
     !compact && (
       <span class="leading-none">
-        <span class="block font-display text-[1.05rem] font-bold tracking-tight text-ink-strong">Crochet</span>
-        <span class="block accent-italic text-[1.05rem] leading-tight">Atelier</span>
+        <span class="block font-display text-[1.05rem] font-bold tracking-tight text-ink-strong">Maschen</span>
+        <span class="block accent-italic text-[1.05rem] leading-tight">stube</span>
       </span>
     )
   }

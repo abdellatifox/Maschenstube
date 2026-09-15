@@ -1,75 +1,79 @@
 ---
-title: "Strawberry Cream Ripple Blanket"
-excerpt: "A classic chevron throw in strawberry, blush and cream stripes - soothing, repetitive, endless."
+title: "Wellendecke in Erdbeere & Creme"
+excerpt: "Ein klassisches Zickzack-Plaid in Streifen aus Erdbeere, Zartrosa und Creme – beruhigend, gleichmäßig, endlos."
 category: "blankets"
 cover: "/images/patterns/strawberry-cream-blanket.svg"
 publishDate: 2026-06-22
 featured: false
 difficulty: "easy"
-hook: "6.5 mm (K)"
+hook: "6,5 mm"
 yarnWeight: "Aran (4)"
-yardage: "1,880 yd / 1,719 m"
-gauge: "14 sts x 8 rows = 4 in in dc"
-time: "22-28 hours"
-sizes: ["Throw 48 x 62 in", "Twin 66 x 88 in"]
-stitches: ["ch", "dc", "dc2tog", "sc"]
+yardage: "1.719 m / 1.880 yd"
+gauge: "14 M x 8 R = 10 cm in Stb"
+time: "22–28 Stunden"
+sizes: ["Plaid 122 x 157 cm", "Einzelbett 168 x 224 cm"]
+stitches: ["Lm", "Stb", "2 Stb zus.", "fM"]
 materials:
-  - "Aran yarn - 4 skeins Strawberry, 4 Blush, 4 Cream"
-  - "6.5 mm hook"
-  - "Tapestry needle"
-colors: ["Strawberry", "Blush", "Cream"]
-tags: ["blanket", "ripple", "chevron", "stripes"]
+  - "Aran-Garn – 4 Knäuel Erdbeere, 4 Zartrosa, 4 Creme"
+  - "Häkelnadel 6,5 mm"
+  - "Wollnadel"
+colors: ["Erdbeere", "Zartrosa", "Creme"]
+tags: ["Decke", "Welle", "Zickzack", "Streifen"]
 ---
 
-## Why you will love it
+## Warum du sie lieben wirst
 
-A classic chevron throw in strawberry, blush and cream stripes - soothing, repetitive, endless. This one is written the way I would explain it to a friend sitting next to me - every round counted, every shaping step spelled out, and no surprises at the finish line.
+Ein klassisches Zickzack-Plaid in Streifen aus Erdbeere, Zartrosa und Creme – beruhigend, gleichmäßig, endlos. Diese Anleitung ist so geschrieben, wie ich sie einer Freundin erklären würde, die neben mir sitzt – jede Runde gezählt, jeder Formschritt ausbuchstabiert und keine Überraschungen auf der Zielgeraden.
 
-> Skill level: **easy** - Hook **6.5 mm (K)** - Yarn **Aran (4)**
+> Schwierigkeit: **Leicht** – Nadel **6,5 mm** – Garn **Aran (4)**
 
-## Materials
+## Material
 
-- Aran yarn - 4 skeins Strawberry, 4 Blush, 4 Cream
-- 6.5 mm hook
-- Tapestry needle
+- Aran-Garn – 4 Knäuel Erdbeere, 4 Zartrosa, 4 Creme
+- Häkelnadel 6,5 mm
+- Wollnadel
 
-## Gauge
+## Maschenprobe
 
-14 sts x 8 rows = 4 in in dc. Take the two minutes to swatch - with aran (4) yarn a half-stitch difference compounds fast.
+14 M x 8 R = 10 cm in Stb. Nimm dir die zwei Minuten für eine Maschenprobe – bei Aran-Garn (4) summiert sich ein halber Maschenunterschied schnell.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| hdc | half double crochet |
-| dc | double crochet |
-| sl st | slip stitch |
-| inc / dec | increase / decrease |
-| blo | back loop only |
-| st(s) | stitch(es) |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| hStb | halbes Stäbchen |
+| Stb | Stäbchen |
+| Km | Kettmasche |
+| Zun / Abn | zunehmen / abnehmen |
+| hMg | nur hinteres Maschenglied |
+| M | Masche(n) |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- The turning chain does *not* count as a stitch unless stated.
-- Mark the first stitch of every round; it saves a lot of counting later.
-- Read the whole pattern once before you pick up the hook.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Die Wendeluftmasche zählt *nicht* als Masche, sofern nicht anders angegeben.
+- Markiere die erste Masche jeder Runde; das spart später viel Zählerei.
+- Lies die ganze Anleitung einmal durch, bevor du zur Nadel greifst.
+- **Für Einsteiger:** Schau dir vorab kurz an, wie eine **feste Masche (fM)** und ein **Stäbchen (Stb)** gehäkelt werden – dann fällt dir alles Weitere ganz leicht.
+- Verzählt? Passiert wirklich jedem. Trenn einfach bis zur letzten Markierung zurück und häkle von dort in Ruhe weiter.
 
-## Instructions
+## Anleitung
 
-1. Ch 170 (234) plus 3 for the turning chain.
-2. Row 1: work the ripple repeat - 2 dc in the peak, 5 dc, dc2tog twice, 5 dc - to the end.
-3. Rows 2-124: repeat Row 1, changing colour every 4 rows in the sequence Strawberry, Blush, Cream.
-4. Keep your tension even at the valleys; that is where ripples usually distort.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. 170 (234) Lm plus 3 Wendeluftmaschen.
+2. R 1: den Wellenrapport häkeln – 2 Stb in die Spitze, 5 Stb, zweimal 2 Stb zusammen, 5 Stb – bis zum Ende.
+3. R 2–124: R 1 wiederholen und alle 4 Reihen die Farbe in der Reihenfolge Erdbeere, Zartrosa, Creme wechseln.
+4. Halte deine Spannung an den Tälern gleichmäßig; dort verziehen sich Wellen meistens.
 
-- Edge with 2 rounds of sc, working 3 sc in each peak and skipping 1 st in each valley.
-- Weave the ends as you go - 30 colour changes are a lot to face at the end.
-- Block only if the edges curl.
+## Fertigstellung
 
-## Make it yours
+- Umrande mit 2 Runden fM, dabei 3 fM in jede Spitze häkeln und in jedem Tal 1 M überspringen.
+- Vernähe die Fäden nach und nach – 30 Farbwechsel sind am Ende viel auf einmal.
+- Nur spannen, wenn sich die Kanten wellen.
 
-Swap the main colour for anything in the same weight - this shape carries a bold shade just as well as it carries strawberry. If you make one, tag it so I can see it; nothing beats seeing a pattern out in the world.
+## Mach sie zu deiner
+
+Tausch die Hauptfarbe gegen eine beliebige Farbe derselben Stärke – diese Form trägt einen kräftigen Ton genauso gut wie Erdbeere. Wenn du eine machst, markiere sie, damit ich sie sehen kann; nichts geht über eine Anleitung, die draußen in der Welt lebt.

@@ -1,74 +1,78 @@
 ---
-title: "Sugar Pink Flower Coaster Set"
-excerpt: "Six little flower coasters in three shades of pink - the ideal scrap-yarn project."
+title: "Blüten-Untersetzer-Set in Zuckerrosa"
+excerpt: "Sechs kleine Blüten-Untersetzer in drei Rosatönen – das ideale Projekt für Garnreste."
 category: "home-decor"
 cover: "/images/patterns/sugar-pink-coaster-set.svg"
 publishDate: 2026-06-10
 featured: false
 difficulty: "beginner"
-hook: "4.0 mm (G)"
-yarnWeight: "Cotton DK (3)"
-yardage: "150 yd / 137 m"
-gauge: "Not critical"
-time: "1 hour each"
-sizes: ["4.5 in across"]
-stitches: ["ch", "sc", "dc", "magic ring", "picot", "sl st"]
+hook: "4,0 mm"
+yarnWeight: "Baumwolle DK (3)"
+yardage: "137 m / 150 yd"
+gauge: "Nicht kritisch"
+time: "1 Stunde pro Stück"
+sizes: ["11 cm Durchmesser"]
+stitches: ["Lm", "fM", "Stb", "Magischer Ring", "Picot", "Km"]
 materials:
-  - "Cotton DK scraps in three pinks"
-  - "4.0 mm hook"
-  - "Tapestry needle"
-colors: ["Sugar Pink", "Blush", "Rose"]
-tags: ["coasters", "home decor", "scrap yarn", "beginner"]
+  - "Baumwoll-DK-Reste in drei Rosatönen"
+  - "Häkelnadel 4,0 mm"
+  - "Wollnadel"
+colors: ["Zuckerrosa", "Zartrosa", "Rosé"]
+tags: ["Untersetzer", "Deko", "Garnreste", "Anfänger"]
 ---
 
-## Why you will love it
+## Warum du sie lieben wirst
 
-Six little flower coasters in three shades of pink - the ideal scrap-yarn project. This one is written the way I would explain it to a friend sitting next to me - every round counted, every shaping step spelled out, and no surprises at the finish line.
+Sechs kleine Blüten-Untersetzer in drei Rosatönen – das ideale Projekt für Garnreste. Diese Anleitung ist so geschrieben, wie ich sie einer Freundin erklären würde, die neben mir sitzt – jede Runde gezählt, jeder Formschritt ausbuchstabiert und keine Überraschungen auf der Zielgeraden.
 
-> Skill level: **beginner** - Hook **4.0 mm (G)** - Yarn **Cotton DK (3)**
+> Schwierigkeit: **Anfänger** – Nadel **4,0 mm** – Garn **Baumwolle DK (3)**
 
-## Materials
+## Material
 
-- Cotton DK scraps in three pinks
-- 4.0 mm hook
-- Tapestry needle
+- Baumwoll-DK-Reste in drei Rosatönen
+- Häkelnadel 4,0 mm
+- Wollnadel
 
-## Gauge
+## Maschenprobe
 
-Not critical. Take the two minutes to swatch - with cotton dk (3) yarn a half-stitch difference compounds fast.
+Nicht kritisch. Nimm dir die zwei Minuten für eine Maschenprobe – bei Baumwolle DK (3) summiert sich ein halber Maschenunterschied schnell.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| hdc | half double crochet |
-| dc | double crochet |
-| sl st | slip stitch |
-| inc / dec | increase / decrease |
-| blo | back loop only |
-| st(s) | stitch(es) |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| hStb | halbes Stäbchen |
+| Stb | Stäbchen |
+| Km | Kettmasche |
+| Zun / Abn | zunehmen / abnehmen |
+| hMg | nur hinteres Maschenglied |
+| M | Masche(n) |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- The turning chain does *not* count as a stitch unless stated.
-- Mark the first stitch of every round; it saves a lot of counting later.
-- Read the whole pattern once before you pick up the hook.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Die Wendeluftmasche zählt *nicht* als Masche, sofern nicht anders angegeben.
+- Markiere die erste Masche jeder Runde; das spart später viel Zählerei.
+- Lies die ganze Anleitung einmal durch, bevor du zur Nadel greifst.
+- **Für Einsteiger:** Schau dir vorab kurz an, wie eine **feste Masche (fM)** und ein **Stäbchen (Stb)** gehäkelt werden – dann fällt dir alles Weitere ganz leicht.
+- Verzählt? Passiert wirklich jedem. Trenn einfach bis zur letzten Markierung zurück und häkle von dort in Ruhe weiter.
 
-## Instructions
+## Anleitung
 
-1. Rnd 1: magic ring, 12 dc, join (12 sts).
-2. Rnd 2: 2 dc in each st around (24 sts).
-3. Rnd 3: work 3 dc in next st, skip 1, sl st around to form 8 petals.
-4. Rnd 4: work sc behind the petals, then a final round of picot along each petal edge.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Rd 1: Magischer Ring, 12 Stb, schließen (12 M).
+2. Rd 2: 2 Stb in jede M rundherum (24 M).
+3. Rd 3: 3 Stb in die nächste M, 1 M überspringen, mit Km rundherum – so entstehen 8 Blütenblätter.
+4. Rd 4: fM hinter den Blütenblättern häkeln, dann eine abschließende Picot-Runde entlang jeder Blütenblattkante.
 
-- Weave all ends into the back of the flower centre.
-- Starch lightly if you want them to lie perfectly flat.
+## Fertigstellung
 
-## Make it yours
+- Vernähe alle Fäden auf der Rückseite der Blütenmitte.
+- Leicht stärken, wenn sie perfekt flach liegen sollen.
 
-Swap the main colour for anything in the same weight - this shape carries a bold shade just as well as it carries sugar pink. If you make one, tag it so I can see it; nothing beats seeing a pattern out in the world.
+## Mach sie zu deinen
+
+Tausch die Hauptfarbe gegen eine beliebige Farbe derselben Stärke – diese Form trägt einen kräftigen Ton genauso gut wie Zuckerrosa. Wenn du welche machst, markiere sie, damit ich sie sehen kann; nichts geht über eine Anleitung, die draußen in der Welt lebt.

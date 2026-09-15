@@ -10,8 +10,8 @@ interface Props {
 const {
   variant = 'panel',
   source = 'footer',
-  title = 'One pattern in your inbox, every Sunday.',
-  blurb = 'New releases, yarn substitutions and the occasional behind-the-scenes mess. No spam, unsubscribe in one click.',
+  title = 'Jeden Sonntag eine Anleitung in deinem Postfach.',
+  blurb = 'Neue Anleitungen, Garn-Alternativen und ab und zu ein Blick hinter die Kulissen. Kein Spam, Abmeldung mit einem Klick.',
 } = Astro.props;
 
 const id = `nl-${Math.random().toString(36).slice(2, 8)}`;
@@ -26,7 +26,7 @@ const id = `nl-${Math.random().toString(36).slice(2, 8)}`;
   data-newsletter
   data-source={source}
 >
-  <p class:list={['eyebrow', variant === 'panel' && '!text-panel-accent']}>The Sunday Stitch</p>
+  <p class:list={['eyebrow', variant === 'panel' && '!text-panel-accent']}>Die Sonntagsmasche</p>
   <h3
     class:list={[
       'mt-3 font-display font-bold tracking-tight',
@@ -40,14 +40,14 @@ const id = `nl-${Math.random().toString(36).slice(2, 8)}`;
   </p>
 
   <form class="mt-6 flex flex-col gap-3 sm:flex-row" novalidate>
-    <label class="sr-only" for={id}>Email address</label>
+    <label class="sr-only" for={id}>E-Mail-Adresse</label>
     <input
       id={id}
       name="email"
       type="email"
       required
       autocomplete="email"
-      placeholder="you@example.com"
+      placeholder="du@beispiel.de"
       class:list={[
         'min-w-0 flex-1 rounded-full px-5 py-3.5 text-[0.95rem] outline-none transition',
         variant === 'panel'
@@ -65,7 +65,7 @@ const id = `nl-${Math.random().toString(36).slice(2, 8)}`;
       ]}
     >
       <Icon name="mail" size={16} />
-      Subscribe
+      Abonnieren
     </button>
   </form>
 
@@ -84,13 +84,13 @@ const id = `nl-${Math.random().toString(36).slice(2, 8)}`;
       const email = String(data.get('email') ?? '').trim();
 
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
-        msg.textContent = 'Please enter a valid email address.';
+        msg.textContent = 'Bitte gib eine gültige E-Mail-Adresse ein.';
         msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-medium text-blush-400';
         return;
       }
 
       btn.disabled = true;
-      msg.textContent = 'Signing you up…';
+      msg.textContent = 'Wird eingetragen…';
       msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-medium opacity-70';
 
       try {
@@ -106,14 +106,14 @@ const id = `nl-${Math.random().toString(36).slice(2, 8)}`;
         const out = await res.json();
         if (res.ok && out.ok) {
           form.reset();
-          msg.textContent = out.message ?? 'You are in! Check your inbox on Sunday.';
+          msg.textContent = out.message ?? 'Du bist dabei! Schau am Sonntag in dein Postfach.';
           msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-semibold text-panel-accent';
         } else {
-          msg.textContent = out.error ?? 'Something went wrong. Try again in a moment.';
+          msg.textContent = out.error ?? 'Etwas ist schiefgelaufen. Versuch es gleich noch einmal.';
           msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-medium text-blush-400';
         }
       } catch {
-        msg.textContent = 'Network error — please try again.';
+        msg.textContent = 'Netzwerkfehler — bitte versuch es erneut.';
         msg.className = 'mt-3 min-h-[1.25rem] text-[0.85rem] font-medium text-blush-400';
       } finally {
         btn.disabled = false;

@@ -5,14 +5,14 @@ import Icon from './Icon.astro';
 <dialog
   id="search-dialog"
   class="m-0 w-full max-w-2xl rounded-3xl border border-line bg-bg p-0 shadow-lift backdrop:bg-plum-900/50 backdrop:backdrop-blur-sm sm:mx-auto sm:mt-[12vh]"
-  aria-label="Search patterns"
+  aria-label="Anleitungen durchsuchen"
 >
   <div class="flex items-center gap-3 border-b border-line/70 px-5 py-4">
     <Icon name="search" size={20} class="shrink-0 text-accent" />
     <input
       id="search-input"
       type="search"
-      placeholder="Search patterns, stitches, yarn weight…"
+      placeholder="Anleitungen, Maschen, Garnstärke durchsuchen…"
       autocomplete="off"
       class="w-full bg-transparent text-lg text-ink-strong outline-none placeholder:text-muted"
     />
@@ -22,12 +22,12 @@ import Icon from './Icon.astro';
   </div>
 
   <div id="search-results" class="max-h-[58vh] overflow-y-auto p-3">
-    <p class="px-3 py-8 text-center text-[0.9rem] text-muted">Start typing to search the pattern library.</p>
+    <p class="px-3 py-8 text-center text-[0.9rem] text-muted">Tippe los, um die Anleitungsbibliothek zu durchsuchen.</p>
   </div>
 
   <div class="flex items-center justify-between border-t border-line/70 px-5 py-3">
-    <span class="text-[0.68rem] font-bold tracking-[0.16em] text-muted uppercase">Crochet Atelier search</span>
-    <a href="/patterns" class="text-[0.75rem] font-semibold text-accent-soft hover:text-blush-500">Browse all →</a>
+    <span class="text-[0.68rem] font-bold tracking-[0.16em] text-muted uppercase">Maschenstube Suche</span>
+    <a href="/patterns" class="text-[0.75rem] font-semibold text-accent-soft hover:text-blush-500">Alle ansehen →</a>
   </div>
 </dialog>
 
@@ -70,11 +70,11 @@ import Icon from './Icon.astro';
     if (!results) return;
     if (!q) {
       results.innerHTML =
-        '<p class="px-3 py-8 text-center text-[0.9rem] text-muted">Start typing to search the pattern library.</p>';
+        '<p class="px-3 py-8 text-center text-[0.9rem] text-muted">Tippe los, um die Anleitungsbibliothek zu durchsuchen.</p>';
       return;
     }
     if (!items.length) {
-      results.innerHTML = `<p class="px-3 py-8 text-center text-[0.9rem] text-muted">No pattern matches “${escapeHtml(q)}”.</p>`;
+      results.innerHTML = `<p class="px-3 py-8 text-center text-[0.9rem] text-muted">Keine Anleitung passt zu „${escapeHtml(q)}“.</p>`;
       return;
     }
     results.innerHTML = items
@@ -84,7 +84,7 @@ import Icon from './Icon.astro';
         <img src="${i.cover}" alt="" width="56" height="56" loading="lazy"
              class="size-14 shrink-0 rounded-xl object-cover" />
         <span class="min-w-0 flex-1">
-          <span class="block text-[0.7rem] font-bold tracking-[0.16em] text-accent uppercase">${escapeHtml(i.category.replace('-', ' & '))}</span>
+          <span class="block text-[0.7rem] font-bold tracking-[0.16em] text-accent uppercase">${escapeHtml(i.category)}</span>
           <span class="block truncate font-semibold text-ink-strong">${escapeHtml(i.title)}</span>
           <span class="block truncate text-[0.8rem] text-ink-soft">${escapeHtml(i.hook)} · ${escapeHtml(i.difficulty)}</span>
         </span>

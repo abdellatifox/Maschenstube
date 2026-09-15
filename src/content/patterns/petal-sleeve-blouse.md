@@ -1,50 +1,52 @@
 ---
-title: "Petal Sleeve Blouse"
-excerpt: "Shell-stitch sleeves that fall open like petals over a fitted bodice."
+title: "Bluse mit Blütenärmeln"
+excerpt: "Ärmel im Muschelmuster, die sich wie Blütenblätter über einem taillierten Oberteil öffnen."
 category: "clothing"
 cover: "/images/patterns/petal-sleeve-blouse.svg"
 publishDate: 2026-06-18
 featured: false
 difficulty: "intermediate"
-hook: "4.0 mm (G)"
+hook: "4,0 mm"
 yarnWeight: "DK (3)"
-gauge: "Work a 4 in swatch in the main stitch before you start."
-time: "8-12 hours"
-sizes: ["One size"]
-stitches: ["ch", "sc", "dc", "hdc", "sl st"]
+gauge: "Häkle vor dem Start eine 10-cm-Maschenprobe im Grundmuster."
+time: "8–12 Stunden"
+sizes: ["Einheitsgröße"]
+stitches: ["Lm", "fM", "Stb", "hStb", "Km"]
 materials:
-  - "DK (3) yarn in your chosen pink - 2 to 4 skeins"
-  - "4.0 mm (G) crochet hook"
-  - "Tapestry needle and stitch markers"
-colors: ["Blush", "Rose"]
-tags: ["blouse", "shell stitch", "sleeves"]
+  - "DK-Garn (3) in deinem Wunsch-Rosa – 2 bis 4 Knäuel"
+  - "Häkelnadel 4,0 mm"
+  - "Wollnadel und Maschenmarkierer"
+colors: ["Zartrosa", "Rosé"]
+tags: ["Bluse", "Muschelmuster", "Ärmel"]
 ---
 
-## Why you will love it
+## Warum du sie lieben wirst
 
-Shell-stitch sleeves that fall open like petals over a fitted bodice. Written round by round in US terms, with the fiddly parts explained rather than glossed over.
+Ärmel im Muschelmuster, die sich wie Blütenblätter über einem taillierten Oberteil öffnen. Runde für Runde in deutschen Häkelbegriffen geschrieben, wobei die kniffligen Stellen erklärt statt übergangen werden.
 
-> Skill level: **intermediate** - Hook **4.0 mm (G)** - Yarn **DK (3)**
+> Schwierigkeit: **Mittel** – Nadel **4,0 mm** – Garn **DK (3)**
 
-## Materials
+## Material
 
-- DK (3) yarn in your chosen pink
-- 4.0 mm (G) crochet hook
-- Tapestry needle, stitch markers, scissors
+- DK-Garn (3) in deinem Wunsch-Rosa
+- Häkelnadel 4,0 mm
+- Wollnadel, Maschenmarkierer, Schere
 
-## Gauge
+## Maschenprobe
 
-Swatch 4 in square in the main stitch. If your swatch runs large, drop half a hook size.
+Häkle eine Maschenprobe von 10 cm im Grundmuster. Fällt deine Probe zu groß aus, geh eine halbe Nadelstärke runter.
 
-## Instructions
+## Anleitung
 
-1. Start with the foundation as written and mark the first stitch of the round.
-2. Work the body section evenly, keeping your tension relaxed.
-3. Shape as directed, counting at the end of every round.
-4. Work the final rounds and fasten off, leaving a long tail for finishing.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Beginne mit der Grundreihe (der Anfangskette aus Luftmaschen) wie angegeben und markiere die erste Masche der Runde mit einem Maschenmarkierer – so verlierst du den Anfang nie aus dem Blick.
+2. Häkle den Hauptteil ruhig und gleichmäßig weiter und halte deine Spannung locker; zu fest gehäkelt wird die Arbeit hart und uneben.
+3. Forme das Teil wie beschrieben und zähle am Ende jeder Runde deine Maschen nach, damit sich kein Fehler einschleicht.
+4. Häkle die letzten Runden, schneide den Faden ab und zieh ihn zum Schluss durch die letzte Masche fest; lass dabei ein langes Ende zum Vernähen.
 
-- Weave in every end on the wrong side.
-- Block gently to open up the stitch pattern.
-- Photograph it in daylight — pink always reads better that way.
+## Fertigstellung
+
+- Vernähe jeden Faden auf der linken Seite.
+- Spanne behutsam, um das Maschenmuster zu öffnen.
+- Fotografiere sie im Tageslicht – Rosa wirkt so immer besser.

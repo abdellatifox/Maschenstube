@@ -26,22 +26,22 @@ const cover = d.cover;
     <div class="flex items-center justify-between gap-4 border-b border-line/70 pb-5">
       <p class="eyebrow flex items-center gap-2">
         <span class="size-1.5 rounded-full bg-blush-500"></span>
-        Crochet Atelier
+        Maschenstube
       </p>
-      <p class="eyebrow !text-muted">For modern makers</p>
+      <p class="eyebrow !text-muted">Für moderne Macherinnen</p>
     </div>
 
     <div class="grid items-center gap-10 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pt-14">
       <!-- العمود النصّي -->
       <div class="animate-fade-up">
         <h1 class="font-display text-hero font-bold tracking-[-0.035em] text-ink-strong">
-          Free patterns,<br />
-          <span class="accent-italic">made</span> modern.
+          Kostenlose Anleitungen,<br />
+          <span class="accent-italic">modern</span> gemacht.
         </h1>
 
         <p class="mt-7 max-w-md text-[1.05rem] leading-relaxed text-ink-soft">
-          A curated home for crocheters who love clean lines and gorgeous textures. Bags, blankets, baby clothes and
-          more — all free, all written with care.
+          Ein kuratiertes Zuhause für alle, die klare Linien und schöne Texturen lieben. Taschen, Decken, Babykleidung
+          und mehr — alles kostenlos, alles mit Sorgfalt geschrieben.
         </p>
 
         <div class="mt-9 flex flex-wrap items-center gap-3">
@@ -49,7 +49,7 @@ const cover = d.cover;
             href="/patterns"
             class="inline-flex items-center gap-2 rounded-full bg-blush-600 px-7 py-3.5 text-[0.78rem] font-bold tracking-[0.14em] text-white uppercase shadow-soft transition-all hover:-translate-y-0.5 hover:bg-blush-700 hover:shadow-lift"
           >
-            Browse patterns
+            Anleitungen ansehen
             <Icon name="arrow-right" size={16} />
           </a>
           <button
@@ -58,16 +58,16 @@ const cover = d.cover;
             class="inline-flex items-center gap-2 rounded-full border border-ink/20 px-7 py-3.5 text-[0.78rem] font-bold tracking-[0.14em] text-ink uppercase transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:bg-surface"
           >
             <Icon name="search" size={16} />
-            Search
+            Suchen
           </button>
         </div>
 
         <dl class="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-line/70 pt-7">
           {
             [
-              [String(total), 'Free patterns'],
-              [String(categories.length), 'Collections'],
-              ['100%', 'Tested twice'],
+              [String(total), 'Kostenlose Anleitungen'],
+              [String(categories.length), 'Kollektionen'],
+              ['100%', 'Doppelt getestet'],
             ].map(([value, label]) => (
               <div>
                 <dt class="font-display text-2xl font-bold text-accent-soft sm:text-3xl">{value}</dt>
@@ -83,7 +83,7 @@ const cover = d.cover;
         <span
           class="absolute -top-3 start-6 z-10 rounded-full bg-panel px-4 py-2 text-[0.62rem] font-bold tracking-[0.2em] text-panel-ink uppercase shadow-soft"
         >
-          Now showing
+          Jetzt im Fokus
         </span>
 
         <a href={`/patterns/${featured.id}`} class="media-zoom group block overflow-hidden rounded-[1.75rem] bg-tint-2 shadow-lift">
@@ -98,13 +98,13 @@ const cover = d.cover;
             />
             <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-plum-900/85 via-plum-900/35 to-transparent p-6 pt-24">
               <p class="text-[0.62rem] font-bold tracking-[0.2em] text-panel-ink-soft uppercase">
-                Featured · {categoryMap[d.category]?.title}
+                Empfohlen · {categoryMap[d.category]?.title}
               </p>
               <h2 class="mt-2 max-w-sm font-display text-2xl leading-tight font-bold tracking-tight text-white sm:text-[1.75rem]">
                 {d.title}
               </h2>
               <span class="mt-4 inline-flex items-center gap-2 text-[0.72rem] font-bold tracking-[0.14em] text-white uppercase">
-                Get the pattern
+                Zur Anleitung
                 <Icon name="arrow-up-right" size={15} class="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </span>
             </div>

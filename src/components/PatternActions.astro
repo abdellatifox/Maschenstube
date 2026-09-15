@@ -25,7 +25,7 @@ const { slug, pdfKey, pdfGated = false } = Astro.props;
         class="inline-flex items-center gap-2 rounded-full bg-blush-600 px-6 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-white uppercase shadow-soft transition-all hover:-translate-y-0.5 hover:bg-blush-700"
       >
         <Icon name="download" size={16} />
-        {pdfGated ? 'Get the PDF' : 'Download PDF'}
+        {pdfGated ? 'PDF holen' : 'PDF herunterladen'}
       </a>
     )
   }
@@ -46,12 +46,12 @@ const { slug, pdfKey, pdfGated = false } = Astro.props;
     class="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-5 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-ink uppercase transition-all hover:-translate-y-0.5 hover:border-blush-400 hover:text-accent-soft"
   >
     <Icon name="print" size={16} />
-    Print
+    Drucken
   </button>
 
   <span class="inline-flex items-center gap-1.5 text-[0.78rem] text-ink-soft">
     <Icon name="eye" size={15} class="text-blush-500" />
-    <span data-views>—</span> views
+    <span data-views>—</span> Aufrufe
   </span>
 </div>
 
@@ -60,27 +60,27 @@ const { slug, pdfKey, pdfGated = false } = Astro.props;
   data-gate
   class="m-auto w-[min(92vw,28rem)] rounded-3xl border border-line bg-bg p-7 shadow-lift backdrop:bg-plum-900/50 backdrop:backdrop-blur-sm"
 >
-  <p class="eyebrow">Members only</p>
-  <h3 class="mt-3 font-display text-xl font-bold text-ink-strong">Pop in your email and the PDF is yours.</h3>
+  <p class="eyebrow">Nur für Mitglieder</p>
+  <h3 class="mt-3 font-display text-xl font-bold text-ink-strong">Trag deine E-Mail ein und das PDF gehört dir.</h3>
   <p class="mt-2 text-[0.9rem] text-ink-soft">
-    You will also get one new pattern each Sunday. Unsubscribe whenever you like.
+    Du bekommst außerdem jeden Sonntag eine neue Anleitung. Abmeldung jederzeit möglich.
   </p>
   <form class="mt-5 flex flex-col gap-2.5">
     <input
       type="email"
       name="email"
       required
-      placeholder="you@example.com"
+      placeholder="du@beispiel.de"
       class="rounded-full border border-line bg-surface px-5 py-3 text-[0.95rem] text-ink-strong outline-none focus:border-blush-400 focus:ring-2 focus:ring-tint-3"
     />
     <button
       type="submit"
       class="rounded-full bg-blush-600 px-6 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-white uppercase hover:bg-blush-700"
     >
-      Send me the pattern
+      Schick mir die Anleitung
     </button>
     <button type="button" data-gate-close class="mt-1 text-[0.8rem] font-semibold text-muted hover:text-ink">
-      Maybe later
+      Vielleicht später
     </button>
   </form>
 </dialog>
@@ -100,7 +100,7 @@ const { slug, pdfKey, pdfGated = false } = Astro.props;
       .then((r) => (r.ok ? r.json() : null))
       .then((s: any) => {
         if (!s) return;
-        if (views) views.textContent = new Intl.NumberFormat('en', { notation: 'compact' }).format(s.views ?? 0);
+        if (views) views.textContent = new Intl.NumberFormat('de', { notation: 'compact' }).format(s.views ?? 0);
         if (likeCount) likeCount.textContent = String(s.likes ?? 0);
       })
       .catch(() => {});

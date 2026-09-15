@@ -11,7 +11,7 @@ export const POST: APIRoute = async (ctx) => {
   try {
     body = await ctx.request.json();
   } catch {
-    return bad('Invalid request body.');
+    return bad('Ungültige Anfrage.');
   }
 
   if (body.website) return json({ ok: true }); // فخ البوتات
@@ -21,16 +21,16 @@ export const POST: APIRoute = async (ctx) => {
   const subject = String(body.subject ?? 'Message').slice(0, 120);
   const text = String(body.body ?? '').trim().slice(0, 4000);
 
-  if (!name || !text) return bad('Please fill in your name and message.');
-  if (!EMAIL.test(email)) return bad('Please enter a valid email address.');
+  if (!name || !text) return bad('Bitte fülle Name und Nachricht aus.');
+  if (!EMAIL.test(email)) return bad('Bitte gib eine gültige E-Mail-Adresse ein.');
 
   const who = await visitorHash(ctx.request, 'contact');
   if (!(await rateLimit(ctx, `contact:${who}`, 3, 900))) {
-    return bad('Too many messages. Please try again in a little while.', 429);
+    return bad('Zu viele Nachrichten. Bitte versuch es in Kürze noch einmal.', 429);
   }
 
   const db = getDB(ctx);
-  if (!db) return bad('Database unavailable.', 503);
+  if (!db) return bad('Datenbank nicht verfügbar.', 503);
 
   try {
     await db
@@ -40,6 +40,6 @@ export const POST: APIRoute = async (ctx) => {
     return json({ ok: true });
   } catch (err) {
     console.error('contact insert failed', err);
-    return bad('Could not send your message right now.', 500);
+    return bad('Deine Nachricht konnte gerade nicht gesendet werden.', 500);
   }
 };

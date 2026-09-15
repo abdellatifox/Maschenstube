@@ -1,73 +1,75 @@
 ---
-title: "Rose Cocoon Longline Cardigan"
-excerpt: "A knee-length cocoon cardigan with deep pockets and a wide shawl collar, worked from two simple rectangles."
+title: "Langer Cocoon-Cardigan in Rosé"
+excerpt: "Ein knielanger Cocoon-Cardigan mit tiefen Taschen und breitem Schalkragen, aus zwei einfachen Rechtecken gearbeitet."
 category: "clothing"
 cover: "/images/patterns/rose-cocoon-longline-cardigan.svg"
 publishDate: 2026-09-04
 featured: false
 difficulty: "easy"
-hook: "6.0 mm (J)"
+hook: "6,0 mm"
 yarnWeight: "Aran (4)"
-yardage: "1,320 yd / 1,207 m"
-gauge: "13 sts x 8 rows = 4 in (10 cm) in hdc"
-time: "14-18 hours"
+yardage: "1.207 m / 1.320 yd"
+gauge: "13 M x 8 R = 10 cm in hStb"
+time: "14–18 Stunden"
 sizes: ["S/M", "L/XL", "2X/3X"]
-stitches: ["ch", "hdc", "sc", "sl st"]
+stitches: ["Lm", "hStb", "fM", "Km"]
 materials:
-  - "Aran wool blend in Rose - 8 skeins"
-  - "6.0 mm hook"
-  - "Tapestry needle and stitch markers"
-colors: ["Rose", "Antique Blush"]
-tags: ["cardigan", "longline", "cocoon", "pockets"]
+  - "Aran-Wollmischung in Rosé – 8 Knäuel"
+  - "Häkelnadel 6,0 mm"
+  - "Wollnadel und Maschenmarkierer"
+colors: ["Rosé", "Altrosa"]
+tags: ["Cardigan", "lang", "Cocoon", "Taschen"]
 ---
 
-## Why you will love it
+## Warum du ihn lieben wirst
 
-Two rectangles, four seams, and you have a cardigan that covers past the knee and never needs a button. The cocoon shape means there is no shaping to get wrong, and the collar is worked straight onto the finished edge.
+Zwei Rechtecke, vier Nähte, und du hast einen Cardigan, der übers Knie reicht und nie einen Knopf braucht. Die Cocoon-Form bedeutet, dass es keine Formung gibt, die schiefgehen könnte, und der Kragen wird direkt an die fertige Kante gehäkelt.
 
-> Skill level: **easy** - Hook **6.0 mm (J)** - Yarn **Aran (4)**
+> Schwierigkeit: **Leicht** – Nadel **6,0 mm** – Garn **Aran (4)**
 
-## Materials
+## Material
 
-- Aran wool blend in Rose - 8 skeins
-- 6.0 mm hook
-- Tapestry needle, stitch markers, blocking pins
+- Aran-Wollmischung in Rosé – 8 Knäuel
+- Häkelnadel 6,0 mm
+- Wollnadel, Maschenmarkierer, Spannnadeln
 
-## Gauge
+## Maschenprobe
 
-13 sts x 8 rows = 4 in (10 cm) in hdc. Aran yarn grows when it is worn, so err on the tighter side.
+13 M x 8 R = 10 cm in hStb. Aran-Garn dehnt sich beim Tragen, arbeite daher eher etwas fester.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| hdc | half double crochet |
-| sl st | slip stitch |
-| st(s) | stitch(es) |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| hStb | halbes Stäbchen |
+| Km | Kettmasche |
+| M | Masche(n) |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- Both panels are worked flat, bottom to top, then folded.
-- Length is easy to change: add or remove rows before the armhole marker.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Beide Teile werden in Reihen von unten nach oben gehäkelt und dann gefaltet.
+- Die Länge lässt sich leicht ändern: füge vor dem Armausschnitt-Marker Reihen hinzu oder lass welche weg.
 
-## Instructions
+## Anleitung
 
-1. Back panel: ch 92 (100, 110). Row 1: hdc in 3rd ch from hook and across.
-2. Rows 2-84 (90, 96): ch 2, hdc across. The panel should measure about 42 in (107 cm) long.
-3. Front panels (make 2): ch 46 (50, 55) and work as the back for the same number of rows.
-4. Lay the back flat, place a front panel on each side, and seam the shoulders across the top 6 in (15 cm).
-5. Seam each side from the hem up, leaving 9 (10, 11) in open at the top for the armhole.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Rückenteil: 92 (100, 110) Lm. R 1: hStb in die 3. Lm ab Nadel und in jede weitere.
+2. R 2–84 (90, 96): 2 Lm, hStb über die ganze Reihe. Das Teil sollte etwa 107 cm lang sein.
+3. Vorderteile (2 Stück): 46 (50, 55) Lm und wie das Rückenteil über die gleiche Reihenzahl häkeln.
+4. Leg das Rückenteil flach hin, lege je ein Vorderteil an jede Seite und nähe die Schultern über die oberen 15 cm.
+5. Nähe jede Seite vom Saum nach oben, dabei oben 23 (25, 28) cm für den Armausschnitt offen lassen.
 
-- Collar: work 7 rounds of hdc around the whole front opening and neck, then 2 rounds of sc.
-- Pockets (make 2): ch 26, work 22 rows of hdc, and sew one to each front panel 10 in above the hem.
-- Cuffs: work 4 rounds of sc around each armhole to firm up the edge.
-- Wet-block the finished cardigan and dry flat over two towels.
+## Fertigstellung
 
-## Make it yours
+- Kragen: 7 Runden hStb um die gesamte Vorderöffnung und den Hals häkeln, dann 2 Runden fM.
+- Taschen (2 Stück): 26 Lm, 22 Reihen hStb häkeln und je eine 25 cm über dem Saum an jedes Vorderteil nähen.
+- Bündchen: 4 Runden fM um jeden Armausschnitt häkeln, um die Kante zu festigen.
+- Spanne den fertigen Cardigan nass und trockne ihn flach auf zwei Handtüchern.
 
-Work the collar and pockets in a contrasting shade for a tailored look, or add 12 more rows to each panel for a full-length duster.
+## Mach ihn zu deinem
+
+Häkle Kragen und Taschen in einem Kontrastton für einen edlen Look, oder füge jedem Teil 12 weitere Reihen hinzu für einen bodenlangen Mantel.

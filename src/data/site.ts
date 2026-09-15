@@ -1,12 +1,12 @@
 export const site = {
-  name: 'Crochet Atelier',
-  tagline: 'Crochet for modern makers',
+  name: 'Maschenstube',
+  tagline: 'Häkeln für moderne Macherinnen',
   description:
-    'A curated home for crocheters who love clean lines and gorgeous textures — bags, blankets, baby clothes and more. All free, all written with care.',
+    'Ein liebevoll kuratiertes Zuhause für alle, die klare Linien und schöne Texturen lieben — Taschen, Decken, Babykleidung und mehr. Alles kostenlos, alles mit Sorgfalt geschrieben.',
   author: 'Mia',
-  email: 'hello@crochetatelier.com',
-  url: 'https://crochet-theme.pages.dev',
-  locale: 'en',
+  email: 'hallo@maschenstube.de',
+  url: 'https://maschenstube.de',
+  locale: 'de',
   social: [
     { label: 'Pinterest', href: 'https://pinterest.com/', icon: 'pinterest' },
     { label: 'Instagram', href: 'https://instagram.com/', icon: 'instagram' },
@@ -16,12 +16,12 @@ export const site = {
 } as const;
 
 export const nav = [
-  { label: 'Home', href: '/' },
-  { label: 'Patterns', href: '/patterns' },
-  { label: 'Categories', href: '/#the-index' },
-  { label: 'Seasonal', href: '/category/seasonal' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Start', href: '/' },
+  { label: 'Anleitungen', href: '/patterns' },
+  { label: 'Kategorien', href: '/#the-index' },
+  { label: 'Saisonal', href: '/category/seasonal' },
+  { label: 'Über mich', href: '/about' },
+  { label: 'Kontakt', href: '/contact' },
 ] as const;
 
 export type CategoryKey =
@@ -31,15 +31,23 @@ export type CategoryKey =
 export const categories: {
   key: CategoryKey; no: string; title: string; blurb: string; kicker: string;
 }[] = [
-  { key: 'accessories', no: '01', title: 'Accessories',        kicker: 'worth carrying',  blurb: 'Bags, totes, scarves and everything you reach for on the way out.' },
-  { key: 'baby-kids',   no: '02', title: 'Baby & Kids',        kicker: 'little makes',    blurb: 'Soft, safe and sweet — sized for the tiniest people.' },
-  { key: 'clothing',    no: '03', title: 'Clothing & Wearables',kicker: 'you will live in',blurb: 'Cardigans, sweaters and cover-ups with modern, modest silhouettes.' },
-  { key: 'blankets',    no: '04', title: 'Blankets & Afghans', kicker: 'made to keep',    blurb: 'Squares, ripples and throws for every corner of the house.' },
-  { key: 'footwear',    no: '05', title: 'Footwear',           kicker: 'step softly',     blurb: 'Slippers, booties and socks worked in the round.' },
-  { key: 'home-decor',  no: '06', title: 'Home Decor',         kicker: 'for the house',   blurb: 'Baskets, coasters, plant hangers and wall pieces.' },
-  { key: 'seasonal',    no: '07', title: 'Seasonal & Holidays',kicker: 'right on time',   blurb: 'Autumn, winter and everything worth decorating for.' },
+  { key: 'accessories', no: '01', title: 'Accessoires',          kicker: 'zum Mitnehmen',   blurb: 'Taschen, Beutel, Schals und alles, wonach du auf dem Weg nach draußen greifst.' },
+  { key: 'baby-kids',   no: '02', title: 'Baby & Kind',          kicker: 'kleine Werke',    blurb: 'Weich, sicher und süß — in Größen für die allerkleinsten Menschen.' },
+  { key: 'clothing',    no: '03', title: 'Kleidung & Tragbares', kicker: 'zum Reinleben',   blurb: 'Cardigans, Pullover und Überwürfe mit modernen, dezenten Silhouetten.' },
+  { key: 'blankets',    no: '04', title: 'Decken & Plaids',      kicker: 'zum Behalten',    blurb: 'Squares, Wellen und Überwürfe für jede Ecke des Hauses.' },
+  { key: 'footwear',    no: '05', title: 'Schuhe',               kicker: 'leise treten',    blurb: 'Hausschuhe, Babyschühchen und Socken in Runden gehäkelt.' },
+  { key: 'home-decor',  no: '06', title: 'Deko',                 kicker: 'fürs Zuhause',    blurb: 'Körbe, Untersetzer, Blumenampeln und Wandobjekte.' },
+  { key: 'seasonal',    no: '07', title: 'Saisonal & Feste',     kicker: 'pünktlich da',    blurb: 'Herbst, Winter und alles, wofür sich Dekorieren lohnt.' },
 ];
 
 export const categoryMap = Object.fromEntries(categories.map((c) => [c.key, c]));
 
 export const difficulties = ['beginner', 'easy', 'intermediate', 'advanced'] as const;
+
+/** Deutsche Anzeigenamen für die (intern englischen) Schwierigkeitsstufen. */
+export const difficultyLabels: Record<string, string> = {
+  beginner: 'Anfänger',
+  easy: 'Leicht',
+  intermediate: 'Mittel',
+  advanced: 'Fortgeschritten',
+};

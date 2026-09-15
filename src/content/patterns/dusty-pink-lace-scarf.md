@@ -1,50 +1,52 @@
 ---
-title: "Dusty Pink Lace Scarf"
-excerpt: "An airy pineapple-lace scarf that blocks out to twice its size."
+title: "Spitzenschal in Altrosa"
+excerpt: "Ein luftiger Schal in Ananas-Spitze, der sich beim Spannen auf die doppelte Größe öffnet."
 category: "accessories"
 cover: "/images/patterns/dusty-pink-lace-scarf.svg"
 publishDate: 2026-07-12
 featured: false
 difficulty: "easy"
-hook: "4.0 mm (G)"
-yarnWeight: "Fingering (1)"
-gauge: "Work a 4 in swatch in the main stitch before you start."
-time: "4-6 hours"
-sizes: ["One size"]
-stitches: ["ch", "sc", "dc", "sl st"]
+hook: "4,0 mm"
+yarnWeight: "Superfein (1)"
+gauge: "Häkle vor dem Start eine 10-cm-Maschenprobe im Grundmuster."
+time: "4–6 Stunden"
+sizes: ["Einheitsgröße"]
+stitches: ["Lm", "fM", "Stb", "Km"]
 materials:
-  - "Fingering (1) yarn in your chosen pink - 2 to 4 skeins"
-  - "4.0 mm (G) crochet hook"
-  - "Tapestry needle and stitch markers"
-colors: ["Blush", "Rose"]
-tags: ["scarf", "lace", "light"]
+  - "Superfein-Garn (1) in deinem Wunsch-Rosa – 2 bis 4 Knäuel"
+  - "Häkelnadel 4,0 mm"
+  - "Wollnadel und Maschenmarkierer"
+colors: ["Zartrosa", "Rosé"]
+tags: ["Schal", "Spitze", "leicht"]
 ---
 
-## Why you will love it
+## Warum du ihn lieben wirst
 
-An airy pineapple-lace scarf that blocks out to twice its size. Written round by round in US terms, with the fiddly parts explained rather than glossed over.
+Ein luftiger Schal in Ananas-Spitze, der sich beim Spannen auf die doppelte Größe öffnet. Runde für Runde in deutschen Häkelbegriffen geschrieben, wobei die kniffligen Stellen erklärt statt übergangen werden.
 
-> Skill level: **easy** - Hook **4.0 mm (G)** - Yarn **Fingering (1)**
+> Schwierigkeit: **Leicht** – Nadel **4,0 mm** – Garn **Superfein (1)**
 
-## Materials
+## Material
 
-- Fingering (1) yarn in your chosen pink
-- 4.0 mm (G) crochet hook
-- Tapestry needle, stitch markers, scissors
+- Superfein-Garn (1) in deinem Wunsch-Rosa
+- Häkelnadel 4,0 mm
+- Wollnadel, Maschenmarkierer, Schere
 
-## Gauge
+## Maschenprobe
 
-Swatch 4 in square in the main stitch. If your swatch runs large, drop half a hook size.
+Häkle eine Maschenprobe von 10 cm im Grundmuster. Fällt deine Probe zu groß aus, geh eine halbe Nadelstärke runter.
 
-## Instructions
+## Anleitung
 
-1. Start with the foundation as written and mark the first stitch of the round.
-2. Work the body section evenly, keeping your tension relaxed.
-3. Shape as directed, counting at the end of every round.
-4. Work the final rounds and fasten off, leaving a long tail for finishing.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Beginne mit der Grundreihe (der Anfangskette aus Luftmaschen) wie angegeben und markiere die erste Masche der Runde mit einem Maschenmarkierer – so verlierst du den Anfang nie aus dem Blick.
+2. Häkle den Hauptteil ruhig und gleichmäßig weiter und halte deine Spannung locker; zu fest gehäkelt wird die Arbeit hart und uneben.
+3. Forme das Teil wie beschrieben und zähle am Ende jeder Runde deine Maschen nach, damit sich kein Fehler einschleicht.
+4. Häkle die letzten Runden, schneide den Faden ab und zieh ihn zum Schluss durch die letzte Masche fest; lass dabei ein langes Ende zum Vernähen.
 
-- Weave in every end on the wrong side.
-- Block gently to open up the stitch pattern.
-- Photograph it in daylight — pink always reads better that way.
+## Fertigstellung
+
+- Vernähe jeden Faden auf der linken Seite.
+- Spanne behutsam, um das Maschenmuster zu öffnen.
+- Fotografiere ihn im Tageslicht – Rosa wirkt so immer besser.

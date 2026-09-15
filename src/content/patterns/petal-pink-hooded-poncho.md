@@ -1,73 +1,75 @@
 ---
-title: "Petal Pink Hooded Poncho"
-excerpt: "A generous hooded poncho in soft shell stitch — full coverage, no fastenings, and it packs down small."
+title: "Kapuzenponcho in Blütenrosa"
+excerpt: "Ein großzügiger Kapuzenponcho in weichem Muschelmuster – volle Bedeckung, keine Verschlüsse, und er lässt sich klein zusammenpacken."
 category: "clothing"
 cover: "/images/patterns/petal-pink-hooded-poncho.svg"
 publishDate: 2026-07-28
 featured: false
 difficulty: "easy"
-hook: "6.5 mm (K)"
+hook: "6,5 mm"
 yarnWeight: "Aran (4)"
-yardage: "1,050 yd / 960 m"
-gauge: "3 shells x 7 rows = 4 in (10 cm)"
-time: "10-14 hours"
-sizes: ["One size — fits bust 34 to 50 in"]
-stitches: ["ch", "sc", "dc", "shell", "sl st"]
+yardage: "960 m / 1.050 yd"
+gauge: "3 Muscheln x 7 R = 10 cm"
+time: "10–14 Stunden"
+sizes: ["Einheitsgröße – für Brustumfang 86 bis 127 cm"]
+stitches: ["Lm", "fM", "Stb", "Muschel", "Km"]
 materials:
-  - "Aran acrylic blend in Petal Pink - 6 skeins"
-  - "6.5 mm hook"
-  - "Tapestry needle"
-colors: ["Petal Pink", "Rose"]
-tags: ["poncho", "hooded", "shell stitch", "layering"]
+  - "Aran-Acrylmischung in Blütenrosa – 6 Knäuel"
+  - "Häkelnadel 6,5 mm"
+  - "Wollnadel"
+colors: ["Blütenrosa", "Rosé"]
+tags: ["Poncho", "Kapuze", "Muschelmuster", "Lagenlook"]
 ---
 
-## Why you will love it
+## Warum du ihn lieben wirst
 
-One rectangle folded and seamed once, plus a hood worked straight onto the neckline. It covers the shoulders and arms completely, throws on over anything, and rolls into a bag without creasing.
+Ein Rechteck, einmal gefaltet und genäht, plus eine Kapuze, die direkt an den Halsausschnitt gehäkelt wird. Er bedeckt Schultern und Arme vollständig, lässt sich über alles werfen und rollt sich knitterfrei in eine Tasche.
 
-> Skill level: **easy** - Hook **6.5 mm (K)** - Yarn **Aran (4)**
+> Schwierigkeit: **Leicht** – Nadel **6,5 mm** – Garn **Aran (4)**
 
-## Materials
+## Material
 
-- Aran acrylic blend in Petal Pink - 6 skeins
-- 6.5 mm hook
-- Tapestry needle
+- Aran-Acrylmischung in Blütenrosa – 6 Knäuel
+- Häkelnadel 6,5 mm
+- Wollnadel
 
-## Gauge
+## Maschenprobe
 
-3 shells x 7 rows = 4 in (10 cm). Shell stitch is forgiving, but a loose gauge will stretch the poncho long over time.
+3 Muscheln x 7 R = 10 cm. Muschelmuster ist gutmütig, aber eine zu lockere Maschenprobe zieht den Poncho mit der Zeit in die Länge.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| dc | double crochet |
-| shell | 5 dc worked into the same stitch |
-| sl st | slip stitch |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| Stb | Stäbchen |
+| Muschel | 5 Stb in dieselbe Masche gehäkelt |
+| Km | Kettmasche |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- The whole body is one rectangle — no shaping until the hood.
-- Read the folding step twice before seaming; it is the only part people get backwards.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Der ganze Körper ist ein Rechteck – keine Formung bis zur Kapuze.
+- Lies den Faltschritt zweimal, bevor du nähst; das ist der einzige Teil, den man verkehrt herum macht.
 
-## Instructions
+## Anleitung
 
-1. Ch 122. Row 1: sc in 2nd ch from hook, then skip 2, shell in next st, skip 2, sc in next st — repeat to the end.
-2. Row 2: ch 3, 2 dc in the first st, then sc in the centre dc of each shell and a shell in each sc across, ending with 3 dc in the last st.
-3. Rows 3-64: repeat Rows 1 and 2. The panel should measure about 56 x 26 in.
-4. Fold the rectangle in half widthways and seam along one long edge, leaving the top 11 in open for the neck.
-5. Hood: work 46 sc evenly around the neck opening, then work 30 rows of hdc.
-6. Fold the hood in half and seam the top edge closed.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. 122 Lm. R 1: fM in die 2. Lm ab Nadel, dann 2 M überspringen, Muschel in die nächste M, 2 M überspringen, fM in die nächste M – bis zum Ende wiederholen.
+2. R 2: 3 Lm, 2 Stb in die erste M, dann fM in das mittlere Stb jeder Muschel und eine Muschel in jede fM, am Ende 3 Stb in die letzte M.
+3. R 3–64: R 1 und 2 wiederholen. Das Teil sollte etwa 142 x 66 cm messen.
+4. Falte das Rechteck der Breite nach in der Mitte und nähe entlang einer langen Kante, dabei oben 28 cm für den Hals offen lassen.
+5. Kapuze: 46 fM gleichmäßig um den Halsausschnitt häkeln, dann 30 Reihen hStb.
+6. Falte die Kapuze in der Mitte und nähe die obere Kante zu.
 
-- Work 2 rounds of sc around the hood opening and the full lower hem.
-- Add a row of picot along the hem if you want a softer edge.
-- Block the shells open so the stitch pattern reads clearly.
+## Fertigstellung
 
-## Make it yours
+- Häkle 2 Runden fM um die Kapuzenöffnung und den gesamten unteren Saum.
+- Ergänze eine Reihe Picot am Saum, wenn du eine weichere Kante möchtest.
+- Spanne die Muscheln offen, damit das Muster klar zur Geltung kommt.
 
-Skip the hood and work a folded cowl collar instead, or add a deep fringe along the hem for a winter version.
+## Mach ihn zu deinem
+
+Lass die Kapuze weg und häkle stattdessen einen umgeschlagenen Kragen, oder ergänze für eine Winterversion eine tiefe Fransenkante am Saum.

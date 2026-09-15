@@ -1,76 +1,80 @@
 ---
-title: "Petal Pink Macrame-Style Plant Hanger"
-excerpt: "A crocheted take on the macrame hanger - chains, rings and tassels, no knotting board required."
+title: "Blumenampel in Makramee-Optik in Blütenrosa"
+excerpt: "Eine gehäkelte Variante der Makramee-Ampel – Ketten, Ringe und Quasten, ganz ohne Knüpfbrett."
 category: "home-decor"
 cover: "/images/patterns/petal-pink-plant-hanger.svg"
 publishDate: 2026-07-04
 featured: false
 difficulty: "beginner"
-hook: "5.0 mm (H)"
-yarnWeight: "Cotton cord (5)"
-yardage: "180 yd / 165 m"
-gauge: "Not critical"
-time: "2-3 hours"
-sizes: ["32 in long, fits a 6 in pot"]
-stitches: ["ch", "sc", "sl st", "tassel"]
+hook: "5,0 mm"
+yarnWeight: "Baumwollkordel (5)"
+yardage: "165 m / 180 yd"
+gauge: "Nicht kritisch"
+time: "2–3 Stunden"
+sizes: ["81 cm lang, für einen 15-cm-Topf"]
+stitches: ["Lm", "fM", "Km", "Quaste"]
 materials:
-  - "Cotton cord in Petal Pink - 2 skeins"
-  - "5.0 mm hook"
-  - "1 wooden ring 50 mm"
-  - "Scissors"
-colors: ["Petal Pink"]
-tags: ["plant hanger", "home decor", "quick make"]
+  - "Baumwollkordel in Blütenrosa – 2 Knäuel"
+  - "Häkelnadel 5,0 mm"
+  - "1 Holzring 50 mm"
+  - "Schere"
+colors: ["Blütenrosa"]
+tags: ["Blumenampel", "Deko", "schnelles Projekt"]
 ---
 
-## Why you will love it
+## Warum du sie lieben wirst
 
-A crocheted take on the macrame hanger - chains, rings and tassels, no knotting board required. This one is written the way I would explain it to a friend sitting next to me - every round counted, every shaping step spelled out, and no surprises at the finish line.
+Eine gehäkelte Variante der Makramee-Ampel – Ketten, Ringe und Quasten, ganz ohne Knüpfbrett. Diese Anleitung ist so geschrieben, wie ich sie einer Freundin erklären würde, die neben mir sitzt – jede Runde gezählt, jeder Formschritt ausbuchstabiert und keine Überraschungen auf der Zielgeraden.
 
-> Skill level: **beginner** - Hook **5.0 mm (H)** - Yarn **Cotton cord (5)**
+> Schwierigkeit: **Anfänger** – Nadel **5,0 mm** – Garn **Baumwollkordel (5)**
 
-## Materials
+## Material
 
-- Cotton cord in Petal Pink - 2 skeins
-- 5.0 mm hook
-- 1 wooden ring 50 mm
-- Scissors
+- Baumwollkordel in Blütenrosa – 2 Knäuel
+- Häkelnadel 5,0 mm
+- 1 Holzring 50 mm
+- Schere
 
-## Gauge
+## Maschenprobe
 
-Not critical. Take the two minutes to swatch - with cotton cord (5) yarn a half-stitch difference compounds fast.
+Nicht kritisch. Nimm dir die zwei Minuten für eine Maschenprobe – bei Baumwollkordel (5) summiert sich ein halber Maschenunterschied schnell.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| hdc | half double crochet |
-| dc | double crochet |
-| sl st | slip stitch |
-| inc / dec | increase / decrease |
-| blo | back loop only |
-| st(s) | stitch(es) |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| hStb | halbes Stäbchen |
+| Stb | Stäbchen |
+| Km | Kettmasche |
+| Zun / Abn | zunehmen / abnehmen |
+| hMg | nur hinteres Maschenglied |
+| M | Masche(n) |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- The turning chain does *not* count as a stitch unless stated.
-- Mark the first stitch of every round; it saves a lot of counting later.
-- Read the whole pattern once before you pick up the hook.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Die Wendeluftmasche zählt *nicht* als Masche, sofern nicht anders angegeben.
+- Markiere die erste Masche jeder Runde; das spart später viel Zählerei.
+- Lies die ganze Anleitung einmal durch, bevor du zur Nadel greifst.
+- **Für Einsteiger:** Schau dir vorab kurz an, wie eine **feste Masche (fM)** und ein **Stäbchen (Stb)** gehäkelt werden – dann fällt dir alles Weitere ganz leicht.
+- Verzählt? Passiert wirklich jedem. Trenn einfach bis zur letzten Markierung zurück und häkle von dort in Ruhe weiter.
 
-## Instructions
+## Anleitung
 
-1. Work 24 sc around the wooden ring to cover it completely.
-2. Make 4 chains of 90 sts each, attaching both ends to the ring.
-3. Join the chains in pairs at 8 in and again at 16 in to form the cradle.
-4. Work a small sc circle at the base and attach all 8 strands to it.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Häkle 24 fM um den Holzring, um ihn vollständig zu umhüllen.
+2. Fertige 4 Ketten aus je 90 M und befestige beide Enden am Ring.
+3. Verbinde die Ketten paarweise bei 20 cm und noch einmal bei 40 cm, um den Korb zu formen.
+4. Häkle unten einen kleinen fM-Kreis und befestige alle 8 Stränge daran.
 
-- Add a 6 in tassel below the base circle.
-- Hang, drop the pot in, and adjust the cradle joins so it sits level.
+## Fertigstellung
 
-## Make it yours
+- Ergänze eine 15-cm-Quaste unter dem Bodenkreis.
+- Aufhängen, den Topf einsetzen und die Verbindungen so justieren, dass er waagerecht hängt.
 
-Swap the main colour for anything in the same weight - this shape carries a bold shade just as well as it carries petal pink. If you make one, tag it so I can see it; nothing beats seeing a pattern out in the world.
+## Mach sie zu deiner
+
+Tausch die Hauptfarbe gegen eine beliebige Farbe derselben Stärke – diese Form trägt einen kräftigen Ton genauso gut wie Blütenrosa. Wenn du eine machst, markiere sie, damit ich sie sehen kann; nichts geht über eine Anleitung, die draußen in der Welt lebt.

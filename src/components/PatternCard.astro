@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import Icon from './Icon.astro';
-import { categoryMap } from '../data/site';
+import { categoryMap, difficultyLabels } from '../data/site';
 import { difficultyDots } from '../lib/utils';
 
 interface Props {
@@ -39,7 +39,7 @@ const titles = {
       {
         d.featured && (
           <span class="absolute start-3 top-3 rounded-full bg-plum-900/85 px-3 py-1.5 text-[0.6rem] font-bold tracking-[0.18em] text-panel-ink uppercase backdrop-blur-sm">
-            Featured
+            Empfohlen
           </span>
         )
       }
@@ -48,7 +48,7 @@ const titles = {
         d.pdfKey && (
           <span
             class="absolute end-3 top-3 grid size-8 place-items-center rounded-full bg-surface/90 text-accent-soft backdrop-blur-sm"
-            title="Printable PDF available"
+            title="Druckbares PDF verfügbar"
           >
             <Icon name="download" size={15} />
           </span>
@@ -58,7 +58,7 @@ const titles = {
       <span
         class="absolute inset-x-3 bottom-3 flex translate-y-2 items-center justify-between rounded-full bg-surface/92 px-4 py-2 opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
       >
-        <span class="text-[0.68rem] font-bold tracking-[0.14em] text-ink-strong uppercase">Read pattern</span>
+        <span class="text-[0.68rem] font-bold tracking-[0.14em] text-ink-strong uppercase">Anleitung lesen</span>
         <Icon name="arrow-right" size={15} class="text-accent" />
       </span>
     </div>
@@ -87,7 +87,7 @@ const titles = {
                 {d.time}
               </span>
             )}
-            <span class="inline-flex items-center gap-1" title={`Difficulty: ${d.difficulty}`}>
+            <span class="inline-flex items-center gap-1" title={`Schwierigkeit: ${difficultyLabels[d.difficulty] ?? d.difficulty}`}>
               {Array.from({ length: 4 }).map((_, i) => (
                 <span
                   class:list={[
@@ -96,7 +96,7 @@ const titles = {
                   ]}
                 />
               ))}
-              <span class="ms-1 capitalize">{d.difficulty}</span>
+              <span class="ms-1">{difficultyLabels[d.difficulty] ?? d.difficulty}</span>
             </span>
           </div>
         )

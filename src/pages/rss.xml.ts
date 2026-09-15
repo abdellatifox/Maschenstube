@@ -30,7 +30,7 @@ export const GET: APIRoute = async ({ site: astroSite }) => {
     <title>${escape(site.name)}</title>
     <link>${base}</link>
     <description>${escape(site.description)}</description>
-    <language>en</language>
+    <language>de</language>
 ${items}
   </channel>
 </rss>`;

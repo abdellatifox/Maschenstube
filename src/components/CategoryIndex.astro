@@ -9,12 +9,12 @@ const { counts } = Astro.props;
 <section id="the-index" class="container-editorial scroll-mt-24 py-20 lg:py-28">
   <div class="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
     <div class="lg:sticky lg:top-28 lg:self-start" data-reveal>
-      <p class="eyebrow">The index</p>
+      <p class="eyebrow">Das Register</p>
       <h2 class="mt-4 font-display text-issue font-bold tracking-tight text-ink-strong">
-        Browse by <span class="accent-italic">category</span>
+        Nach <span class="accent-italic">Kategorie</span> stöbern
       </h2>
       <p class="mt-5 max-w-xs text-[0.95rem] leading-relaxed text-ink-soft">
-        Seven main collections plus seasonal patterns. Pick a thread and pull.
+        Sieben Hauptkollektionen plus saisonale Anleitungen. Zieh an einem Faden und leg los.
       </p>
       <div class="rule-line mt-8 w-24"></div>
     </div>
@@ -37,7 +37,7 @@ const { counts } = Astro.props;
               </span>
 
               <span class="hidden shrink-0 text-[0.7rem] font-bold tracking-[0.14em] text-muted uppercase sm:block">
-                {counts[c.key] ?? 0} {counts[c.key] === 1 ? 'pattern' : 'patterns'}
+                {counts[c.key] ?? 0} {counts[c.key] === 1 ? 'Anleitung' : 'Anleitungen'}
               </span>
 
               <span class="grid size-9 shrink-0 place-items-center rounded-full border border-line text-ink transition-all group-hover:border-blush-500 group-hover:bg-blush-500 group-hover:text-white">

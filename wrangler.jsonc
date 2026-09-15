@@ -40,7 +40,7 @@
   ],
 
   "vars": {
-    "SITE_NAME": "Crochet Atelier",
+    "SITE_NAME": "Maschenstube",
     "PUBLIC_R2_URL": "" // إن ربطت نطاقًا مخصصًا بالـ R2 ضعه هنا مثال: https://media.example.com
   }
 }

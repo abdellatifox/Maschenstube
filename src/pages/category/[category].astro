@@ -25,7 +25,7 @@ const { cat, entries } = Astro.props;
 const others = categories.filter((c) => c.key !== cat.key);
 ---
 
-<BaseLayout title={`${cat.title} crochet patterns`} description={cat.blurb}>
+<BaseLayout title={`${cat.title} Häkelanleitungen`} description={cat.blurb}>
   <section class="yarn-texture border-b border-line/60">
     <div class="container-editorial py-12 lg:py-16">
       <Breadcrumbs items={[{ label: 'Patterns', href: '/patterns' }, { label: cat.title }]} />
@@ -34,7 +34,7 @@ const others = categories.filter((c) => c.key !== cat.key);
         <div>
           <p class="eyebrow flex items-center gap-3">
             <span class="font-mono text-blush-400">{cat.no}</span>
-            Collection
+            Kollektion
           </p>
           <h1 class="mt-4 max-w-3xl font-display text-hero font-bold tracking-[-0.035em] text-ink-strong">
             {cat.title.split(' ')[0]} <span class="accent-italic">{cat.kicker}</span>
@@ -43,7 +43,7 @@ const others = categories.filter((c) => c.key !== cat.key);
         </div>
 
         <p class="rounded-full bg-tint-3 px-4 py-2 text-[0.68rem] font-bold tracking-[0.18em] text-accent-strong uppercase">
-          {entries.length} {entries.length === 1 ? 'pattern' : 'patterns'}
+          {entries.length} {entries.length === 1 ? 'Anleitung' : 'Anleitungen'}
         </p>
       </div>
     </div>
@@ -59,13 +59,13 @@ const others = categories.filter((c) => c.key !== cat.key);
         </div>
       ) : (
         <div class="rounded-3xl border border-dashed border-line py-20 text-center">
-          <p class="font-display text-xl font-bold text-ink-strong">Nothing here just yet.</p>
-          <p class="mt-2 text-ink-soft">This collection is on the hook — subscribe and you will hear first.</p>
+          <p class="font-display text-xl font-bold text-ink-strong">Hier ist noch nichts.</p>
+          <p class="mt-2 text-ink-soft">Diese Kollektion ist in Arbeit — abonniere und erfahre es als Erste.</p>
           <a
             href="/patterns"
             class="mt-6 inline-flex items-center gap-2 rounded-full bg-blush-600 px-6 py-3 text-[0.76rem] font-bold tracking-[0.14em] text-white uppercase"
           >
-            Browse everything
+            Alles ansehen
             <Icon name="arrow-right" size={15} />
           </a>
         </div>
@@ -76,7 +76,7 @@ const others = categories.filter((c) => c.key !== cat.key);
   <!-- تصنيفات أخرى -->
   <section class="border-t border-line/70 bg-tint/60 py-16">
     <div class="container-editorial">
-      <p class="eyebrow">Keep browsing</p>
+      <p class="eyebrow">Weiter stöbern</p>
       <ul class="mt-6 flex flex-wrap gap-2.5">
         {
           others.map((c) => (

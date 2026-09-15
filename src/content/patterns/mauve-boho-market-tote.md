@@ -1,75 +1,79 @@
 ---
-title: "Mauve Boho Market Tote"
-excerpt: "An airy mesh tote that folds into a pocket and stretches to hold a whole farmers-market haul."
+title: "Boho-Markttasche in Mauve"
+excerpt: "Eine luftige Netztasche, die sich klein zusammenfalten lässt und trotzdem einen ganzen Wochenmarkt-Einkauf fasst."
 category: "accessories"
 cover: "/images/patterns/mauve-boho-market-tote.svg"
 publishDate: 2026-07-18
 featured: false
 difficulty: "easy"
-hook: "6.0 mm (J)"
+hook: "6,0 mm"
 yarnWeight: "Bulky (5)"
-yardage: "420 yd / 384 m"
-gauge: "Mesh: 8 spaces x 8 rows = 4 in"
-time: "6-7 hours"
-sizes: ["14 x 16 in unstretched"]
-stitches: ["ch", "sc", "dc", "mesh", "sl st"]
+yardage: "384 m / 420 yd"
+gauge: "Netzmuster: 8 Zwischenräume x 8 Reihen = 10 cm"
+time: "6–7 Stunden"
+sizes: ["36 x 41 cm ungedehnt"]
+stitches: ["Lm", "fM", "Stb", "Netz", "Km"]
 materials:
-  - "Bulky cotton in Mauve - 3 skeins"
-  - "6.0 mm hook"
-  - "Tapestry needle"
-colors: ["Mauve", "Dusty Rose"]
-tags: ["tote", "mesh", "market bag", "summer"]
+  - "Bulky-Baumwolle in Mauve – 3 Knäuel"
+  - "Häkelnadel 6,0 mm"
+  - "Wollnadel"
+colors: ["Mauve", "Altrosa"]
+tags: ["Tasche", "Netzmuster", "Markttasche", "Sommer"]
 ---
 
-## Why you will love it
+## Warum du sie lieben wirst
 
-An airy mesh tote that folds into a pocket and stretches to hold a whole farmers-market haul. This one is written the way I would explain it to a friend sitting next to me - every round counted, every shaping step spelled out, and no surprises at the finish line.
+Eine luftige Netztasche, die sich klein zusammenfalten lässt und trotzdem einen ganzen Wochenmarkt-Einkauf fasst. Diese Anleitung ist so geschrieben, wie ich sie einer Freundin erklären würde, die neben mir sitzt – jede Runde gezählt, jeder Formschritt ausbuchstabiert und keine Überraschungen auf der Zielgeraden.
 
-> Skill level: **easy** - Hook **6.0 mm (J)** - Yarn **Bulky (5)**
+> Schwierigkeit: **Leicht** – Nadel **6,0 mm** – Garn **Bulky (5)**
 
-## Materials
+## Material
 
-- Bulky cotton in Mauve - 3 skeins
-- 6.0 mm hook
-- Tapestry needle
+- Bulky-Baumwolle in Mauve – 3 Knäuel
+- Häkelnadel 6,0 mm
+- Wollnadel
 
-## Gauge
+## Maschenprobe
 
-Mesh: 8 spaces x 8 rows = 4 in. Take the two minutes to swatch - with bulky (5) yarn a half-stitch difference compounds fast.
+Netzmuster: 8 Zwischenräume x 8 Reihen = 10 cm. Nimm dir die zwei Minuten für eine Maschenprobe – bei Bulky-Garn (5) summiert sich ein halber Maschenunterschied schnell.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| hdc | half double crochet |
-| dc | double crochet |
-| sl st | slip stitch |
-| inc / dec | increase / decrease |
-| blo | back loop only |
-| st(s) | stitch(es) |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| hStb | halbes Stäbchen |
+| Stb | Stäbchen |
+| Km | Kettmasche |
+| Zun / Abn | zunehmen / abnehmen |
+| hMg | nur hinteres Maschenglied |
+| M | Masche(n) |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- The turning chain does *not* count as a stitch unless stated.
-- Mark the first stitch of every round; it saves a lot of counting later.
-- Read the whole pattern once before you pick up the hook.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Die Wendeluftmasche zählt *nicht* als Masche, sofern nicht anders angegeben.
+- Markiere die erste Masche jeder Runde; das spart später viel Zählerei.
+- Lies die ganze Anleitung einmal durch, bevor du zur Nadel greifst.
+- **Für Einsteiger:** Schau dir vorab kurz an, wie eine **feste Masche (fM)** und ein **Stäbchen (Stb)** gehäkelt werden – dann fällt dir alles Weitere ganz leicht.
+- Verzählt? Passiert wirklich jedem. Trenn einfach bis zur letzten Markierung zurück und häkle von dort in Ruhe weiter.
 
-## Instructions
+## Anleitung
 
-1. Start with a flat circular base: 6 rounds of sc increases to 60 sts.
-2. Rnd 7: work ch 3, skip 2, sc around to begin the mesh.
-3. Rnds 8-34: continue the mesh, working each sc into the previous ch-3 space.
-4. Rnd 35-38: work 4 solid rounds of sc for a firm top band.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Beginne mit einem flachen runden Boden: 6 Runden mit fM-Zunahmen auf 60 M.
+2. Rd 7: 3 Lm, 2 M überspringen, in fM rundherum – so beginnt das Netzmuster.
+3. Rd 8–34: das Netzmuster fortführen und jede fM in den vorherigen 3-Lm-Bogen häkeln.
+4. Rd 35–38: 4 dichte Runden fM für einen festen oberen Rand häkeln.
 
-- Make two 22 in handles in sc and sew them 6 in apart on each side.
-- Reinforce the handle joins with a second pass of stitches.
-- The mesh stretches a lot - do not block it flat.
+## Fertigstellung
 
-## Make it yours
+- Häkle zwei Henkel von 56 cm in fM und nähe sie mit 15 cm Abstand an jede Seite.
+- Verstärke die Henkelansätze mit einer zweiten Reihe Maschen.
+- Das Netz dehnt sich stark – nicht flach spannen.
 
-Swap the main colour for anything in the same weight - this shape carries a bold shade just as well as it carries mauve. If you make one, tag it so I can see it; nothing beats seeing a pattern out in the world.
+## Mach sie zu deiner
+
+Tausch die Hauptfarbe gegen eine beliebige Farbe derselben Stärke – diese Form trägt einen kräftigen Ton genauso gut wie Mauve. Wenn du eine machst, markiere sie, damit ich sie sehen kann; nichts geht über eine Anleitung, die draußen in der Welt lebt.

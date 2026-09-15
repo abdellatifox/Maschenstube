@@ -23,7 +23,7 @@ const hasLead = Boolean(lead);
     <div class="flex flex-wrap items-end justify-between gap-4 border-b border-line/70 pb-6" data-reveal>
       <div class="flex flex-wrap items-baseline gap-4">
         <span class="rounded-full bg-tint-3 px-3.5 py-1.5 text-[0.6rem] font-bold tracking-[0.2em] text-accent-strong uppercase">
-          Issue no. {issue}
+          Ausgabe Nr. {issue}
         </span>
         <h2 class="font-display text-issue font-bold tracking-tight text-ink-strong">
           {cat?.title.split(' ')[0]} <span class="accent-italic">{cat?.kicker}</span>
@@ -33,7 +33,7 @@ const hasLead = Boolean(lead);
         href={`/category/${category}`}
         class="group inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-ink uppercase transition-colors hover:text-accent"
       >
-        View all
+        Alle ansehen
         <Icon name="arrow-right" size={15} class="transition-transform group-hover:translate-x-1" />
       </a>
     </div>
@@ -41,7 +41,7 @@ const hasLead = Boolean(lead);
     <div class="mt-9 grid gap-8 lg:grid-cols-[1.15fr_1fr] lg:gap-12">
       <!-- الباترون الرئيسي -->
       <div class="relative">
-        <span class="eyebrow absolute -top-1 start-0 z-10 hidden">01 / Featured</span>
+        <span class="eyebrow absolute -top-1 start-0 z-10 hidden">01 / Empfohlen</span>
         <PatternCard entry={lead} size="lg" index={0} />
       </div>
 

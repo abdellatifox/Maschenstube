@@ -1,77 +1,81 @@
 ---
-title: "Winter Rose Beanie and Scarf Set"
-excerpt: "A ribbed slouchy beanie and a matching pocket scarf worked in warm rose bulky yarn."
+title: "Mützen- und Schal-Set in Winterrose"
+excerpt: "Eine gerippte, lässige Mütze und ein passender Taschenschal aus warmem, dickem Garn in Rosé."
 category: "seasonal"
 cover: "/images/patterns/winter-rose-beanie-set.svg"
 publishDate: 2026-09-08
 featured: false
 difficulty: "easy"
-hook: "6.0 mm (J)"
+hook: "6,0 mm"
 yarnWeight: "Bulky (5)"
-yardage: "560 yd / 512 m"
-gauge: "11 sts x 9 rows = 4 in in hdc blo"
-time: "7-9 hours"
-sizes: ["Adult S/M", "Adult L"]
-stitches: ["ch", "hdc", "hdc blo", "sc", "sl st"]
+yardage: "512 m / 560 yd"
+gauge: "11 M x 9 R = 10 cm in hStb ins hintere Maschenglied"
+time: "7–9 Stunden"
+sizes: ["Erwachsene S/M", "Erwachsene L"]
+stitches: ["Lm", "hStb", "hStb hMg", "fM", "Km"]
 materials:
-  - "Bulky wool in Winter Rose - 4 skeins"
-  - "6.0 mm hook"
-  - "Faux-fur pom pom"
-  - "Tapestry needle"
-colors: ["Winter Rose", "Cream"]
-tags: ["beanie", "scarf", "winter", "ribbing"]
+  - "Bulky-Wolle in Winterrose – 4 Knäuel"
+  - "Häkelnadel 6,0 mm"
+  - "Kunstfell-Bommel"
+  - "Wollnadel"
+colors: ["Winterrose", "Creme"]
+tags: ["Mütze", "Schal", "Winter", "Rippen"]
 ---
 
-## Why you will love it
+## Warum du es lieben wirst
 
-A ribbed slouchy beanie and a matching pocket scarf worked in warm rose bulky yarn. This one is written the way I would explain it to a friend sitting next to me - every round counted, every shaping step spelled out, and no surprises at the finish line.
+Eine gerippte, lässige Mütze und ein passender Taschenschal aus warmem, dickem Garn in Rosé. Diese Anleitung ist so geschrieben, wie ich sie einer Freundin erklären würde, die neben mir sitzt – jede Runde gezählt, jeder Formschritt ausbuchstabiert und keine Überraschungen auf der Zielgeraden.
 
-> Skill level: **easy** - Hook **6.0 mm (J)** - Yarn **Bulky (5)**
+> Schwierigkeit: **Leicht** – Nadel **6,0 mm** – Garn **Bulky (5)**
 
-## Materials
+## Material
 
-- Bulky wool in Winter Rose - 4 skeins
-- 6.0 mm hook
-- Faux-fur pom pom
-- Tapestry needle
+- Bulky-Wolle in Winterrose – 4 Knäuel
+- Häkelnadel 6,0 mm
+- Kunstfell-Bommel
+- Wollnadel
 
-## Gauge
+## Maschenprobe
 
-11 sts x 9 rows = 4 in in hdc blo. Take the two minutes to swatch - with bulky (5) yarn a half-stitch difference compounds fast.
+11 M x 9 R = 10 cm in hStb ins hintere Maschenglied. Nimm dir die zwei Minuten für eine Maschenprobe – bei Bulky-Garn (5) summiert sich ein halber Maschenunterschied schnell.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| hdc | half double crochet |
-| dc | double crochet |
-| sl st | slip stitch |
-| inc / dec | increase / decrease |
-| blo | back loop only |
-| st(s) | stitch(es) |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| hStb | halbes Stäbchen |
+| Stb | Stäbchen |
+| Km | Kettmasche |
+| Zun / Abn | zunehmen / abnehmen |
+| hMg | nur hinteres Maschenglied |
+| M | Masche(n) |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- The turning chain does *not* count as a stitch unless stated.
-- Mark the first stitch of every round; it saves a lot of counting later.
-- Read the whole pattern once before you pick up the hook.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Die Wendeluftmasche zählt *nicht* als Masche, sofern nicht anders angegeben.
+- Markiere die erste Masche jeder Runde; das spart später viel Zählerei.
+- Lies die ganze Anleitung einmal durch, bevor du zur Nadel greifst.
+- **Für Einsteiger:** Schau dir vorab kurz an, wie eine **feste Masche (fM)** und ein **Stäbchen (Stb)** gehäkelt werden – dann fällt dir alles Weitere ganz leicht.
+- Verzählt? Passiert wirklich jedem. Trenn einfach bis zur letzten Markierung zurück und häkle von dort in Ruhe weiter.
 
-## Instructions
+## Anleitung
 
-1. Beanie: ch 13 and work hdc blo rows until the band wraps your head snugly, then seam into a tube.
-2. Work 24 sc evenly along one edge of the band, then 14 rounds of hdc.
-3. Decrease 6 sts per round until 8 remain, then cinch closed.
-4. Scarf: ch 25 and work hdc blo for 62 in.
-5. Fold each end up 8 in and seam the sides to make the pockets.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Mütze: 13 Lm und Reihen hStb ins hintere Maschenglied häkeln, bis das Band eng um deinen Kopf reicht, dann zu einem Schlauch nähen.
+2. 24 fM gleichmäßig entlang einer Kante des Bandes häkeln, dann 14 Runden hStb.
+3. Pro Runde 6 M abnehmen, bis 8 M übrig sind, dann zuziehen.
+4. Schal: 25 Lm und hStb ins hintere Maschenglied über 157 cm häkeln.
+5. Beide Enden 20 cm hochklappen und die Seiten zunähen, um die Taschen zu formen.
 
-- Attach the pom pom to the crown with a secure double knot.
-- Block the scarf lightly so the ribbing relaxes.
+## Fertigstellung
 
-## Make it yours
+- Befestige den Bommel mit einem festen Doppelknoten an der Mützenspitze.
+- Spanne den Schal leicht, damit sich die Rippen entspannen.
 
-Swap the main colour for anything in the same weight - this shape carries a bold shade just as well as it carries winter rose. If you make one, tag it so I can see it; nothing beats seeing a pattern out in the world.
+## Mach es zu deinem
+
+Tausch die Hauptfarbe gegen eine beliebige Farbe derselben Stärke – diese Form trägt einen kräftigen Ton genauso gut wie Winterrose. Wenn du eins machst, markiere es, damit ich es sehen kann; nichts geht über eine Anleitung, die draußen in der Welt lebt.

@@ -1,78 +1,82 @@
 ---
-title: "Rose Quartz Tiered Baby Dress"
-excerpt: "Three soft tiers of shell stitch over a snug yoke - sized from newborn to 24 months."
+title: "Stufen-Babykleid in Rosenquarz"
+excerpt: "Drei weiche Volantstufen im Muschelmuster über einer eng anliegenden Passe – in Größen von Neugeboren bis 24 Monate."
 category: "baby-kids"
 cover: "/images/patterns/rose-quartz-baby-dress.svg"
 publishDate: 2026-07-30
 featured: false
 difficulty: "intermediate"
-hook: "3.5 mm (E)"
+hook: "3,5 mm"
 yarnWeight: "Sport (2)"
-yardage: "480 yd / 439 m"
-gauge: "22 sts x 12 rows = 4 in (10 cm) in dc"
-time: "8-10 hours"
-sizes: ["0-3m", "3-6m", "6-12m", "12-18m", "18-24m"]
-stitches: ["ch", "sc", "dc", "shell", "sl st"]
+yardage: "439 m / 480 yd"
+gauge: "22 M x 12 R = 10 cm in Stb"
+time: "8–10 Stunden"
+sizes: ["0–3 Mon.", "3–6 Mon.", "6–12 Mon.", "12–18 Mon.", "18–24 Mon."]
+stitches: ["Lm", "fM", "Stb", "Muschel", "Km"]
 materials:
-  - "Baby-soft sport yarn in Rose Quartz - 3 skeins"
-  - "3.5 mm hook"
-  - "3 small buttons"
-  - "Tapestry needle"
-colors: ["Rose Quartz", "Ivory"]
-tags: ["baby", "dress", "shell stitch"]
+  - "Babyweiches Sport-Garn in Rosenquarz – 3 Knäuel"
+  - "Häkelnadel 3,5 mm"
+  - "3 kleine Knöpfe"
+  - "Wollnadel"
+colors: ["Rosenquarz", "Elfenbein"]
+tags: ["Baby", "Kleid", "Muschelmuster"]
 ---
 
-## Why you will love it
+## Warum du es lieben wirst
 
-Three soft tiers of shell stitch over a snug yoke - sized from newborn to 24 months. This one is written the way I would explain it to a friend sitting next to me - every round counted, every shaping step spelled out, and no surprises at the finish line.
+Drei weiche Volantstufen im Muschelmuster über einer eng anliegenden Passe – in Größen von Neugeboren bis 24 Monate. Diese Anleitung ist so geschrieben, wie ich sie einer Freundin erklären würde, die neben mir sitzt – jede Runde gezählt, jeder Formschritt ausbuchstabiert und keine Überraschungen auf der Zielgeraden.
 
-> Skill level: **intermediate** - Hook **3.5 mm (E)** - Yarn **Sport (2)**
+> Schwierigkeit: **Mittel** – Nadel **3,5 mm** – Garn **Sport (2)**
 
-## Materials
+## Material
 
-- Baby-soft sport yarn in Rose Quartz - 3 skeins
-- 3.5 mm hook
-- 3 small buttons
-- Tapestry needle
+- Babyweiches Sport-Garn in Rosenquarz – 3 Knäuel
+- Häkelnadel 3,5 mm
+- 3 kleine Knöpfe
+- Wollnadel
 
-## Gauge
+## Maschenprobe
 
-22 sts x 12 rows = 4 in (10 cm) in dc. Take the two minutes to swatch - with sport (2) yarn a half-stitch difference compounds fast.
+22 M x 12 R = 10 cm in Stb. Nimm dir die zwei Minuten für eine Maschenprobe – bei Sport-Garn (2) summiert sich ein halber Maschenunterschied schnell.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| hdc | half double crochet |
-| dc | double crochet |
-| sl st | slip stitch |
-| inc / dec | increase / decrease |
-| blo | back loop only |
-| st(s) | stitch(es) |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| hStb | halbes Stäbchen |
+| Stb | Stäbchen |
+| Km | Kettmasche |
+| Zun / Abn | zunehmen / abnehmen |
+| hMg | nur hinteres Maschenglied |
+| M | Masche(n) |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- The turning chain does *not* count as a stitch unless stated.
-- Mark the first stitch of every round; it saves a lot of counting later.
-- Read the whole pattern once before you pick up the hook.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Die Wendeluftmasche zählt *nicht* als Masche, sofern nicht anders angegeben.
+- Markiere die erste Masche jeder Runde; das spart später viel Zählerei.
+- Lies die ganze Anleitung einmal durch, bevor du zur Nadel greifst.
+- **Für Einsteiger:** Schau dir vorab kurz an, wie eine **feste Masche (fM)** und ein **Stäbchen (Stb)** gehäkelt werden – dann fällt dir alles Weitere ganz leicht.
+- Verzählt? Passiert wirklich jedem. Trenn einfach bis zur letzten Markierung zurück und häkle von dort in Ruhe weiter.
 
-## Instructions
+## Anleitung
 
-1. Work the yoke flat in rows of dc with 4 raglan increase points.
-2. After 9 (10, 11, 12, 13) rows, separate the sleeves and join the body in the round.
-3. Tier 1: work 6 rounds of shell stitch.
-4. Tier 2: increase to 1.5x the stitch count and work 8 rounds.
-5. Tier 3: increase again and work 10 rounds, then edge with sc.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Häkle die Passe in Reihen aus Stb mit 4 Raglan-Zunahmepunkten.
+2. Nach 9 (10, 11, 12, 13) Reihen die Ärmel abteilen und den Körper zur Runde schließen.
+3. Stufe 1: 6 Runden Muschelmuster häkeln.
+4. Stufe 2: auf das 1,5-Fache der Maschenzahl zunehmen und 8 Runden häkeln.
+5. Stufe 3: erneut zunehmen und 10 Runden häkeln, dann mit fM abschließen.
 
-- Add a sc placket along the back opening and space three button loops evenly.
-- Edge the sleeves with a single round of picot.
-- Wash and lay flat to dry - the tiers settle into a lovely swing.
+## Fertigstellung
 
-## Make it yours
+- Häkle eine fM-Blende entlang der Rückenöffnung und verteile drei Knopfschlingen gleichmäßig.
+- Umrande die Ärmel mit einer einzelnen Picot-Runde.
+- Waschen und flach trocknen – die Stufen legen sich in einen schönen Schwung.
 
-Swap the main colour for anything in the same weight - this shape carries a bold shade just as well as it carries rose quartz. If you make one, tag it so I can see it; nothing beats seeing a pattern out in the world.
+## Mach es zu deinem
+
+Tausch die Hauptfarbe gegen eine beliebige Farbe derselben Stärke – diese Form trägt einen kräftigen Ton genauso gut wie Rosenquarz. Wenn du eines machst, markiere es, damit ich es sehen kann; nichts geht über eine Anleitung, die draußen in der Welt lebt.

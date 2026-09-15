@@ -13,15 +13,15 @@ const { class: cls = '', withLabel = false } = Astro.props;
     withLabel ? 'w-full justify-start gap-3 px-3 py-2.5' : 'size-10',
     cls,
   ]}
-  aria-label="Switch to dark mode"
-  title="Light / dark"
+  aria-label="Zum dunklen Modus wechseln"
+  title="Hell / Dunkel"
 >
   <span class:list={['grid', withLabel ? '' : 'place-items-center']}>
     <!-- أيقونتان متراكبتان: تظهر واحدة حسب الوضع -->
     <Icon name="sun" size={19} class="col-start-1 row-start-1 scale-100 opacity-100 transition-all duration-300 dark-hide" />
     <Icon name="moon" size={18} class="col-start-1 row-start-1 scale-50 opacity-0 transition-all duration-300 dark-show" />
   </span>
-  {withLabel && <span class="text-lg font-semibold" data-theme-label>Dark mode</span>}
+  {withLabel && <span class="text-lg font-semibold" data-theme-label>Dunkler Modus</span>}
 </button>
 
 <style>
@@ -51,9 +51,9 @@ const { class: cls = '', withLabel = false } = Astro.props;
       ?.setAttribute('content', theme === 'dark' ? META_DARK : META_LIGHT);
 
     for (const btn of document.querySelectorAll('[data-theme-toggle]')) {
-      btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      btn.setAttribute('aria-label', theme === 'dark' ? 'Zum hellen Modus wechseln' : 'Zum dunklen Modus wechseln');
       const label = btn.querySelector('[data-theme-label]');
-      if (label) label.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+      if (label) label.textContent = theme === 'dark' ? 'Heller Modus' : 'Dunkler Modus';
     }
   };
 
@@ -66,12 +66,6 @@ const { class: cls = '', withLabel = false } = Astro.props;
     }),
   );
 
-  // اتباع النظام ما دام المستخدم لم يختر يدويًا
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    let stored: string | null = null;
-    try {
-      stored = localStorage.getItem('theme');
-    } catch {}
-    if (!stored) apply(e.matches ? 'dark' : 'light', false);
-  });
+  // الوضع الفاتح هو الأساسي؛ لا نتبع نظام التشغيل تلقائيًا
+  // يبقى الوضع فاتحًا ما لم يختر الزائر الوضع الداكن يدويًا.
 </script>

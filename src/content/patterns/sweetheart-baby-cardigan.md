@@ -1,50 +1,52 @@
 ---
-title: "Sweetheart Baby Cardigan"
-excerpt: "A top-down raglan cardigan in one piece — no seaming at all."
+title: "Herzchen-Babycardigan"
+excerpt: "Ein Raglan-Cardigan von oben nach unten in einem Stück – ganz ohne Nähte."
 category: "baby-kids"
 cover: "/images/patterns/sweetheart-baby-cardigan.svg"
 publishDate: 2026-07-16
 featured: false
 difficulty: "intermediate"
-hook: "3.5 mm (E)"
+hook: "3,5 mm"
 yarnWeight: "Sport (2)"
-gauge: "Work a 4 in swatch in the main stitch before you start."
-time: "8-12 hours"
-sizes: ["One size"]
-stitches: ["ch", "sc", "dc", "shell", "sl st"]
+gauge: "Häkle vor dem Start eine 10-cm-Maschenprobe im Grundmuster."
+time: "8–12 Stunden"
+sizes: ["Einheitsgröße"]
+stitches: ["Lm", "fM", "Stb", "Muschel", "Km"]
 materials:
-  - "Sport (2) yarn in your chosen pink - 2 to 4 skeins"
-  - "3.5 mm (E) crochet hook"
-  - "Tapestry needle and stitch markers"
-colors: ["Blush", "Rose"]
-tags: ["baby", "cardigan", "raglan"]
+  - "Sport-Garn (2) in deinem Wunsch-Rosa – 2 bis 4 Knäuel"
+  - "Häkelnadel 3,5 mm"
+  - "Wollnadel und Maschenmarkierer"
+colors: ["Zartrosa", "Rosé"]
+tags: ["Baby", "Cardigan", "Raglan"]
 ---
 
-## Why you will love it
+## Warum du ihn lieben wirst
 
-A top-down raglan cardigan in one piece — no seaming at all. Written round by round in US terms, with the fiddly parts explained rather than glossed over.
+Ein Raglan-Cardigan von oben nach unten in einem Stück – ganz ohne Nähte. Runde für Runde in deutschen Häkelbegriffen geschrieben, wobei die kniffligen Stellen erklärt statt übergangen werden.
 
-> Skill level: **intermediate** - Hook **3.5 mm (E)** - Yarn **Sport (2)**
+> Schwierigkeit: **Mittel** – Nadel **3,5 mm** – Garn **Sport (2)**
 
-## Materials
+## Material
 
-- Sport (2) yarn in your chosen pink
-- 3.5 mm (E) crochet hook
-- Tapestry needle, stitch markers, scissors
+- Sport-Garn (2) in deinem Wunsch-Rosa
+- Häkelnadel 3,5 mm
+- Wollnadel, Maschenmarkierer, Schere
 
-## Gauge
+## Maschenprobe
 
-Swatch 4 in square in the main stitch. If your swatch runs large, drop half a hook size.
+Häkle eine Maschenprobe von 10 cm im Grundmuster. Fällt deine Probe zu groß aus, geh eine halbe Nadelstärke runter.
 
-## Instructions
+## Anleitung
 
-1. Start with the foundation as written and mark the first stitch of the round.
-2. Work the body section evenly, keeping your tension relaxed.
-3. Shape as directed, counting at the end of every round.
-4. Work the final rounds and fasten off, leaving a long tail for finishing.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Beginne mit der Grundreihe (der Anfangskette aus Luftmaschen) wie angegeben und markiere die erste Masche der Runde mit einem Maschenmarkierer – so verlierst du den Anfang nie aus dem Blick.
+2. Häkle den Hauptteil ruhig und gleichmäßig weiter und halte deine Spannung locker; zu fest gehäkelt wird die Arbeit hart und uneben.
+3. Forme das Teil wie beschrieben und zähle am Ende jeder Runde deine Maschen nach, damit sich kein Fehler einschleicht.
+4. Häkle die letzten Runden, schneide den Faden ab und zieh ihn zum Schluss durch die letzte Masche fest; lass dabei ein langes Ende zum Vernähen.
 
-- Weave in every end on the wrong side.
-- Block gently to open up the stitch pattern.
-- Photograph it in daylight — pink always reads better that way.
+## Fertigstellung
+
+- Vernähe jeden Faden auf der linken Seite.
+- Spanne behutsam, um das Maschenmuster zu öffnen.
+- Fotografiere ihn im Tageslicht – Rosa wirkt so immer besser.

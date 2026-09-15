@@ -5,7 +5,7 @@ import PatternCard from '../../components/PatternCard.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Newsletter from '../../components/Newsletter.astro';
 import Icon from '../../components/Icon.astro';
-import { categories, difficulties } from '../../data/site';
+import { categories, difficulties, difficultyLabels } from '../../data/site';
 
 const all = (await getCollection('patterns', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
@@ -16,17 +16,18 @@ for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 
 ---
 
 <BaseLayout
-  title="All free crochet patterns"
-  description="Every free crochet pattern in the library — filter by category, difficulty and hook size."
+  title="Alle kostenlosen Häkelanleitungen"
+  description="Jede kostenlose Häkelanleitung der Bibliothek — filtere nach Kategorie, Schwierigkeit und Nadelstärke."
 >
   <section class="yarn-texture border-b border-line/60">
     <div class="container-editorial py-12 lg:py-16">
       <Breadcrumbs items={[{ label: 'Patterns' }]} />
       <h1 class="mt-6 font-display text-hero font-bold tracking-[-0.035em] text-ink-strong">
-        The <span class="accent-italic">library</span>
+        Die <span class="accent-italic">Bibliothek</span>
       </h1>
       <p class="mt-5 max-w-lg text-[1.02rem] leading-relaxed text-ink-soft">
-        {all.length} free patterns, written in US terms and tested twice. Filter your way to the next project.
+        {all.length} kostenlose Anleitungen, in deutschen Häkelbegriffen geschrieben und doppelt getestet. Filtere dich
+        zu deinem nächsten Projekt.
       </p>
     </div>
   </section>
@@ -37,7 +38,7 @@ for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 
       <div
         class="-mx-5 flex items-center gap-1.5 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:flex-wrap md:overflow-visible md:px-0 md:pb-0"
         role="group"
-        aria-label="Filter by category"
+        aria-label="Nach Kategorie filtern"
       >
         <button
           type="button"
@@ -45,7 +46,7 @@ for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 
           data-value="all"
           class="filter-chip is-active"
         >
-          All <span class="opacity-60">{all.length}</span>
+          Alle <span class="opacity-60">{all.length}</span>
         </button>
         {
           categories.map((c) =>
@@ -59,29 +60,29 @@ for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 
       </div>
 
       <div class="flex flex-wrap items-center gap-1.5">
-        <label class="sr-only" for="sort">Sort patterns</label>
+        <label class="sr-only" for="sort">Anleitungen sortieren</label>
         <select
           id="sort"
           class="rounded-full border border-line bg-surface px-4 py-2 text-[0.78rem] font-semibold text-ink outline-none focus:border-blush-400"
         >
-          <option value="newest">Newest first</option>
-          <option value="oldest">Oldest first</option>
+          <option value="newest">Neueste zuerst</option>
+          <option value="oldest">Älteste zuerst</option>
           <option value="az">A → Z</option>
         </select>
 
         <select
           id="difficulty"
-          class="rounded-full border border-line bg-surface px-4 py-2 text-[0.78rem] font-semibold text-ink capitalize outline-none focus:border-blush-400"
+          class="rounded-full border border-line bg-surface px-4 py-2 text-[0.78rem] font-semibold text-ink outline-none focus:border-blush-400"
         >
-          <option value="all">Any difficulty</option>
-          {difficulties.map((d) => <option value={d}>{d}</option>)}
+          <option value="all">Jede Schwierigkeit</option>
+          {difficulties.map((d) => <option value={d}>{difficultyLabels[d]}</option>)}
         </select>
       </div>
     </div>
   </div>
 
   <section class="container-editorial py-12 lg:py-16">
-    <p id="result-count" class="eyebrow mb-8">Showing {all.length} patterns</p>
+    <p id="result-count" class="eyebrow mb-8">{all.length} Anleitungen werden angezeigt</p>
 
     <div id="grid" class="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
       {
@@ -100,8 +101,8 @@ for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 
     </div>
 
     <p id="empty" hidden class="py-20 text-center text-ink-soft">
-      No patterns match those filters yet.
-      <button type="button" id="reset" class="font-semibold text-accent-soft underline underline-offset-4">Reset</button>
+      Noch passt keine Anleitung zu diesen Filtern.
+      <button type="button" id="reset" class="font-semibold text-accent-soft underline underline-offset-4">Zurücksetzen</button>
     </p>
   </section>
 
@@ -170,7 +171,7 @@ for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 
     });
     sorted.forEach((c) => grid.appendChild(c));
 
-    countEl.textContent = `Showing ${visible} ${visible === 1 ? 'pattern' : 'patterns'}`;
+    countEl.textContent = `${visible} ${visible === 1 ? 'Anleitung' : 'Anleitungen'} werden angezeigt`;
     empty.hidden = visible > 0;
 
     // مزامنة الرابط

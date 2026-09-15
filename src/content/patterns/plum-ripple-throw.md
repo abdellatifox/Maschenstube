@@ -1,73 +1,77 @@
 ---
-title: "Plum and Petal Ripple Throw"
-excerpt: "Deep plum valleys fading up into petal-pink peaks, worked in a soft feather-and-fan repeat."
+title: "Wellenplaid in Pflaume & Blüte"
+excerpt: "Tiefe Pflaumentäler, die nach oben in blütenrosa Spitzen verblassen, im weichen Feder-und-Fächer-Rapport gearbeitet."
 category: "blankets"
 cover: "/images/patterns/plum-ripple-throw.svg"
 publishDate: 2026-05-30
 featured: false
 difficulty: "intermediate"
-hook: "6.0 mm (J)"
-yarnWeight: "Worsted (4)"
-yardage: "1,450 yd / 1,326 m"
-gauge: "16 sts x 9 rows = 4 in"
-time: "18-22 hours"
-sizes: ["50 x 65 in"]
-stitches: ["ch", "dc", "tr", "dc2tog", "sc", "picot"]
+hook: "6,0 mm"
+yarnWeight: "Medium (4)"
+yardage: "1.326 m / 1.450 yd"
+gauge: "16 M x 9 R = 10 cm"
+time: "18–22 Stunden"
+sizes: ["127 x 165 cm"]
+stitches: ["Lm", "Stb", "DStb", "2 Stb zus.", "fM", "Picot"]
 materials:
-  - "Worsted merino - 5 skeins Plum, 4 Petal, 3 Blush"
-  - "6.0 mm hook"
-  - "Tapestry needle"
-colors: ["Plum", "Petal", "Blush"]
-tags: ["throw", "feather and fan", "gradient"]
+  - "Medium-Merino – 5 Knäuel Pflaume, 4 Blüte, 3 Zartrosa"
+  - "Häkelnadel 6,0 mm"
+  - "Wollnadel"
+colors: ["Pflaume", "Blüte", "Zartrosa"]
+tags: ["Plaid", "Feder-und-Fächer", "Farbverlauf"]
 ---
 
-## Why you will love it
+## Warum du es lieben wirst
 
-Deep plum valleys fading up into petal-pink peaks, worked in a soft feather-and-fan repeat. This one is written the way I would explain it to a friend sitting next to me - every round counted, every shaping step spelled out, and no surprises at the finish line.
+Tiefe Pflaumentäler, die nach oben in blütenrosa Spitzen verblassen, im weichen Feder-und-Fächer-Rapport gearbeitet. Diese Anleitung ist so geschrieben, wie ich sie einer Freundin erklären würde, die neben mir sitzt – jede Runde gezählt, jeder Formschritt ausbuchstabiert und keine Überraschungen auf der Zielgeraden.
 
-> Skill level: **intermediate** - Hook **6.0 mm (J)** - Yarn **Worsted (4)**
+> Schwierigkeit: **Mittel** – Nadel **6,0 mm** – Garn **Medium (4)**
 
-## Materials
+## Material
 
-- Worsted merino - 5 skeins Plum, 4 Petal, 3 Blush
-- 6.0 mm hook
-- Tapestry needle
+- Medium-Merino – 5 Knäuel Pflaume, 4 Blüte, 3 Zartrosa
+- Häkelnadel 6,0 mm
+- Wollnadel
 
-## Gauge
+## Maschenprobe
 
-16 sts x 9 rows = 4 in. Take the two minutes to swatch - with worsted (4) yarn a half-stitch difference compounds fast.
+16 M x 9 R = 10 cm. Nimm dir die zwei Minuten für eine Maschenprobe – bei Medium-Garn (4) summiert sich ein halber Maschenunterschied schnell.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| hdc | half double crochet |
-| dc | double crochet |
-| sl st | slip stitch |
-| inc / dec | increase / decrease |
-| blo | back loop only |
-| st(s) | stitch(es) |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| hStb | halbes Stäbchen |
+| Stb | Stäbchen |
+| Km | Kettmasche |
+| Zun / Abn | zunehmen / abnehmen |
+| hMg | nur hinteres Maschenglied |
+| M | Masche(n) |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- The turning chain does *not* count as a stitch unless stated.
-- Mark the first stitch of every round; it saves a lot of counting later.
-- Read the whole pattern once before you pick up the hook.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Die Wendeluftmasche zählt *nicht* als Masche, sofern nicht anders angegeben.
+- Markiere die erste Masche jeder Runde; das spart später viel Zählerei.
+- Lies die ganze Anleitung einmal durch, bevor du zur Nadel greifst.
+- **Für Einsteiger:** Schau dir vorab kurz an, wie eine **feste Masche (fM)** und ein **Stäbchen (Stb)** gehäkelt werden – dann fällt dir alles Weitere ganz leicht.
+- Verzählt? Passiert wirklich jedem. Trenn einfach bis zur letzten Markierung zurück und häkle von dort in Ruhe weiter.
 
-## Instructions
+## Anleitung
 
-1. Ch 194. Row 1: work the 18-stitch feather-and-fan repeat across.
-2. Rows 2-130: repeat, moving one shade lighter every 10 rows.
-3. Use a lifeline every 20 rows - frogging a fan repeat is painful.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. 194 Lm. R 1: den 18-Maschen-Rapport Feder-und-Fächer über die ganze Reihe häkeln.
+2. R 2–130: wiederholen und alle 10 Reihen einen Ton heller wechseln.
+3. Zieh alle 20 Reihen einen Rettungsfaden ein – einen Fächer-Rapport aufzuribbeln ist schmerzhaft.
 
-- Work a picot edge in Blush all the way around.
-- Steam-block the peaks flat so the gradient reads cleanly.
+## Fertigstellung
 
-## Make it yours
+- Häkle rundherum eine Picot-Kante in Zartrosa.
+- Spanne die Spitzen mit Dampf flach, damit der Farbverlauf sauber wirkt.
 
-Swap the main colour for anything in the same weight - this shape carries a bold shade just as well as it carries plum. If you make one, tag it so I can see it; nothing beats seeing a pattern out in the world.
+## Mach es zu deinem
+
+Tausch die Hauptfarbe gegen eine beliebige Farbe derselben Stärke – diese Form trägt einen kräftigen Ton genauso gut wie Pflaume. Wenn du eines machst, markiere es, damit ich es sehen kann; nichts geht über eine Anleitung, die draußen in der Welt lebt.

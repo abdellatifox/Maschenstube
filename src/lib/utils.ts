@@ -1,13 +1,13 @@
-export function formatDate(date: Date, locale = 'en-US') {
+export function formatDate(date: Date, locale = 'de-DE') {
   return new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', day: 'numeric' }).format(date);
 }
 
-export function shortDate(date: Date, locale = 'en-US') {
+export function shortDate(date: Date, locale = 'de-DE') {
   return new Intl.DateTimeFormat(locale, { month: 'short', day: '2-digit', year: 'numeric' }).format(date);
 }
 
 export function compact(n: number) {
-  return new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 }).format(n);
+  return new Intl.NumberFormat('de', { notation: 'compact', maximumFractionDigits: 1 }).format(n);
 }
 
 export function readingTime(text: string) {

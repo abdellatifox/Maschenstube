@@ -2,20 +2,21 @@
 import Icon from './Icon.astro';
 import type { CollectionEntry } from 'astro:content';
 import { difficultyDots } from '../lib/utils';
+import { difficultyLabels } from '../data/site';
 
 interface Props { data: CollectionEntry<'patterns'>['data'] }
 const { data: d } = Astro.props;
 
 const rows = [
-  { icon: 'hook', label: 'Hook', value: d.hook },
-  { icon: 'yarn', label: 'Yarn weight', value: d.yarnWeight },
-  { icon: 'ruler', label: 'Yardage', value: d.yardage },
-  { icon: 'clock', label: 'Time', value: d.time },
+  { icon: 'hook', label: 'Nadel', value: d.hook },
+  { icon: 'yarn', label: 'Garnstärke', value: d.yarnWeight },
+  { icon: 'ruler', label: 'Garnmenge', value: d.yardage },
+  { icon: 'clock', label: 'Dauer', value: d.time },
 ].filter((r) => Boolean(r.value));
 ---
 
 <aside class="rounded-3xl border border-tint-3 bg-tint/70 p-6 sm:p-7">
-  <p class="eyebrow">At a glance</p>
+  <p class="eyebrow">Auf einen Blick</p>
 
   <div class="mt-5 space-y-4">
     {
@@ -37,9 +38,9 @@ const rows = [
         <Icon name="star" size={17} />
       </span>
       <span>
-        <span class="block text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Difficulty</span>
+        <span class="block text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Schwierigkeit</span>
         <span class="flex items-center gap-1.5">
-          <span class="text-[0.92rem] font-semibold text-ink-strong capitalize">{d.difficulty}</span>
+          <span class="text-[0.92rem] font-semibold text-ink-strong">{difficultyLabels[d.difficulty] ?? d.difficulty}</span>
           <span class="flex gap-1">
             {
               Array.from({ length: 4 }).map((_, i) => (
@@ -55,7 +56,7 @@ const rows = [
   {
     d.gauge && (
       <div class="mt-6 border-t border-tint-3 pt-5">
-        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Gauge</p>
+        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Maschenprobe</p>
         <p class="mt-1.5 text-[0.9rem] leading-relaxed text-ink">{d.gauge}</p>
       </div>
     )
@@ -64,7 +65,7 @@ const rows = [
   {
     d.sizes.length > 0 && (
       <div class="mt-5 border-t border-tint-3 pt-5">
-        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Sizes</p>
+        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Größen</p>
         <ul class="mt-2 flex flex-wrap gap-1.5">
           {d.sizes.map((s) => (
             <li class="rounded-full bg-surface px-3 py-1 text-[0.75rem] font-semibold text-ink ring-1 ring-tint-3">
@@ -79,7 +80,7 @@ const rows = [
   {
     d.stitches.length > 0 && (
       <div class="mt-5 border-t border-tint-3 pt-5">
-        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Stitches used</p>
+        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Verwendete Maschen</p>
         <ul class="mt-2 flex flex-wrap gap-1.5">
           {d.stitches.map((s) => (
             <li class="rounded-full bg-tint-3/60 px-3 py-1 font-mono text-[0.72rem] font-semibold text-accent-strong">
@@ -94,7 +95,7 @@ const rows = [
   {
     d.colors.length > 0 && (
       <div class="mt-5 border-t border-tint-3 pt-5">
-        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Colourway</p>
+        <p class="text-[0.65rem] font-bold tracking-[0.16em] text-muted uppercase">Farben</p>
         <ul class="mt-2 space-y-1.5">
           {d.colors.map((c) => (
             <li class="text-[0.85rem] text-ink">{c}</li>

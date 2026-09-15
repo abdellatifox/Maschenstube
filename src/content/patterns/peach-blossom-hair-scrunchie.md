@@ -1,50 +1,52 @@
 ---
-title: "Peach Blossom Scrunchie Set"
-excerpt: "Three scrunchies in an hour — the perfect way to burn through cotton scraps."
+title: "Scrunchie-Set Pfirsichblüte"
+excerpt: "Drei Scrunchies in einer Stunde – die perfekte Art, Baumwollreste zu verbrauchen."
 category: "accessories"
 cover: "/images/patterns/peach-blossom-hair-scrunchie.svg"
 publishDate: 2026-06-28
 featured: false
 difficulty: "beginner"
-hook: "3.5 mm (E)"
-yarnWeight: "Cotton DK (3)"
-gauge: "Work a 4 in swatch in the main stitch before you start."
-time: "1-2 hours"
-sizes: ["One size"]
-stitches: ["ch", "sc", "dc", "sl st"]
+hook: "3,5 mm"
+yarnWeight: "Baumwolle DK (3)"
+gauge: "Häkle vor dem Start eine 10-cm-Maschenprobe im Grundmuster."
+time: "1–2 Stunden"
+sizes: ["Einheitsgröße"]
+stitches: ["Lm", "fM", "Stb", "Km"]
 materials:
-  - "Cotton DK (3) yarn in your chosen pink - 2 to 4 skeins"
-  - "3.5 mm (E) crochet hook"
-  - "Tapestry needle and stitch markers"
-colors: ["Blush", "Rose"]
-tags: ["scrunchie", "quick make", "scrap yarn"]
+  - "Baumwolle DK (3) in deinem Wunsch-Rosa – 2 bis 4 Knäuel"
+  - "Häkelnadel 3,5 mm"
+  - "Wollnadel und Maschenmarkierer"
+colors: ["Zartrosa", "Rosé"]
+tags: ["Scrunchie", "schnelles Projekt", "Garnreste"]
 ---
 
-## Why you will love it
+## Warum du es lieben wirst
 
-Three scrunchies in an hour — the perfect way to burn through cotton scraps. Written round by round in US terms, with the fiddly parts explained rather than glossed over.
+Drei Scrunchies in einer Stunde – die perfekte Art, Baumwollreste zu verbrauchen. Runde für Runde in deutschen Häkelbegriffen geschrieben, wobei die kniffligen Stellen erklärt statt übergangen werden.
 
-> Skill level: **beginner** - Hook **3.5 mm (E)** - Yarn **Cotton DK (3)**
+> Schwierigkeit: **Anfänger** – Nadel **3,5 mm** – Garn **Baumwolle DK (3)**
 
-## Materials
+## Material
 
-- Cotton DK (3) yarn in your chosen pink
-- 3.5 mm (E) crochet hook
-- Tapestry needle, stitch markers, scissors
+- Baumwolle DK (3) in deinem Wunsch-Rosa
+- Häkelnadel 3,5 mm
+- Wollnadel, Maschenmarkierer, Schere
 
-## Gauge
+## Maschenprobe
 
-Swatch 4 in square in the main stitch. If your swatch runs large, drop half a hook size.
+Häkle eine Maschenprobe von 10 cm im Grundmuster. Fällt deine Probe zu groß aus, geh eine halbe Nadelstärke runter.
 
-## Instructions
+## Anleitung
 
-1. Start with the foundation as written and mark the first stitch of the round.
-2. Work the body section evenly, keeping your tension relaxed.
-3. Shape as directed, counting at the end of every round.
-4. Work the final rounds and fasten off, leaving a long tail for finishing.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Beginne mit der Grundreihe (der Anfangskette aus Luftmaschen) wie angegeben und markiere die erste Masche der Runde mit einem Maschenmarkierer – so verlierst du den Anfang nie aus dem Blick.
+2. Häkle den Hauptteil ruhig und gleichmäßig weiter und halte deine Spannung locker; zu fest gehäkelt wird die Arbeit hart und uneben.
+3. Forme das Teil wie beschrieben und zähle am Ende jeder Runde deine Maschen nach, damit sich kein Fehler einschleicht.
+4. Häkle die letzten Runden, schneide den Faden ab und zieh ihn zum Schluss durch die letzte Masche fest; lass dabei ein langes Ende zum Vernähen.
 
-- Weave in every end on the wrong side.
-- Block gently to open up the stitch pattern.
-- Photograph it in daylight — pink always reads better that way.
+## Fertigstellung
+
+- Vernähe jeden Faden auf der linken Seite.
+- Spanne behutsam, um das Maschenmuster zu öffnen.
+- Fotografiere sie im Tageslicht – Rosa wirkt so immer besser.

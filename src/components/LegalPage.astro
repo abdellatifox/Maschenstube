@@ -6,12 +6,12 @@ interface Props { title: string; updated?: string }
 const { title, updated = 'September 2026' } = Astro.props;
 ---
 
-<BaseLayout title={title} description={`${title} for Crochet Atelier.`}>
+<BaseLayout title={title} description={`${title} für Maschenstube.`}>
   <section class="yarn-texture border-b border-line/60">
     <div class="container-editorial py-12 lg:py-16">
       <Breadcrumbs items={[{ label: title }]} />
       <h1 class="mt-6 font-display text-4xl font-bold tracking-[-0.03em] text-ink-strong sm:text-5xl">{title}</h1>
-      <p class="mt-4 text-[0.7rem] font-bold tracking-[0.16em] text-muted uppercase">Last updated {updated}</p>
+      <p class="mt-4 text-[0.7rem] font-bold tracking-[0.16em] text-muted uppercase">Zuletzt aktualisiert {updated}</p>
     </div>
   </section>
 

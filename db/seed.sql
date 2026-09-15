@@ -7,5 +7,5 @@ INSERT OR IGNORE INTO pattern_stats (slug, views, likes, downloads) VALUES
   ('mauve-boho-market-tote',        655,  98,  41);
 
 INSERT OR IGNORE INTO media_files (r2_key, slug, kind, title, gated) VALUES
-  ('patterns/blush-puff-envelope-bag.pdf', 'blush-puff-envelope-bag', 'pdf', 'Blush Puff Envelope Bag — PDF', 0),
-  ('patterns/peony-granny-square-cardigan.pdf', 'peony-granny-square-cardigan', 'pdf', 'Peony Cardigan — PDF', 1);
+  ('patterns/blush-puff-envelope-bag.pdf', 'blush-puff-envelope-bag', 'pdf', 'Puff-Clutch in Zartrosa — PDF', 0),
+  ('patterns/peony-granny-square-cardigan.pdf', 'peony-granny-square-cardigan', 'pdf', 'Granny-Square-Cardigan in Pfingstrose — PDF', 1);

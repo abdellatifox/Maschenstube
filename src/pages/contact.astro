@@ -5,22 +5,22 @@ import Icon from '../components/Icon.astro';
 import { site } from '../data/site';
 
 const faqs = [
-  ['Can I sell what I make from your patterns?', 'Yes — sell as many finished items as you like. Please credit the pattern and never resell the pattern file itself.'],
-  ['Can I translate a pattern?', 'Absolutely, with a link back to the original page. Send me the link and I will list it here too.'],
-  ['Do you take custom orders?', 'Not at the moment. My hands are full writing the next release.'],
-  ['A round is not adding up — help?', 'Send me the pattern name and the round number. I answer every one of these, usually within two days.'],
+  ['Darf ich verkaufen, was ich aus deinen Anleitungen mache?', 'Ja — verkaufe so viele fertige Stücke, wie du möchtest. Bitte nenne die Anleitung als Quelle und verkaufe niemals die Anleitungsdatei selbst weiter.'],
+  ['Darf ich eine Anleitung übersetzen?', 'Absolut, mit einem Link zurück zur Originalseite. Schick mir den Link und ich liste ihn hier ebenfalls auf.'],
+  ['Nimmst du Auftragsarbeiten an?', 'Momentan nicht. Meine Hände sind mit der nächsten Anleitung voll ausgelastet.'],
+  ['Eine Runde geht nicht auf — Hilfe?', 'Schick mir den Namen der Anleitung und die Rundennummer. Ich beantworte jede einzelne, meist innerhalb von zwei Tagen.'],
 ];
 ---
 
-<BaseLayout title="Contact" description={`Get in touch with ${site.author} about patterns, corrections and collaborations.`}>
+<BaseLayout title="Kontakt" description={`Nimm mit ${site.author} Kontakt auf — zu Anleitungen, Korrekturen und Kooperationen.`}>
   <section class="yarn-texture border-b border-line/60">
     <div class="container-editorial py-12 lg:py-16">
       <Breadcrumbs items={[{ label: 'Contact' }]} />
       <h1 class="mt-6 font-display text-hero font-bold tracking-[-0.035em] text-ink-strong">
-        Say <span class="accent-italic">hello</span>.
+        Sag <span class="accent-italic">Hallo</span>.
       </h1>
       <p class="mt-5 max-w-lg text-[1.02rem] leading-relaxed text-ink-soft">
-        Pattern questions, corrections, collaborations, or a photo of what you made — all welcome.
+        Fragen zu Anleitungen, Korrekturen, Kooperationen oder ein Foto von deinem Werk — alles ist willkommen.
       </p>
     </div>
   </section>
@@ -32,7 +32,7 @@ const faqs = [
         <form id="contact-form" class="space-y-5" novalidate>
           <div class="grid gap-5 sm:grid-cols-2">
             <div>
-              <label for="name" class="eyebrow block">Your name</label>
+              <label for="name" class="eyebrow block">Dein Name</label>
               <input
                 id="name"
                 name="name"
@@ -41,7 +41,7 @@ const faqs = [
               />
             </div>
             <div>
-              <label for="email" class="eyebrow block">Email</label>
+              <label for="email" class="eyebrow block">E-Mail</label>
               <input
                 id="email"
                 name="email"
@@ -53,21 +53,21 @@ const faqs = [
           </div>
 
           <div>
-            <label for="subject" class="eyebrow block">Subject</label>
+            <label for="subject" class="eyebrow block">Betreff</label>
             <select
               id="subject"
               name="subject"
               class="mt-2 w-full rounded-2xl border border-line bg-surface px-4 py-3 text-[0.95rem] text-ink-strong outline-none transition focus:border-blush-400 focus:ring-2 focus:ring-tint-3"
             >
-              <option>Pattern question</option>
-              <option>Report a correction</option>
-              <option>Collaboration</option>
-              <option>Something else</option>
+              <option>Frage zur Anleitung</option>
+              <option>Korrektur melden</option>
+              <option>Kooperation</option>
+              <option>Etwas anderes</option>
             </select>
           </div>
 
           <div>
-            <label for="body" class="eyebrow block">Message</label>
+            <label for="body" class="eyebrow block">Nachricht</label>
             <textarea
               id="body"
               name="body"
@@ -84,7 +84,7 @@ const faqs = [
             class="inline-flex items-center gap-2 rounded-full bg-blush-600 px-7 py-3.5 text-[0.78rem] font-bold tracking-[0.14em] text-white uppercase shadow-soft transition-all hover:-translate-y-0.5 hover:bg-blush-700 disabled:opacity-60"
           >
             <Icon name="mail" size={16} />
-            Send message
+            Nachricht senden
           </button>
 
           <p id="contact-msg" role="status" aria-live="polite" class="min-h-[1.5rem] text-[0.88rem] font-medium"></p>
@@ -93,7 +93,7 @@ const faqs = [
 
       <!-- الأسئلة الشائعة -->
       <aside>
-        <p class="eyebrow">Before you write</p>
+        <p class="eyebrow">Bevor du schreibst</p>
         <div class="mt-5 divide-y divide-line/70 border-y border-line/70">
           {
             faqs.map(([q, a]) => (
@@ -111,11 +111,11 @@ const faqs = [
         </div>
 
         <div class="mt-8 rounded-2xl bg-panel p-6 text-panel-ink">
-          <p class="eyebrow !text-panel-accent">Prefer email?</p>
+          <p class="eyebrow !text-panel-accent">Lieber per E-Mail?</p>
           <a href={`mailto:${site.email}`} class="mt-3 block font-display text-lg font-bold text-white hover:text-panel-accent">
             {site.email}
           </a>
-          <p class="mt-2 text-[0.86rem] text-panel-ink-soft/75">I reply to everything, usually within two days.</p>
+          <p class="mt-2 text-[0.86rem] text-panel-ink-soft/75">Ich antworte auf alles, meist innerhalb von zwei Tagen.</p>
         </div>
       </aside>
     </div>
@@ -133,13 +133,13 @@ const faqs = [
     const payload = Object.fromEntries(new FormData(form));
 
     if (!payload.name || !payload.email || !payload.body) {
-      msg.textContent = 'Please fill in your name, email and message.';
+      msg.textContent = 'Bitte fülle Name, E-Mail und Nachricht aus.';
       msg.className = 'min-h-[1.5rem] text-[0.88rem] font-medium text-accent';
       return;
     }
 
     btn.disabled = true;
-    msg.textContent = 'Sending…';
+    msg.textContent = 'Wird gesendet…';
     msg.className = 'min-h-[1.5rem] text-[0.88rem] font-medium opacity-70';
 
     try {
@@ -151,14 +151,14 @@ const faqs = [
       const out = await res.json();
       if (res.ok && out.ok) {
         form.reset();
-        msg.textContent = 'Thank you — your message is with me.';
+        msg.textContent = 'Danke — deine Nachricht ist bei mir angekommen.';
         msg.className = 'min-h-[1.5rem] text-[0.88rem] font-semibold text-accent-soft';
       } else {
-        msg.textContent = out.error ?? 'Something went wrong. Try again shortly.';
+        msg.textContent = out.error ?? 'Etwas ist schiefgelaufen. Versuch es gleich noch einmal.';
         msg.className = 'min-h-[1.5rem] text-[0.88rem] font-medium text-accent';
       }
     } catch {
-      msg.textContent = 'Network error — please try again.';
+      msg.textContent = 'Netzwerkfehler — bitte versuch es erneut.';
       msg.className = 'min-h-[1.5rem] text-[0.88rem] font-medium text-accent';
     } finally {
       btn.disabled = false;

@@ -5,15 +5,15 @@ import { site, categories } from '../data/site';
 
 const year = new Date().getFullYear();
 const explore = [
-  { label: 'All patterns', href: '/patterns' },
-  { label: 'About Mia', href: '/about' },
-  { label: 'Contact', href: '/contact' },
-  { label: 'RSS feed', href: '/rss.xml' },
+  { label: 'Alle Anleitungen', href: '/patterns' },
+  { label: 'Über Mia', href: '/about' },
+  { label: 'Kontakt', href: '/contact' },
+  { label: 'RSS-Feed', href: '/rss.xml' },
 ];
 const legal = [
-  { label: 'Privacy policy', href: '/privacy' },
-  { label: 'Terms of use', href: '/terms' },
-  { label: 'Disclaimer', href: '/disclaimer' },
+  { label: 'Datenschutz', href: '/privacy' },
+  { label: 'Nutzungsbedingungen', href: '/terms' },
+  { label: 'Haftungsausschluss', href: '/disclaimer' },
 ];
 ---
 
@@ -24,7 +24,7 @@ const legal = [
       {
         Array.from({ length: 2 }).map(() => (
           <div class="flex shrink-0 gap-10">
-            {['Free patterns', 'Written in US terms', 'Tested twice', 'Printable PDFs', 'Made with pink yarn', 'New every Sunday'].map(
+            {['Kostenlose Anleitungen', 'Deutsche Häkelbegriffe', 'Doppelt getestet', 'PDFs zum Ausdrucken', 'Mit rosa Garn gemacht', 'Jeden Sonntag neu'].map(
               (t) => (
                 <span class="flex items-center gap-10 text-[0.7rem] font-bold tracking-[0.28em] text-accent-soft uppercase">
                   {t}
@@ -44,7 +44,7 @@ const legal = [
     <div class="mt-16 grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
       <div>
         <h2 class="font-display text-2xl font-bold tracking-tight text-ink-strong">
-          Crochet <span class="accent-italic">Atelier</span>
+          Maschen<span class="accent-italic">stube</span>
         </h2>
         <p class="mt-4 max-w-xs text-[0.92rem] leading-relaxed text-ink-soft">{site.description}</p>
         <ul class="mt-6 flex gap-2">
@@ -67,7 +67,7 @@ const legal = [
       </div>
 
       <nav aria-labelledby="f-cat">
-        <p class="eyebrow" id="f-cat">Categories</p>
+        <p class="eyebrow" id="f-cat">Kategorien</p>
         <ul class="mt-5 space-y-2.5">
           {
             categories.slice(0, 6).map((c) => (
@@ -85,7 +85,7 @@ const legal = [
       </nav>
 
       <nav aria-labelledby="f-exp">
-        <p class="eyebrow" id="f-exp">Explore</p>
+        <p class="eyebrow" id="f-exp">Entdecken</p>
         <ul class="mt-5 space-y-2.5">
           {
             explore.map((l) => (
@@ -100,7 +100,7 @@ const legal = [
       </nav>
 
       <nav aria-labelledby="f-leg">
-        <p class="eyebrow" id="f-leg">Legal</p>
+        <p class="eyebrow" id="f-leg">Rechtliches</p>
         <ul class="mt-5 space-y-2.5">
           {
             legal.map((l) => (
@@ -119,10 +119,7 @@ const legal = [
       class="mt-14 flex flex-col items-center justify-between gap-3 border-t border-line/70 pt-7 text-center sm:flex-row sm:text-start"
     >
       <p class="text-[0.7rem] font-semibold tracking-[0.16em] text-ink-soft uppercase">
-        © {year} {site.name} — all rights reserved
-      </p>
-      <p class="text-[0.7rem] font-semibold tracking-[0.16em] text-muted uppercase">
-        Built with Astro on Cloudflare
+        © {year} {site.name} — alle Rechte vorbehalten
       </p>
     </div>
   </div>

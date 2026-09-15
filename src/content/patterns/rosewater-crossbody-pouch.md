@@ -1,50 +1,52 @@
 ---
-title: "Rosewater Crossbody Pouch"
-excerpt: "A slim crossbody worked in tight single crochet with an adjustable chain strap."
+title: "Umhängetäschchen in Rosenwasser"
+excerpt: "Eine schmale Umhängetasche in dichten festen Maschen mit verstellbarem Luftmaschen-Riemen."
 category: "accessories"
 cover: "/images/patterns/rosewater-crossbody-pouch.svg"
 publishDate: 2026-08-02
 featured: false
 difficulty: "easy"
-hook: "4.5 mm (G)"
+hook: "4,5 mm"
 yarnWeight: "DK (3)"
-gauge: "Work a 4 in swatch in the main stitch before you start."
-time: "4-6 hours"
-sizes: ["One size"]
-stitches: ["ch", "sc", "dc", "sl st"]
+gauge: "Häkle vor dem Start eine 10-cm-Maschenprobe im Grundmuster."
+time: "4–6 Stunden"
+sizes: ["Einheitsgröße"]
+stitches: ["Lm", "fM", "Stb", "Km"]
 materials:
-  - "DK (3) yarn in your chosen pink - 2 to 4 skeins"
-  - "4.5 mm (G) crochet hook"
-  - "Tapestry needle and stitch markers"
-colors: ["Blush", "Rose"]
-tags: ["bag", "crossbody", "everyday"]
+  - "DK-Garn (3) in deinem Wunsch-Rosa – 2 bis 4 Knäuel"
+  - "Häkelnadel 4,5 mm"
+  - "Wollnadel und Maschenmarkierer"
+colors: ["Zartrosa", "Rosé"]
+tags: ["Tasche", "Umhängetasche", "Alltag"]
 ---
 
-## Why you will love it
+## Warum du sie lieben wirst
 
-A slim crossbody worked in tight single crochet with an adjustable chain strap. Written round by round in US terms, with the fiddly parts explained rather than glossed over.
+Eine schmale Umhängetasche in dichten festen Maschen mit verstellbarem Luftmaschen-Riemen. Runde für Runde in deutschen Häkelbegriffen geschrieben, wobei die kniffligen Stellen erklärt statt übergangen werden.
 
-> Skill level: **easy** - Hook **4.5 mm (G)** - Yarn **DK (3)**
+> Schwierigkeit: **Leicht** – Nadel **4,5 mm** – Garn **DK (3)**
 
-## Materials
+## Material
 
-- DK (3) yarn in your chosen pink
-- 4.5 mm (G) crochet hook
-- Tapestry needle, stitch markers, scissors
+- DK-Garn (3) in deinem Wunsch-Rosa
+- Häkelnadel 4,5 mm
+- Wollnadel, Maschenmarkierer, Schere
 
-## Gauge
+## Maschenprobe
 
-Swatch 4 in square in the main stitch. If your swatch runs large, drop half a hook size.
+Häkle eine Maschenprobe von 10 cm im Grundmuster. Fällt deine Probe zu groß aus, geh eine halbe Nadelstärke runter.
 
-## Instructions
+## Anleitung
 
-1. Start with the foundation as written and mark the first stitch of the round.
-2. Work the body section evenly, keeping your tension relaxed.
-3. Shape as directed, counting at the end of every round.
-4. Work the final rounds and fasten off, leaving a long tail for finishing.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Beginne mit der Grundreihe (der Anfangskette aus Luftmaschen) wie angegeben und markiere die erste Masche der Runde mit einem Maschenmarkierer – so verlierst du den Anfang nie aus dem Blick.
+2. Häkle den Hauptteil ruhig und gleichmäßig weiter und halte deine Spannung locker; zu fest gehäkelt wird die Arbeit hart und uneben.
+3. Forme das Teil wie beschrieben und zähle am Ende jeder Runde deine Maschen nach, damit sich kein Fehler einschleicht.
+4. Häkle die letzten Runden, schneide den Faden ab und zieh ihn zum Schluss durch die letzte Masche fest; lass dabei ein langes Ende zum Vernähen.
 
-- Weave in every end on the wrong side.
-- Block gently to open up the stitch pattern.
-- Photograph it in daylight — pink always reads better that way.
+## Fertigstellung
+
+- Vernähe jeden Faden auf der linken Seite.
+- Spanne behutsam, um das Maschenmuster zu öffnen.
+- Fotografiere sie im Tageslicht – Rosa wirkt so immer besser.

@@ -1,75 +1,77 @@
 ---
-title: "Blush Oversized Crewneck Sweater"
-excerpt: "A roomy drop-shoulder crewneck with a ribbed hem and long sleeves — the jumper you reach for every weekend."
+title: "Oversize-Rundhalspullover in Zartrosa"
+excerpt: "Ein weiter Rundhalspullover mit Fallschulter, Rippbund und langen Ärmeln – der Pulli, zu dem du jedes Wochenende greifst."
 category: "clothing"
 cover: "/images/patterns/blush-oversized-crewneck.svg"
 publishDate: 2026-08-26
 featured: true
 difficulty: "intermediate"
-hook: "5.5 mm (I)"
-yarnWeight: "Worsted (4)"
-yardage: "1,480 yd / 1,353 m"
-gauge: "15 sts x 11 rows = 4 in (10 cm) in sc blo"
-time: "16-20 hours"
+hook: "5,5 mm"
+yarnWeight: "Medium (4)"
+yardage: "1.353 m / 1.480 yd"
+gauge: "15 M x 11 R = 10 cm in fM ins hintere Maschenglied"
+time: "16–20 Stunden"
 sizes: ["XS/S", "M/L", "XL/2X", "3X/4X"]
-stitches: ["ch", "sc", "sc blo", "hdc", "sl st"]
+stitches: ["Lm", "fM", "fM hMg", "hStb", "Km"]
 materials:
-  - "Worsted merino blend in Blush - 9 skeins"
-  - "5.5 mm hook"
-  - "Tapestry needle and 6 stitch markers"
-colors: ["Blush", "Cream"]
-tags: ["sweater", "crewneck", "oversized", "everyday"]
+  - "Medium-Merinomischung in Zartrosa – 9 Knäuel"
+  - "Häkelnadel 5,5 mm"
+  - "Wollnadel und 6 Maschenmarkierer"
+colors: ["Zartrosa", "Creme"]
+tags: ["Pullover", "Rundhals", "Oversize", "Alltag"]
 ---
 
-## Why you will love it
+## Warum du ihn lieben wirst
 
-Full sleeve coverage, a high round neck and enough ease to layer over anything. It is worked in single crochet through the back loop, which gives a knit-look fabric with real drape and almost no bulk at the seams.
+Ganze Ärmellänge, ein hoher Rundhals und genug Weite, um über alles zu schichten. Er wird in festen Maschen ins hintere Maschenglied gehäkelt, was einen strickähnlichen Stoff mit echtem Fall und kaum Volumen an den Nähten ergibt.
 
-> Skill level: **intermediate** - Hook **5.5 mm (I)** - Yarn **Worsted (4)**
+> Schwierigkeit: **Mittel** – Nadel **5,5 mm** – Garn **Medium (4)**
 
-## Materials
+## Material
 
-- Worsted merino blend in Blush - 9 skeins
-- 5.5 mm hook
-- Tapestry needle, 6 stitch markers
+- Medium-Merinomischung in Zartrosa – 9 Knäuel
+- Häkelnadel 5,5 mm
+- Wollnadel, 6 Maschenmarkierer
 
-## Gauge
+## Maschenprobe
 
-15 sts x 11 rows = 4 in (10 cm) in sc blo. This stitch is dense; check your swatch after 20 rows, not 5.
+15 M x 11 R = 10 cm in fM ins hintere Maschenglied. Diese Masche ist dicht; prüfe deine Probe nach 20 Reihen, nicht nach 5.
 
-## Abbreviations
+## Abkürzungen
 
-| Short | Meaning |
+| Kürzel | Bedeutung |
 | --- | --- |
-| ch | chain |
-| sc | single crochet |
-| blo | back loop only |
-| hdc | half double crochet |
-| dec | decrease |
-| st(s) | stitch(es) |
+| Lm | Luftmasche |
+| fM | feste Masche |
+| hMg | nur hinteres Maschenglied |
+| hStb | halbes Stäbchen |
+| Abn | abnehmen |
+| M | Masche(n) |
 
-## Notes before you start
+## Hinweise vor dem Start
 
-- Written in **US crochet terms**.
-- Body and sleeves are worked flat, then seamed. Drop shoulders mean no armhole shaping.
-- The sleeves are written long on purpose — shorten before the cuff if you prefer.
+- In **deutschen Häkelbegriffen** geschrieben.
+- Körper und Ärmel werden in Reihen gehäkelt und dann zusammengenäht. Durch die Fallschulter gibt es keine Armausschnitt-Formung.
+- Die Ärmel sind bewusst lang geschrieben – kürze vor dem Bündchen, wenn du magst.
 
-## Instructions
+## Anleitung
 
-1. Front panel: ch 76 (84, 94, 104). Row 1: sc in 2nd ch from hook and across.
-2. Rows 2-90 (96, 100, 106): ch 1, sc blo across.
-3. Neck shaping: hold the centre 22 sts aside, then work each shoulder separately for 8 rows.
-4. Back panel: work exactly as the front but skip the neck shaping and go straight to the top.
-5. Sleeves (make 2): ch 40 (44, 48, 52) and work 76 rows of sc blo, increasing 1 st at each end every 8th row.
-6. Seam the shoulders, set the sleeves into the straight edge, then seam the sides and underarms in one line.
+Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab. Zähle am Ende jeder Runde (oder Reihe) deine Maschen nach und setze bei Bedarf einen Maschenmarkierer in die erste Masche. Lieber langsam und richtig als schnell und verzählt.
 
-## Finishing
+1. Vorderteil: 76 (84, 94, 104) Lm. R 1: fM in die 2. Lm ab Nadel und in jede weitere.
+2. R 2–90 (96, 100, 106): 1 Lm, fM ins hintere Maschenglied über die ganze Reihe.
+3. Halsformung: die mittleren 22 M stilllegen, dann jede Schulter 8 Reihen einzeln häkeln.
+4. Rückenteil: genau wie das Vorderteil, aber ohne Halsformung – gerade bis nach oben häkeln.
+5. Ärmel (2 Stück): 40 (44, 48, 52) Lm und 76 Reihen fM ins hintere Maschenglied häkeln, dabei in jeder 8. Reihe an beiden Enden 1 M zunehmen.
+6. Nähe die Schultern, setze die Ärmel in die gerade Kante ein und nähe dann Seiten und Unterärmel in einer Linie zusammen.
 
-- Neckband: work 6 rounds of sc around the neck opening, decreasing 4 sts evenly on the first round.
-- Hem: work 8 rows of sc blo sideways for the ribbed band, then seam it to the body.
-- Cuffs: repeat the hem band over 5 rows at each wrist.
-- Steam-block the seams flat.
+## Fertigstellung
 
-## Make it yours
+- Halsbund: 6 Runden fM um den Halsausschnitt häkeln, in der ersten Runde 4 M gleichmäßig abnehmen.
+- Saum: 8 Reihen fM ins hintere Maschenglied quer für den Rippbund häkeln, dann an den Körper nähen.
+- Bündchen: den Saumbund über 5 Reihen an jedem Handgelenk wiederholen.
+- Die Nähte mit Dampf flach spannen.
 
-Add 10 rows to the body for a tunic length that works beautifully over trousers, or work the neckband twice as deep for a folded funnel neck.
+## Mach ihn zu deinem
+
+Füge dem Körper 10 Reihen hinzu für eine Tunika-Länge, die wunderbar über der Hose sitzt, oder häkle den Halsbund doppelt so tief für einen umgeschlagenen Stehkragen.
