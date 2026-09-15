@@ -9,6 +9,8 @@
     "directory": "./dist"
   },
   "observability": { "enabled": true },
+  // الدومين المخصص (maschenstube.de / www) مربوط عبر Custom Domains في Cloudflare،
+  // وليس عبر routes هنا، لأن التوكن يفتقر صلاحية Zone Workers Routes.
 
   // ─────────────── D1 : قاعدة البيانات ───────────────
   // wrangler d1 create crochet-db  ← ثم ضع database_id هنا
