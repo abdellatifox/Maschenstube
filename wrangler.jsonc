@@ -16,7 +16,7 @@
     {
       "binding": "DB",
       "database_name": "crochet-db",
-      "database_id": "REPLACE_WITH_YOUR_D1_ID",
+      "database_id": "f7ea7df8-dfce-43d0-9cd5-f22274410f0a",
       "migrations_dir": "db/migrations"
     }
   ],
@@ -24,20 +24,21 @@
   // ─────────────── KV : كاش + إعدادات + Rate limit ───────────────
   // wrangler kv namespace create CACHE
   "kv_namespaces": [
-    { "binding": "CACHE", "id": "REPLACE_WITH_YOUR_KV_ID" },
-    { "binding": "SETTINGS", "id": "REPLACE_WITH_YOUR_SETTINGS_KV_ID" },
+    { "binding": "CACHE", "id": "47ed7503d9c646ed8f81b746ebdd0502" },
+    { "binding": "SETTINGS", "id": "8a84041613ca4119920cf7af345f8ce9" },
     // جلسات Astro (يطلبها محوّل Cloudflare) — wrangler kv namespace create SESSION
-    { "binding": "SESSION", "id": "REPLACE_WITH_YOUR_SESSION_KV_ID" }
+    { "binding": "SESSION", "id": "188ccc5414d44140b357cde1b4a9a462" }
   ],
 
   // ─────────────── R2 : ملفات PDF والصور ───────────────
-  // wrangler r2 bucket create crochet-media
-  "r2_buckets": [
-    {
-      "binding": "MEDIA",
-      "bucket_name": "crochet-media"
-    }
-  ],
+  // مؤقتًا معطّل حتى تُضاف صلاحية R2 للتوكن ويُفعّل R2 على الحساب.
+  // بعد التفعيل: أنشئ الحاوية `wrangler r2 bucket create crochet-media` ثم أزل التعليق وأعد النشر.
+  // "r2_buckets": [
+  //   {
+  //     "binding": "MEDIA",
+  //     "bucket_name": "crochet-media"
+  //   }
+  // ],
 
   "vars": {
     "SITE_NAME": "Maschenstube",
