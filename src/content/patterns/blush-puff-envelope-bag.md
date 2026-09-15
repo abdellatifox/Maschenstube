@@ -20,8 +20,6 @@ materials:
   - "Baumwoll-Futterstoff 30 x 50 cm"
   - "Wollnadel"
 colors: ["Zartrosa", "Creme"]
-pdfKey: "patterns/blush-puff-envelope-bag.pdf"
-pdfGated: false
 tags: ["Tasche", "Clutch", "Puff-Muster", "anfängerfreundlich"]
 ---
 

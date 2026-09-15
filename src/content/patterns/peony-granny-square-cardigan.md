@@ -19,8 +19,6 @@ materials:
   - "Spannmatten und Nadeln"
   - "Wollnadel"
 colors: ["Pfingstrose", "Zartrosa", "Pflaume", "Creme"]
-pdfKey: "patterns/peony-granny-square-cardigan.pdf"
-pdfGated: true
 tags: ["Cardigan", "Granny Square", "Farbverlauf", "Fortgeschritten"]
 ---
 
