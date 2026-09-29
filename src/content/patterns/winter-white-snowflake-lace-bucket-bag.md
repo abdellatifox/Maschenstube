@@ -1,5 +1,5 @@
 ---
-title: "Winter White Snowflake Lace Bucket Bag"
+title: "Winterweiße Beuteltasche mit Schneeflocken-Spitze"
 excerpt: "Ein wunderschöner Eimer-Handtasche kombiniert eine stabile graue Basis mit zarten weißen Spitzen."
 category: "accessories"
 cover: "/images/patterns/winter-white-snowflake-lace-bucket-bag.jpg"
@@ -11,7 +11,7 @@ hook: "4.0 mm"
 yarnWeight: "Wollgröße (4)"
 sizes: ["Einheitsgröße"]
 stitches: ["Lm", "fM", "Stb"]
-materials: ["Hauptfarbe (MC): Ca. 400 m Baumwollgarn (Wollgröße 4) in Grau", "Kontrastfarbe (CC): Ca. 300 m Baumwollgarn (Wollgröße 4) in Weiß oder Creme", "Häkelnadel: 4.0 mm (G/6) für den Taschenkörper, 3.5 mm (E/4) für die Spitze", "Maschenmarkierer", "Tapestry-Nadel", "Schere", "1 Yard Baumwollseil für den Griff (ca. 8 mm dick)", "2 Metallösen (optional, aber empfohlen)"]
+materials: ["Hauptfarbe (MC): Ca. 400 m Baumwollgarn (Wollgröße 4) in Grau", "Kontrastfarbe (CC): Ca. 300 m Baumwollgarn (Wollgröße 4) in Weiß oder Creme", "Häkelnadel: 4.0 mm (G/6) für den Taschenkörper, 3.5 mm (E/4) für die Spitze", "Maschenmarkierer", "Wollnadel", "Schere", "1 Yard Baumwollseil für den Griff (ca. 8 mm dick)", "2 Metallösen (optional, aber empfohlen)"]
 colors: ["Grau", "Weiß", "Creme"]
 tags: ["Eimer-Handtasche", "Häkelanleitung", "Spitze"]
 ---
@@ -22,7 +22,7 @@ Dieser wunderschöne Eimer-Handtasche kombiniert eine stabile graue Basis mit za
 
 Diese Anleitung ist so geschrieben, wie ich sie einer Freundin erklären würde, die neben mir sitzt – jede Runde gezählt, jeder Formschritt ausbuchstabiert und keine Überraschungen auf der Zielgeraden.
 
-![Winter White Snowflake Lace Bucket Bag](/images/patterns/winter-white-snowflake-lace-bucket-bag-2.jpg)
+![Winterweiße Beuteltasche mit Schneeflocken-Spitze](/images/patterns/winter-white-snowflake-lace-bucket-bag-2.jpg)
 
 > Schwierigkeit: **Mittel** – Nadel **4,0 mm** – Garn **Wollgröße (4)**
 
@@ -32,7 +32,7 @@ Diese Anleitung ist so geschrieben, wie ich sie einer Freundin erklären würde,
 - Kontrastfarbe (CC): Ca. 300 m Baumwollgarn (Wollgröße 4) in Weiß oder Creme
 - Häkelnadel: 4.0 mm (G/6) für den Taschenkörper, 3.5 mm (E/4) für die Spitze
 - Maschenmarkierer
-- Tapestry-Nadel
+- Wollnadel
 - Schere
 - 1 Yard Baumwollseil für den Griff (ca. 8 mm dick)
 - 2 Metallösen (optional, aber empfohlen)
@@ -72,7 +72,7 @@ Neu beim Häkeln? Keine Sorge – arbeite die Schritte einfach der Reihe nach ab
 Wir beginnen von unten und arbeiten in kontinuierlichen Spiralrunden. Platziere einen Maschenmarkierer zu Beginn jeder Runde und bewege ihn nach oben, während du arbeitest.
 
 1. Mit MC und 4.0 mm Häkelnadel:  
-   Runde 1: Magic Ring, 6 fM in den Ring häkeln, festziehen. (6 M)  
+   Runde 1: Magischer Ring, 6 fM in den Ring häkeln, festziehen. (6 M)  
 2. Runde 2: In jede M Zun. (12 M)  
 3. Runde 3: *Fm 1, Zun* wiederhole. (18 M)  
 4. Runde 4: *Fm 2, Zun* wiederhole. (24 M)  
@@ -90,7 +90,7 @@ Wir beginnen von unten und arbeiten in kontinuierlichen Spiralrunden. Platziere 
 
 Nun bauen wir die Seiten auf, indem wir gleichmäßige Runden ohne Zunahmen häkeln.
 
-13. Runde 13: Arbeiten in hinteren Maschengliedern (BLO), fM in jede M häkeln. (72 M)  
+13. Runde 13: Arbeiten in hinteren Maschengliedern (hMg), fM in jede M häkeln. (72 M)  
 14. Runden 14 bis 50: Fm in jede M häkeln. (72 M)  
    Das sind insgesamt 37 Runden von gleichmäßigen festen Maschen. Dein Taschenkörper sollte jetzt ca. 20 cm hoch sein.
 
@@ -117,7 +117,7 @@ Wir verringern sanft, um die kegelförmige Bügel-Form nahe der Öffnung zu scha
 Jetzt für die schönen Überzüge. Jedes Motiv wird separat gearbeitet und anschließend verbunden.
 
 24. Mit CC und 3.5 mm Häkelnadel:  
-   Runde 1: Magic Ring, Lm 3 (zählt als erstes Stb), 11 Stb in den Ring häkeln, Km zur Spitze der Lm-3 zur Verbindung. (12 Stb)  
+   Runde 1: Magischer Ring, Lm 3 (zählt als erstes Stb), 11 Stb in den Ring häkeln, Km zur Spitze der Lm-3 zur Verbindung. (12 Stb)  
 25. Runde 2: Lm 3, Stb in dieselbe M, 2 Stb in jede M rundherum, Km zum Verbinden. (24 Stb)  
 26. Runde 3: Lm 4 (zählt als Stb plus Lm-1), *Stb in die nächste M, Lm 1* wiederhole, Km in die 3. Lm der Anfangslm-4. (24 Stb, 24 Lm-1-Spalte)  
 27. Runde 4: Km in den Lm-1-Spalt, Lm 3, 2 Stb in denselben Spalt, Lm 2, *3 Stb in den nächsten Lm-1-Spalt, Lm 2* wiederhole, Km zum Verbinden. (24 Muschelgruppen)  
@@ -128,9 +128,9 @@ Jetzt für die schönen Überzüge. Jedes Motiv wird separat gearbeitet und ansc
 
 ### Teil Sechs: Verbindung des Spitzeüberzugs
 
-Arrangiere deine 5 fertigen Motive in einem Ring und überlappe die Kanten leicht. Verwende deine Tapestry-Nadel und CC-Garn, um die Motive an ihren Berührungspunkten mit matten Stichen zu verbinden. Arbeite sorgfältig, um die Sichtbarkeit des Spitzenmusters zu erhalten.  
+Arrangiere deine 5 fertigen Motive in einem Ring und überlappe die Kanten leicht. Verwende deine Wollnadel und CC-Garn, um die Motive an ihren Berührungspunkten mit dem Matratzenstich zu verbinden. Arbeite sorgfältig, um die Sichtbarkeit des Spitzenmusters zu erhalten.  
 Positioniere nach dem Verbinden den Spitzenring über dem grauen Taschenkörper. Die untere Kante der Spitze sollte etwa 7 cm vom Boden entfernt liegen. Fixiere sie mit Nadeln.  
-Benutze CC und deine Tapestry-Nadel, um die Spitze an mehreren Punkten entlang der unteren gezackten Kante an den Taschenkörper zu nähen.
+Benutze CC und deine Wollnadel, um die Spitze an mehreren Punkten entlang der unteren gezackten Kante an den Taschenkörper zu nähen.
 
 ### Teil Sieben: Gezackte obere Kante
 
@@ -149,7 +149,7 @@ Binde jedes Seilende sicher auf der Innenseite der Tasche. Zur zusätzlichen Sic
 ### Teil Neun: Zugband und Quasten
 
 Zugband herstellen:  
-Lm ca. 100 mit CC-Garn, oder schneide ein Stück Baumwollseil auf ca. 91 cm. Weave durch die Lm-2-Spalten, die in Runde 63 erstellt wurden.  
+Lm ca. 100 mit CC-Garn, oder schneide ein Stück Baumwollseil auf ca. 91 cm. Fädle es durch die Lm-2-Spalten, die in Runde 63 erstellt wurden.  
 Quasten herstellen (2 Stück):  
 Wickle CC-Garn um ein 10 cm langes Stück Pappe etwa 30 Mal. Rutsche vorsichtig ab. Binde fest etwa 1,5 cm von oben, um den Quastenkopf zu erstellen. Schneide die Schlaufen am unteren Ende gleichmäßig ab.
 
