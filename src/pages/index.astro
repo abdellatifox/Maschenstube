@@ -13,7 +13,7 @@ const all = (await getCollection('patterns', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
 );
 
-const featured = all.find((p) => p.data.featured) ?? all[0]!;
+const featured = all.find((p) => p.data.featured) ?? all[0];
 
 const counts: Record<string, number> = {};
 for (const p of all) counts[p.data.category] = (counts[p.data.category] ?? 0) + 1;
@@ -43,7 +43,23 @@ const jsonLd = {
 ---
 
 <BaseLayout jsonLd={jsonLd}>
-  <Hero featured={featured} total={all.length} />
+  {
+    featured ? (
+      <Hero featured={featured} total={all.length} />
+    ) : (
+      <section class="yarn-texture border-b border-line/60">
+        <div class="container-editorial py-20 text-center lg:py-28">
+          <p class="eyebrow">Maschenstube</p>
+          <h1 class="mt-4 font-display text-hero font-bold tracking-[-0.035em] text-ink-strong">
+            Bald wieder <span class="accent-italic">da</span>.
+          </h1>
+          <p class="mx-auto mt-6 max-w-md text-[1.05rem] leading-relaxed text-ink-soft">
+            Neue Häkelanleitungen sind in Arbeit. Trag dich in die Sonntagsmasche ein und sei die Erste, die es erfährt.
+          </p>
+        </div>
+      </section>
+    )
+  }
 
   <CategoryIndex counts={counts} />
 
@@ -71,9 +87,17 @@ const jsonLd = {
       </a>
     </div>
 
-    <div class="mt-9 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
-      {latest.map((entry, i) => <PatternCard entry={entry} index={i} />)}
-    </div>
+    {
+      latest.length > 0 ? (
+        <div class="mt-9 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+          {latest.map((entry, i) => <PatternCard entry={entry} index={i} />)}
+        </div>
+      ) : (
+        <p class="mt-9 text-[0.95rem] text-ink-soft">
+          Zurzeit sind keine Anleitungen verfügbar — schau bald wieder vorbei.
+        </p>
+      )
+    }
   </section>
 
   <AuthorNote />
