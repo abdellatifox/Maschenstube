@@ -107,15 +107,6 @@ const ogImage = new URL(image, Astro.site ?? site.url).href;
     <SearchDialog />
 
     <!-- ═══════════ HB Agency ═══════════ -->
-    <!-- Sticky LeftBanner 300×600 — يوضع بالسكربت أدناه حسب حجم الشاشة -->
-    <div id="HB_Footer_Close_hbagency_space_352087" class="hb-rail" data-hb-rail>
-      <span class="hb-label">Anzeige</span>
-      <div id="HB_CLOSE_hbagency_space_352087"></div>
-      <div id="HB_OUTER_hbagency_space_352087">
-        <div id="hbagency_space_352087"></div>
-      </div>
-    </div>
-
     <!-- Sticky InFooter 728×90 (جوال: 320×50/100) — يظهر فقط بعد تحميل إعلان -->
     <div id="HB_Footer_Close_hbagency_space_352086" class="hb-footer" data-hb-footer>
       <button type="button" class="hb-footer-close" aria-label="Anzeige schließen" data-hb-footer-close>
@@ -129,29 +120,6 @@ const ogImage = new URL(image, Astro.site ?? site.url).href;
 
     <script is:inline>
       (() => {
-        // ── 1) الشريط الجانبي: اختيار أفضل مكان قبل أن يعرض HB الإعلان ──
-        const rail = document.querySelector('[data-hb-rail]');
-        if (rail) {
-          // HB تطلب هذا الإعلان على الهاتف فقط (نفس كشف الجهاز الذي تستعمله HB)
-          const ua = navigator.userAgent || '';
-          const isMobile =
-            (navigator.userAgentData && navigator.userAgentData.mobile === true) ||
-            /Android|iPhone|iPod|iPad|Mobile|IEMobile|Opera Mini|BlackBerry/i.test(ua) ||
-            (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
-          const ps = document.querySelectorAll('.prose-crochet > p');
-          if (!isMobile) {
-            // الكمبيوتر: لا يُطلب إعلان هنا ← لا نترك مساحة فارغة
-            rail.remove();
-          } else if (ps.length >= 3) {
-            // الجوال: داخل المقال بعد الفقرة الثالثة (300×250)
-            ps[2].after(rail);
-            rail.classList.add('hb-rail--inline');
-          } else {
-            // لا مكان مناسب دون تغطية المحتوى ← لا نطلب الإعلان أصلًا
-            rail.remove();
-          }
-        }
-
         // ── 2) الشريط السفلي: يظهر فقط عند امتلائه، مع زر إغلاق ──
         const foot = document.querySelector('[data-hb-footer]');
         if (foot) {
@@ -178,26 +146,6 @@ const ogImage = new URL(image, Astro.site ?? site.url).href;
     </script>
 
     <style is:global>
-      /* ── HB: الشريط الجانبي ── */
-      .hb-label {
-        display: block;
-        margin-bottom: 0.35rem;
-        font-size: 0.6rem;
-        font-weight: 700;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--color-ink-soft, #8a7d84);
-        text-align: center;
-      }
-      .hb-rail { display: none; }
-      .hb-rail--inline { display: block; }
-      .hb-rail--inline {
-        margin: 2rem auto;
-        min-height: 250px; /* حجز المساحة لتفادي قفز المحتوى (CLS) */
-        text-align: center;
-      }
-      .hb-rail #hbagency_space_352087 { display: flex; justify-content: center; }
-
       /* ── HB: الشريط السفلي الملتصق ── */
       .hb-footer {
         position: fixed;
