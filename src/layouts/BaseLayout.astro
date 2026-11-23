@@ -106,77 +106,7 @@ const ogImage = new URL(image, Astro.site ?? site.url).href;
     <Footer />
     <SearchDialog />
 
-    <!-- ═══════════ HB Agency ═══════════ -->
-    <!-- Sticky InFooter 728×90 (جوال: 320×50/100) — يظهر فقط بعد تحميل إعلان -->
-    <div id="HB_Footer_Close_hbagency_space_352086" class="hb-footer" data-hb-footer>
-      <button type="button" class="hb-footer-close" aria-label="Anzeige schließen" data-hb-footer-close>
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
-      </button>
-      <div id="HB_CLOSE_hbagency_space_352086"></div>
-      <div id="HB_OUTER_hbagency_space_352086">
-        <div id="hbagency_space_352086"></div>
-      </div>
-    </div>
-
-    <script is:inline>
-      (() => {
-        // ── 2) الشريط السفلي: يظهر فقط عند امتلائه، مع زر إغلاق ──
-        const foot = document.querySelector('[data-hb-footer]');
-        if (foot) {
-          let closed = false;
-          try { closed = sessionStorage.getItem('hb-footer-closed') === '1'; } catch {}
-          if (closed) { foot.remove(); return; }
-          const slot = foot.querySelector('#hbagency_space_352086');
-          const show = () => {
-            // إذا عرض Google إعلان Anchor السفلي بنفسه، لا نُظهر شريطًا ثانيًا
-            const anchor = document.querySelector('ins[id^="gpt_unit_"]');
-            const filled = !anchor && slot.querySelector('iframe') && slot.offsetHeight > 10;
-            foot.classList.toggle('is-filled', !!filled);
-            document.body.style.paddingBottom = filled ? foot.offsetHeight + 'px' : '';
-          };
-          new MutationObserver(show).observe(slot, { childList: true, subtree: true, attributes: true });
-          setInterval(show, 1500);
-          foot.querySelector('[data-hb-footer-close]').addEventListener('click', () => {
-            foot.remove();
-            document.body.style.paddingBottom = '';
-            try { sessionStorage.setItem('hb-footer-closed', '1'); } catch {}
-          });
-        }
-      })();
-    </script>
-
-    <style is:global>
-      /* ── HB: الشريط السفلي الملتصق ── */
-      .hb-footer {
-        position: fixed;
-        inset-inline: 0;
-        bottom: 0;
-        z-index: 40; /* فوق المحتوى، تحت قائمة الجوال (60) */
-        display: flex;
-        justify-content: center;
-        padding: 4px 0 calc(4px + env(safe-area-inset-bottom));
-        background: var(--color-surface, #fff);
-        box-shadow: 0 -6px 24px rgb(0 0 0 / 0.12);
-        transform: translateY(110%);
-        transition: transform 0.35s ease;
-      }
-      .hb-footer.is-filled { transform: none; }
-      .hb-footer #hbagency_space_352086 { display: flex; justify-content: center; max-width: 100vw; overflow: hidden; }
-      .hb-footer-close {
-        position: absolute;
-        top: -26px;
-        right: 12px;
-        display: grid;
-        place-items: center;
-        width: 28px;
-        height: 26px;
-        border-radius: 8px 8px 0 0;
-        background: var(--color-surface, #fff);
-        color: var(--color-ink, #333);
-        box-shadow: 0 -4px 10px rgb(0 0 0 / 0.08);
-        cursor: pointer;
-      }
-    </style>
+    <!-- HB Agency: كل الإعلانات (Footer, LeftBanner, Skyscrapers) تضعها HB تلقائيًا عبر السكربت في <head> -->
 
     <script>
       // ── ظهور تدريجي للعناصر عند التمرير ──
