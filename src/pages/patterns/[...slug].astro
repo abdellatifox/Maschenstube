@@ -126,7 +126,7 @@ const jsonLd = {
         </div>
 
         <!-- الشريط الجانبي -->
-        <aside class="flex flex-col">
+        <aside class="md:sticky md:top-28 md:self-start">
           <PatternMeta data={d} />
 
           {
@@ -160,11 +160,6 @@ const jsonLd = {
               <Icon name="pinterest" size={17} />
               Auf Pinterest merken
             </a>
-          </div>
-
-          <!-- مكان إعلان الشريط الجانبي (300×600) — يلتصق أثناء قراءة المقال -->
-          <div data-hb-sidebar class="mt-8 hidden flex-1 md:block">
-            <div data-hb-sidebar-sticky class="sticky top-28"></div>
           </div>
         </aside>
       </div>
