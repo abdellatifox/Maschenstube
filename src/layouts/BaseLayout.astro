@@ -83,6 +83,9 @@ const ogImage = new URL(image, Astro.site ?? site.url).href;
     />
 
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+
+    <!-- HB Agency (Prebid header bidding) — maschenstube, idSito 45177 -->
+    <script is:inline src="https://d3u598arehftfk.cloudfront.net/prebid_hb_14842_45177.js" async></script>
     <slot name="head" />
   </head>
 
