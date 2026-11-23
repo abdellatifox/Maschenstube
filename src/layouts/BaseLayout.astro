@@ -132,18 +132,17 @@ const ogImage = new URL(image, Astro.site ?? site.url).href;
         // ── 1) الشريط الجانبي: اختيار أفضل مكان قبل أن يعرض HB الإعلان ──
         const rail = document.querySelector('[data-hb-rail]');
         if (rail) {
-          const RAIL_W = 300, GAP = 24, CONTAINER = 1312, PAD = 40;
-          const vw = window.innerWidth;
-          const gutter = (vw - CONTAINER) / 2 + PAD;
-          const sidebar = document.querySelector('[data-hb-sidebar-sticky]');
+          // HB تطلب هذا الإعلان على الهاتف فقط (نفس كشف الجهاز الذي تستعمله HB)
+          const ua = navigator.userAgent || '';
+          const isMobile =
+            (navigator.userAgentData && navigator.userAgentData.mobile === true) ||
+            /Android|iPhone|iPod|iPad|Mobile|IEMobile|Opera Mini|BlackBerry/i.test(ua) ||
+            (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
           const ps = document.querySelectorAll('.prose-crochet > p');
-          if (gutter >= RAIL_W + GAP * 2) {
-            // شاشات عريضة: عمود ثابت على اليسار خارج المحتوى
-            rail.classList.add('hb-rail--fixed');
-          } else if (sidebar && vw >= 768 && sidebar.offsetParent !== null) {
-            // سطح مكتب عادي: داخل الشريط الجانبي للمقال، ملتصق أثناء التمرير
-            sidebar.appendChild(rail);
-            rail.classList.add('hb-rail--sidebar');
+          if (!isMobile) {
+            // الكمبيوتر: لا يُطلب إعلان هنا ← لا نترك مساحة فارغة
+            rail.remove();
+            document.querySelectorAll('[data-hb-sidebar]').forEach((el) => el.remove());
           } else if (ps.length >= 3) {
             // الجوال: داخل المقال بعد الفقرة الثالثة (300×250)
             ps[2].after(rail);
@@ -192,18 +191,7 @@ const ogImage = new URL(image, Astro.site ?? site.url).href;
         text-align: center;
       }
       .hb-rail { display: none; }
-      .hb-rail--fixed,
-      .hb-rail--sidebar,
       .hb-rail--inline { display: block; }
-      .hb-rail--fixed {
-        position: fixed;
-        top: 96px; /* أسفل الترويسة الملتصقة (74px) */
-        left: max(24px, calc((100vw - 1312px) / 2 + 40px - 300px - 24px));
-        z-index: 30;
-        width: 300px;
-        min-height: 600px;
-      }
-      .hb-rail--sidebar { width: 300px; max-width: 100%; min-height: 600px; margin-inline: auto; }
       .hb-rail--inline {
         margin: 2rem auto;
         min-height: 250px; /* حجز المساحة لتفادي قفز المحتوى (CLS) */
