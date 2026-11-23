@@ -108,21 +108,6 @@ const jsonLd = {
             <Content />
           </div>
 
-          <!-- HB Agency: In Page (In article) — يُنقل بعد الفقرة الثالثة من المحتوى -->
-          <div id="hb-inpage-slot" class="hb-ad-inpage">
-            <div class="hb-ad-inner">
-              <div class="hbagency_cls hbagency_space_352090"></div>
-            </div>
-          </div>
-          <script is:inline>
-            (() => {
-              const slot = document.getElementById('hb-inpage-slot');
-              const ps = document.querySelectorAll('.prose-crochet > p');
-              const target = ps[2] || ps[ps.length - 1];
-              if (slot && target) target.after(slot);
-            })();
-          </script>
-
           <!-- الوسوم -->
           {
             d.tags.length > 0 && (
@@ -141,7 +126,7 @@ const jsonLd = {
         </div>
 
         <!-- الشريط الجانبي -->
-        <aside class="md:sticky md:top-28 md:self-start">
+        <aside class="flex flex-col">
           <PatternMeta data={d} />
 
           {
@@ -175,6 +160,11 @@ const jsonLd = {
               <Icon name="pinterest" size={17} />
               Auf Pinterest merken
             </a>
+          </div>
+
+          <!-- مكان إعلان الشريط الجانبي (300×600) — يلتصق أثناء قراءة المقال -->
+          <div data-hb-sidebar class="mt-8 hidden flex-1 md:block">
+            <div data-hb-sidebar-sticky class="sticky top-28"></div>
           </div>
         </aside>
       </div>
