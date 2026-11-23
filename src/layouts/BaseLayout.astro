@@ -162,7 +162,9 @@ const ogImage = new URL(image, Astro.site ?? site.url).href;
           if (closed) { foot.remove(); return; }
           const slot = foot.querySelector('#hbagency_space_352086');
           const show = () => {
-            const filled = slot.querySelector('iframe') && slot.offsetHeight > 10;
+            // إذا عرض Google إعلان Anchor السفلي بنفسه، لا نُظهر شريطًا ثانيًا
+            const anchor = document.querySelector('ins[id^="gpt_unit_"]');
+            const filled = !anchor && slot.querySelector('iframe') && slot.offsetHeight > 10;
             foot.classList.toggle('is-filled', !!filled);
             document.body.style.paddingBottom = filled ? foot.offsetHeight + 'px' : '';
           };
