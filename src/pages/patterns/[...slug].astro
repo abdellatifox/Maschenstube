@@ -126,6 +126,11 @@ const jsonLd = {
               const h2s = body.querySelectorAll(':scope > h2');
               const target = h2s[2] || h2s[h2s.length - 1];
               if (target) body.insertBefore(slot, target);
+              // يظهر الإطار فقط عند امتلاء الإعلان (لا مساحة فارغة)
+              const ad = slot.querySelector('#hbagency_space_352090');
+              const check = () => slot.classList.toggle('is-filled', !!ad.querySelector('iframe') && ad.offsetHeight > 10);
+              new MutationObserver(check).observe(ad, { childList: true, subtree: true, attributes: true });
+              setInterval(check, 2000);
             })();
           </script>
 
@@ -212,8 +217,7 @@ const jsonLd = {
 
 <style is:global>
   .hb-inarticle {
-    margin: 2.5rem auto;
-    min-height: 280px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -226,7 +230,10 @@ const jsonLd = {
     text-transform: uppercase;
     color: var(--color-ink-soft, #888);
     margin-bottom: 0.4rem;
+    display: none;
   }
+  .hb-inarticle.is-filled { margin: 2.5rem auto; }
+  .hb-inarticle.is-filled .hb-label { display: block; }
   .hb-inarticle #hbagency_space_352090 { max-width: 100%; overflow: hidden; }
   @media print {
     .hb-inarticle { display: none !important; }
