@@ -104,9 +104,30 @@ const jsonLd = {
             )
           }
 
-          <div class="prose-crochet max-w-none">
+          <div class="prose-crochet max-w-none" data-article-body>
             <Content />
           </div>
+
+          <!-- HB In Page (In article 300x250) — يُنقل داخل النص قبل القسم الثالث -->
+          <div class="hb-inarticle" data-hb-inarticle>
+            <span class="hb-label">Anzeige</span>
+            <div id="HB_Footer_Close_hbagency_space_352090">
+              <div id="HB_CLOSE_hbagency_space_352090"></div>
+              <div id="HB_OUTER_hbagency_space_352090">
+                <div id="hbagency_space_352090"></div>
+              </div>
+            </div>
+          </div>
+          <script is:inline>
+            (() => {
+              const slot = document.querySelector('[data-hb-inarticle]');
+              const body = document.querySelector('[data-article-body]');
+              if (!slot || !body) return;
+              const h2s = body.querySelectorAll(':scope > h2');
+              const target = h2s[2] || h2s[h2s.length - 1];
+              if (target) body.insertBefore(slot, target);
+            })();
+          </script>
 
           <!-- الوسوم -->
           {
@@ -190,7 +211,25 @@ const jsonLd = {
 </BaseLayout>
 
 <style is:global>
+  .hb-inarticle {
+    margin: 2.5rem auto;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+  }
+  .hb-inarticle .hb-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft, #888);
+    margin-bottom: 0.4rem;
+  }
+  .hb-inarticle #hbagency_space_352090 { max-width: 100%; overflow: hidden; }
   @media print {
+    .hb-inarticle { display: none !important; }
     #site-header, footer, aside, .newsletter, [data-actions], #announce, #search-dialog { display: none !important; }
     body { background: white; }
     .prose-crochet { font-size: 11pt; }
